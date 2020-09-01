@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Misc/Kafka" componentId="2da55ebf-2a93-465d-a305-7d555b49921d" version="1" name="Kafka Beta Receive Operation" type="connector-action" subType="boomi-submaster-kafkab-dev" createdDate="2019-04-12T20:33:46Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:33:46Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="Kafka" folderId="RjoyNTA4NDE3" copiedFromComponentId="37aabd9e-a2f6-404c-8f8f-8331b30c2960" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="true" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig customOperationType="RECEIVE" operationType="EXECUTE" requestProfileType="none" responseProfileType="binary">
+          <field id="topic" type="string" value="qaaoq27u-default"/>
+          <field id="consumerGroupId" type="string" value="qaaoq27u-consumer-id-01"/>
+          <field id="timeout" type="integer" value="60000"/>
+          <Options/>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Misc/Kafka" componentId="8553f4ec-d56f-4a40-8c48-4646f80e57df" version="1" name="Kafka Beta Connector Produce Operation" type="connector-action" subType="boomi-submaster-kafkab-dev" createdDate="2019-04-12T20:34:15Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:34:15Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="Kafka" folderId="RjoyNTA4NDE3" copiedFromComponentId="83298001-f7c6-4bb1-8b5c-45dc3d5d4824" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="true" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig customOperationType="PRODUCE" operationType="EXECUTE" requestProfileType="binary" responseProfileType="none">
+          <field id="topic" type="string" value="qaaoq27u-default"/>
+          <Options/>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

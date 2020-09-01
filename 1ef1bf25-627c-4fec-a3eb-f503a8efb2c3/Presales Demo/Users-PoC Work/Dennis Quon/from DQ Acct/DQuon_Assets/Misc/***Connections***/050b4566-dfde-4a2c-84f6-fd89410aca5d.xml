@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Misc/***Connections***" componentId="050b4566-dfde-4a2c-84f6-fd89410aca5d" version="1" name="Kafka" type="connector-settings" subType="boomi-submaster-kafkab-dev" createdDate="2019-04-12T20:34:50Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:34:50Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="***Connections***" folderId="RjoyNTA4MzY3" copiedFromComponentId="f073a8dc-a838-45aa-b260-e0340919b492" copiedFromComponentVersion="1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="username" type="string" value="qaaoq27u"/>
+      <field id="password" type="password" value="75a22d9ddc72b76cc0f7cc29228dfb386e2c13f5e137f9f3c082c068c46138a2096335ad95d6fd75009e51bfd42cece9dcc1b346027239be9b83e8ec013101d7"/>
+      <field id="bootstrapServers" type="string" value="velomobile-01.srvs.cloudkafka.com:9094,velomobile-02.srvs.cloudkafka.com:9094,velomobile-03.srvs.cloudkafka.com:9094"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>
