@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Common Connection" componentId="101b8968-05f8-4a38-a20a-83662261bee2" version="1" name="BOOMI: SMTP GMAIL " type="connector-settings" subType="mail" createdDate="2020-08-24T04:50:17Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:17Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Common Connection" folderId="RjozNTAwMTAx" copiedFromComponentId="f0d0e6b9-1788-489c-acf2-fbb00b3b8f9d" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <MailSettings xmlns="" host="smtp.gmail.com" port="465" usesmtpauth="true" usessl="true" usetls="true">
+      <AuthSettings password="" user="dellboomisend.demo@gmail.com"/>
+    </MailSettings>
+  </bns:object>
+</bns:Component>

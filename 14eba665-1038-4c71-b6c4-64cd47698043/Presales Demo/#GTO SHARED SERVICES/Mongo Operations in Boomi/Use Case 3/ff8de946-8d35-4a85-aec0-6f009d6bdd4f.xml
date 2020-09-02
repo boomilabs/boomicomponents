@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 3" componentId="ff8de946-8d35-4a85-aec0-6f009d6bdd4f" version="2" name="MongoDB: Query Business Log" type="connector-action" subType="boomi-submaster-mongod-dev" createdDate="2020-08-24T04:50:17Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T05:49:28Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 3" folderId="RjozNTAwMTA1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="true">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="messages_business_log" operationType="QUERY" requestProfileType="xml" responseProfile="172dda95-4405-4351-a5bb-4562822fa8d4" responseProfileType="json">
+          <field id="batchSize" type="integer"/>
+          <cookie role="OUTPUT">
+            <value>{"type": "object", "properties": {"_id": { "type": "object", "properties": {"$oid": { "type": "string" }}},"messageId": { "type": "string" },"eventTime": { "type": "string" },"eventTimeZoneOffset": { "type": "string" },"epcList": { "type": "array", "items": [{ "type": "string" },{ "type": "string" },{ "type": "string" },{ "type": "string" }]},"action": { "type": "string" },"bizStep": { "type": "string" },"disposition": { "type": "string" },"readPointId": { "type": "string" },"bizLocationId": { "type": "string" },"bizTransactionType": { "type": "string" },"bizTransactionId": { "type": "string" },"StockOwner": { "type": "string" },"StockOwnerId": { "type": "string" },"SoldEntity": { "type": "string" },"SoldEntityId": { "type": "string" },"Destination": { "type": "string" },"DestinationId": { "type": "string" },"message": { "type": "string" },"status": { "type": "string" },"submitted": { "type": "string" },"timestamp": { "type": "string" }}}</value>
+          </cookie>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="messages_business_log">
+                  <FieldList>
+                    <ConnectorField filterable="true" name="Destination" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="DestinationId" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="SoldEntity" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="SoldEntityId" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="StockOwner" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="StockOwnerId" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="_id/$oid" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="action" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="bizLocationId" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="bizStep" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="bizTransactionId" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="bizTransactionType" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="disposition" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="epcList/0" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="epcList/1" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="epcList/2" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="epcList/3" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="eventTime" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="eventTimeZoneOffset" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="message" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="messageId" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="readPointId" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="status" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="submitted" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="timestamp" selectable="true" selected="true" sortable="true"/>
+                  </FieldList>
+                  <Filter>
+                    <ConnectorBaseFilter>
+                      <ConnectorFilterExpression expressionField="messageId" expressionOperator="EQUALS" key="1" name="messageId"/>
+                    </ConnectorBaseFilter>
+                  </Filter>
+                  <Sorts/>
+                </ConnectorObject>
+              </Fields>
+              <Inputs>
+                <Input key="1" name="messageId"/>
+              </Inputs>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

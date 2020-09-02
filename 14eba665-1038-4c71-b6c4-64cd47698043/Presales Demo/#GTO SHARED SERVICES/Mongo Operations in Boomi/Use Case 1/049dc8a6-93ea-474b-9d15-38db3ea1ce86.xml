@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 1" componentId="049dc8a6-93ea-474b-9d15-38db3ea1ce86" version="1" name="MongoDB: Upsert Technical Log" type="connector-action" subType="boomi-submaster-mongod-dev" createdDate="2020-08-24T04:50:18Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:18Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 1" folderId="RjozNTAwMTAy" copiedFromComponentId="57337136-2ad6-4620-8b8c-dd502687266e" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="true" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="messages_technical_log" objectTypeName="messages_technical_log" operationType="UPSERT" requestProfileType="binary" responseProfile="91ea665a-55d1-4202-9a6a-68974c27289e" responseProfileType="json">
+          <field id="includeSizeExceededPayload" type="boolean" value="false"/>
+          <field id="batchSize" type="integer"/>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="messages_technical_log">
+                  <FieldList>
+                    <ConnectorField filterable="true" name="errorDetails/errorCode" selectable="true" selected="true" sortable="true"/>
+                    <ConnectorField filterable="true" name="errorDetails/errorMessage" selectable="true" selected="true" sortable="true"/>
+                  </FieldList>
+                </ConnectorObject>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

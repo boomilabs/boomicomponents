@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 3" componentId="99f64751-89a2-44b6-976e-2bae8d3528d8" version="1" name="FF: Business Log" type="profile.flatfile" createdDate="2020-08-24T04:50:19Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:19Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 3" folderId="RjozNTAwMTA1" copiedFromComponentId="d8694895-4434-4e15-bc4f-024fee30385a" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <FlatFileProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <GeneralInfo fileType="delimited" useColumnHeaders="true"/>
+        <Options>
+          <DataOptions/>
+          <DelimitedOptions fileDelimiter="commadelimited" removeEscape="false" textQualifier="textqualifierdouble"/>
+        </Options>
+      </ProfileProperties>
+      <DataElements>
+        <FlatFileRecord detectFormat="numberofcolumns" isNode="true" key="1" name="Record">
+          <FlatFileElements isNode="true" key="2" name="Elements">
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="3" mandatory="false" maxLength="0" minLength="0" name="messageId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="4" mandatory="false" maxLength="0" minLength="0" name="message" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="5" mandatory="false" maxLength="0" minLength="0" name="action" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="6" mandatory="false" maxLength="0" minLength="0" name="bizStep" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="7" mandatory="false" maxLength="0" minLength="0" name="disposition" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="8" mandatory="false" maxLength="0" minLength="0" name="readPointId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="9" mandatory="false" maxLength="0" minLength="0" name="bizLocationId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="10" mandatory="false" maxLength="0" minLength="0" name="bizTransactionType" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="11" mandatory="false" maxLength="0" minLength="0" name="bizTransactionId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="12" mandatory="false" maxLength="0" minLength="0" name="StockOwner" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="13" mandatory="false" maxLength="0" minLength="0" name="StockOwnerId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="14" mandatory="false" maxLength="0" minLength="0" name="SoldEntity" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="15" mandatory="false" maxLength="0" minLength="0" name="SoldEntityId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="16" mandatory="false" maxLength="0" minLength="0" name="Destination" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="17" mandatory="false" maxLength="0" minLength="0" name="DestinationId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="18" mandatory="false" maxLength="0" minLength="0" name="status" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="19" mandatory="false" maxLength="0" minLength="0" name="submitted" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="20" mandatory="false" maxLength="0" minLength="0" name="timestamp" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="21" mandatory="false" maxLength="0" minLength="0" name="_id" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+          </FlatFileElements>
+        </FlatFileRecord>
+      </DataElements>
+    </FlatFileProfile>
+  </bns:object>
+</bns:Component>

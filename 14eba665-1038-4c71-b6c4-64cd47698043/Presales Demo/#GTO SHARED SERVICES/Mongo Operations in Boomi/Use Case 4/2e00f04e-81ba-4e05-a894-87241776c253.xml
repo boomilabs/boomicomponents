@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 4" componentId="2e00f04e-81ba-4e05-a894-87241776c253" version="1" name="Mongo DB Cloud" type="connector-settings" subType="boomi-submaster-mongod-dev" createdDate="2020-08-24T04:50:18Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:18Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 4" folderId="RjozNTAwMTA0" copiedFromComponentId="207c9dea-a279-4b9d-9a37-264c61e6fc8a" copiedFromComponentVersion="32">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="hostname" type="string" value="cluster0-shard-00-02.hpwjg.mongodb.net"/>
+      <field id="port" type="string" value="27017"/>
+      <field id="database" type="string" value="sample_analytics"/>
+      <field id="authDatabase" type="string" value="admin"/>
+      <field id="username" type="string" value="kundan123"/>
+      <field id="password" type="password" value="d5eddde6569a4598abcd421716884285c757783609ed5b8dcd01ba7f3f43dbc7b8dcb5e3fe5a4c8648eb4d80e7e69767022de1f382d40ddd6f8fb67f3f9d5d2d"/>
+      <field id="userCert" type="privatecertificate"/>
+      <field id="caCert" type="publiccertificate"/>
+      <field id="replicaSetMembers" type="string" value=""/>
+      <field id="authtype" type="string" value="SCRAMSHA1"/>
+      <field id="useSSL" type="boolean" value="true"/>
+      <field id="kdc" type="string" value=""/>
+      <field id="realm" type="string" value=""/>
+      <field id="krb5Path" type="string" value=""/>
+      <field id="gssPath" type="string" value=""/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

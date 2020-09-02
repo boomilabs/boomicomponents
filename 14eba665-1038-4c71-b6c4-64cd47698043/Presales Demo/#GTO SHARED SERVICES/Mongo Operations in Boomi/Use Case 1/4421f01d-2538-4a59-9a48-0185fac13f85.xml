@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 1" componentId="4421f01d-2538-4a59-9a48-0185fac13f85" version="1" name="Map: Log Technical Transaction" type="transform.map" createdDate="2020-08-24T04:50:18Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:18Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 1" folderId="RjozNTAwMTAy" copiedFromComponentId="8d8a96b6-5425-4e83-810a-53f0789d4616" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="808cfe5f-ba79-4618-b23c-0c88b0852fd8" toProfile="8e4e80f4-8429-440e-807a-5490049f772e">
+      <Mappings>
+        <Mapping fromKey="3" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" fromNamePath="Record/Elements/error" fromType="profile" toKey="29" toKeyPath="*[@key='17']/*[@key='18']/*[@key='29']" toNamePath="technicalLog/Object/message" toType="profile"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" fromNamePath="Record/Elements/processName" fromType="profile" toKey="28" toKeyPath="*[@key='17']/*[@key='18']/*[@key='28']" toNamePath="technicalLog/Object/origin" toType="profile"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" fromNamePath="Record/Elements/processName" fromType="profile" toKey="24" toKeyPath="*[@key='17']/*[@key='18']/*[@key='24']" toNamePath="technicalLog/Object/job" toType="profile"/>
+        <Mapping fromKey="6" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='6']" fromNamePath="Record/Elements/accountId" fromType="profile" toKey="22" toKeyPath="*[@key='17']/*[@key='18']/*[@key='22']" toNamePath="technicalLog/Object/father_pid" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='5']" fromNamePath="Record/Elements/processId" fromType="profile" toKey="21" toKeyPath="*[@key='17']/*[@key='18']/*[@key='21']" toNamePath="technicalLog/Object/root_pid" toType="profile"/>
+        <Mapping fromKey="4" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='4']" fromNamePath="Record/Elements/executionId" fromType="profile" toKey="20" toKeyPath="*[@key='17']/*[@key='18']/*[@key='20']" toNamePath="technicalLog/Object/pid" toType="profile"/>
+        <Mapping fromFunction="1" fromKey="1" fromType="function" toKey="19" toKeyPath="*[@key='17']/*[@key='18']/*[@key='19']" toNamePath="technicalLog/Object/moment" toType="profile"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" fromNamePath="Record/Elements/processName" fromType="profile" toKey="23" toKeyPath="*[@key='17']/*[@key='18']/*[@key='23']" toNamePath="technicalLog/Object/project" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep category="userdefined" id="4d471ac1-fb85-468e-ae43-28bda319d7e4" key="1" name="MF: Current Date" position="1" type="userdefined" x="10.0" y="10.0">
+          <Inputs/>
+          <Outputs>
+            <Output key="1" name="timestamp"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Functions>
+      <Defaults>
+        <Default toKey="30" value="500"/>
+        <Default toKey="27" value="BOOMI Integration"/>
+        <Default toKey="26" value="Medium"/>
+        <Default toKey="25" value="Working on POC"/>
+      </Defaults>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

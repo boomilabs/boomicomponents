@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 3" componentId="ad101f85-3979-4e9b-90a9-b1aca81d79d2" version="1" name="MAP: Business Log XML to FF " type="transform.map" createdDate="2020-08-24T04:50:17Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:17Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 3" folderId="RjozNTAwMTA1" copiedFromComponentId="9ccd21e1-8845-4166-8899-8420419841ef" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="172dda95-4405-4351-a5bb-4562822fa8d4" toProfile="99f64751-89a2-44b6-976e-2bae8d3528d8">
+      <Mappings>
+        <Mapping fromKey="35" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='35']" fromNamePath="Root/Object/messageId" fromType="profile" toKey="3" toKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" toNamePath="Record/Elements/messageId" toType="profile"/>
+        <Mapping fromKey="54" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='54']" fromNamePath="Root/Object/message" fromType="profile" toKey="4" toKeyPath="*[@key='1']/*[@key='2']/*[@key='4']" toNamePath="Record/Elements/message" toType="profile"/>
+        <Mapping fromKey="41" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='41']" fromNamePath="Root/Object/action" fromType="profile" toKey="5" toKeyPath="*[@key='1']/*[@key='2']/*[@key='5']" toNamePath="Record/Elements/action" toType="profile"/>
+        <Mapping fromKey="42" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='42']" fromNamePath="Root/Object/bizStep" fromType="profile" toKey="6" toKeyPath="*[@key='1']/*[@key='2']/*[@key='6']" toNamePath="Record/Elements/bizStep" toType="profile"/>
+        <Mapping fromKey="43" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='43']" fromNamePath="Root/Object/disposition" fromType="profile" toKey="7" toKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" toNamePath="Record/Elements/disposition" toType="profile"/>
+        <Mapping fromKey="44" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='44']" fromNamePath="Root/Object/readPointId" fromType="profile" toKey="8" toKeyPath="*[@key='1']/*[@key='2']/*[@key='8']" toNamePath="Record/Elements/readPointId" toType="profile"/>
+        <Mapping fromKey="45" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='45']" fromNamePath="Root/Object/bizLocationId" fromType="profile" toKey="9" toKeyPath="*[@key='1']/*[@key='2']/*[@key='9']" toNamePath="Record/Elements/bizLocationId" toType="profile"/>
+        <Mapping fromKey="46" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='46']" fromNamePath="Root/Object/bizTransactionType" fromType="profile" toKey="10" toKeyPath="*[@key='1']/*[@key='2']/*[@key='10']" toNamePath="Record/Elements/bizTransactionType" toType="profile"/>
+        <Mapping fromKey="47" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='47']" fromNamePath="Root/Object/bizTransactionId" fromType="profile" toKey="11" toKeyPath="*[@key='1']/*[@key='2']/*[@key='11']" toNamePath="Record/Elements/bizTransactionId" toType="profile"/>
+        <Mapping fromKey="48" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='48']" fromNamePath="Root/Object/StockOwner" fromType="profile" toKey="12" toKeyPath="*[@key='1']/*[@key='2']/*[@key='12']" toNamePath="Record/Elements/StockOwner" toType="profile"/>
+        <Mapping fromKey="49" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='49']" fromNamePath="Root/Object/StockOwnerId" fromType="profile" toKey="13" toKeyPath="*[@key='1']/*[@key='2']/*[@key='13']" toNamePath="Record/Elements/StockOwnerId" toType="profile"/>
+        <Mapping fromKey="50" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='50']" fromNamePath="Root/Object/SoldEntity" fromType="profile" toKey="14" toKeyPath="*[@key='1']/*[@key='2']/*[@key='14']" toNamePath="Record/Elements/SoldEntity" toType="profile"/>
+        <Mapping fromKey="51" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='51']" fromNamePath="Root/Object/SoldEntityId" fromType="profile" toKey="15" toKeyPath="*[@key='1']/*[@key='2']/*[@key='15']" toNamePath="Record/Elements/SoldEntityId" toType="profile"/>
+        <Mapping fromKey="52" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='52']" fromNamePath="Root/Object/Destination" fromType="profile" toKey="16" toKeyPath="*[@key='1']/*[@key='2']/*[@key='16']" toNamePath="Record/Elements/Destination" toType="profile"/>
+        <Mapping fromKey="53" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='53']" fromNamePath="Root/Object/DestinationId" fromType="profile" toKey="17" toKeyPath="*[@key='1']/*[@key='2']/*[@key='17']" toNamePath="Record/Elements/DestinationId" toType="profile"/>
+        <Mapping fromKey="55" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='55']" fromNamePath="Root/Object/status" fromType="profile" toKey="18" toKeyPath="*[@key='1']/*[@key='2']/*[@key='18']" toNamePath="Record/Elements/status" toType="profile"/>
+        <Mapping fromKey="56" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='56']" fromNamePath="Root/Object/submitted" fromType="profile" toKey="19" toKeyPath="*[@key='1']/*[@key='2']/*[@key='19']" toNamePath="Record/Elements/submitted" toType="profile"/>
+        <Mapping fromKey="57" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='57']" fromNamePath="Root/Object/timestamp" fromType="profile" toKey="20" toKeyPath="*[@key='1']/*[@key='2']/*[@key='20']" toNamePath="Record/Elements/timestamp" toType="profile"/>
+        <Mapping fromKey="34" fromKeyPath="*[@key='32']/*[@key='33']/*[@key='34']" fromNamePath="Root/Object/_id" fromType="profile" toKey="21" toKeyPath="*[@key='1']/*[@key='2']/*[@key='21']" toNamePath="Record/Elements/_id" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

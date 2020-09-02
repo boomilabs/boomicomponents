@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 3" componentId="587bd383-64c4-4e8a-b65f-6f877638ffcd" version="1" name="Mail: Send Report" type="connector-action" subType="mail" createdDate="2020-08-24T04:50:18Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:18Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 3" folderId="RjozNTAwMTA1" copiedFromComponentId="b25dd989-c39b-4cdf-9abf-645036c78ca5" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <MailSendAction bodyContentType="text/html" dataContentType="text/plain" disposition="attachment" from="" subject="" to=""/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

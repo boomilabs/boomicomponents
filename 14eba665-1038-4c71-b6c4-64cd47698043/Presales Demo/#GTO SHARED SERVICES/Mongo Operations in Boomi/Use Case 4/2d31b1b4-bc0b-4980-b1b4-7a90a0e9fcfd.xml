@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 4" componentId="2d31b1b4-bc0b-4980-b1b4-7a90a0e9fcfd" version="2" name="MongoDB (Tech Preview) message_submission QUERY Response" type="profile.json" createdDate="2020-08-24T04:50:18Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T05:47:23Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 4" folderId="RjozNTAwMTA0">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <JSONProfile xmlns="" strict="false">
+      <DataElements>
+        <JSONRootValue dataType="character" isMappable="true" isNode="true" key="64" name="">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <JSONObject isMappable="false" isNode="true" key="65" name="Object">
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="66" name="Destination_ID1">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="67" name="Dispatch_excep1">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="boolean" isMappable="true" isNode="true" key="68" name="EMCS">
+              <DataFormat/>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="69" name="EO_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="boolean" isMappable="true" isNode="true" key="70" name="Exp_Declaration">
+              <DataFormat/>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="71" name="F_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="72" name="Int_transloading">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="73" name="Message_Type">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="74" name="Recording_Time">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="boolean" isMappable="true" isNode="true" key="75" name="SAAD">
+              <DataFormat/>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="76" name="Transport_mode1">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="boolean" isMappable="true" isNode="true" key="77" name="Transport_mode3">
+              <DataFormat/>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="boolean" isMappable="true" isNode="true" key="78" name="Transport_mode4">
+              <DataFormat/>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="boolean" isMappable="true" isNode="true" key="79" name="Transport_mode5">
+              <DataFormat/>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="80" name="UI_Type">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="81" name="_id">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <JSONObject isMappable="false" isNode="true" key="82" name="Object">
+                <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="83" name="$oid">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </JSONObjectEntry>
+              </JSONObject>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="84" name="aUIs">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <JSONArray elementType="absolute" isMappable="false" isNode="true" key="85" name="Array">
+                <JSONArrayElement dataType="character" isMappable="true" isNode="true" key="86" maxOccurs="1" minOccurs="0" name="01">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </JSONArrayElement>
+                <JSONArrayElement dataType="character" isMappable="true" isNode="true" key="87" maxOccurs="1" minOccurs="0" name="12">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </JSONArrayElement>
+                <JSONArrayElement dataType="character" isMappable="true" isNode="true" key="88" maxOccurs="1" minOccurs="0" name="23">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </JSONArrayElement>
+                <JSONArrayElement dataType="character" isMappable="true" isNode="true" key="89" maxOccurs="1" minOccurs="0" name="34">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </JSONArrayElement>
+              </JSONArray>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="90" name="message">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="91" name="messageId">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="92" name="status">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="93" name="submitted">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="94" name="timestamp">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </JSONObjectEntry>
+          </JSONObject>
+        </JSONRootValue>
+      </DataElements>
+      <tagLists/>
+    </JSONProfile>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 1" componentId="808cfe5f-ba79-4618-b23c-0c88b0852fd8" version="1" name="FF: Caught Error" type="profile.flatfile" createdDate="2020-08-24T04:50:17Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:17Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 1" folderId="RjozNTAwMTAy" copiedFromComponentId="415bd1cc-0dcd-4630-9cb5-3c207074bd9f" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <FlatFileProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <GeneralInfo fileType="delimited" useColumnHeaders="false"/>
+        <Options>
+          <DataOptions padcharacter=""/>
+          <DelimitedOptions delimiterEscape="" escapeForEscape="" fileDelimiter="otherdelimited" fileDelimiterSpecial="**" removeEscape="false" textQualifier="textqualifierdouble" textQualifierEscape=""/>
+        </Options>
+      </ProfileProperties>
+      <DataElements>
+        <FlatFileRecord detectFormat="numberofcolumns" isNode="true" key="1" name="Record">
+          <FlatFileElements isNode="true" key="2" name="Elements">
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="3" mandatory="false" maxLength="0" minLength="0" name="error" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="4" mandatory="false" maxLength="0" minLength="0" name="executionId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="5" mandatory="false" maxLength="0" minLength="0" name="processId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="6" mandatory="false" maxLength="0" minLength="0" name="accountId" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="7" mandatory="false" maxLength="0" minLength="0" name="processName" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+          </FlatFileElements>
+        </FlatFileRecord>
+      </DataElements>
+    </FlatFileProfile>
+  </bns:object>
+</bns:Component>

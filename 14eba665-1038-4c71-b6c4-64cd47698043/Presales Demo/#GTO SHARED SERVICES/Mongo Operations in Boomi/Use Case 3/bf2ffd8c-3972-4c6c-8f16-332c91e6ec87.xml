@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 3" componentId="bf2ffd8c-3972-4c6c-8f16-332c91e6ec87" version="3" name="Sub: Filter and Query Business Log" type="process" createdDate="2020-08-24T04:50:16Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T05:49:31Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 3" folderId="RjozNTAwMTA1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <passthroughaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape3" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="decision_icon" name="shape3" shapetype="decision" userlabel="check status == Not Validated ??" x="240.0" y="48.0">
+          <configuration>
+            <decision comparison="equals" name="check status == Not Validated ??">
+              <decisionvalue valueType="profile">
+                <profileelement elementId="59" elementName="status (Root/Object/status)" profileId="2d31b1b4-bc0b-4980-b1b4-7a90a0e9fcfd" profileType="profile.json"/>
+              </decisionvalue>
+              <decisionvalue valueType="static">
+                <staticparameter staticproperty="Not Validated"/>
+              </decisionvalue>
+            </decision>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="true" name="shape3.dragpoint1" text="True" toShape="shape2" x="416.0" y="57.0">
+              <linesegment length="0" name="shape3.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape3.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment label="True" length="63" name="shape3.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="false" name="shape3.dragpoint2" text="False" toShape="shape4" x="416.0" y="217.0">
+              <linesegment length="0" name="shape3.dragpoint2.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint2.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape3.dragpoint2.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="160" name="shape3.dragpoint2.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment label="False" length="63" name="shape3.dragpoint2.lineseg5" orient="horizontal" x="353.0" y="223.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape2" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="2e00f04e-81ba-4e05-a894-87241776c253" connectorType="boomi-submaster-mongod-dev" hideSettings="false" operationId="ff8de946-8d35-4a85-aec0-6f009d6bdd4f" parameter-profile="EMBEDDED|genericparameterchooser|ff8de946-8d35-4a85-aec0-6f009d6bdd4f">
+              <parameters>
+                <parametervalue elementToSetId="1" elementToSetName="messageId" key="0" valueType="profile">
+                  <profileelement elementId="37" elementName="messageId (Root/Object/messageId)" profileId="2d31b1b4-bc0b-4980-b1b4-7a90a0e9fcfd" profileType="profile.json"/>
+                </parametervalue>
+              </parameters>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape8" x="608.0" y="57.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment length="63" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape4" shapetype="stop" userlabel="" x="432.0" y="208.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="returndocuments_icon" name="shape8" shapetype="returndocuments" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <returndocuments label=""/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

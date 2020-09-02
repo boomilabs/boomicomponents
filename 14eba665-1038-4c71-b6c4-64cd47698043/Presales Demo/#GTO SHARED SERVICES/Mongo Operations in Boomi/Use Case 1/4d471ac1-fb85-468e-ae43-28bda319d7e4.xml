@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 1" componentId="4d471ac1-fb85-468e-ae43-28bda319d7e4" version="1" name="MF: Current Date" type="transform.function" createdDate="2020-08-24T04:50:19Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T04:50:19Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 1" folderId="RjozNTAwMTAy" copiedFromComponentId="5e8b5616-3a36-4ffc-a783-6fcac6b64e5e" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Function xmlns="">
+      <Inputs/>
+      <Outputs>
+        <Output key="1" name="timestamp"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" category="Date" key="1" name="Get Current Date" position="1" sumEnabled="false" type="CurrentDate" x="104.0" y="141.0">
+          <Inputs/>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Date" key="2" name="Date Format" position="2" sumEnabled="false" type="DateFormat" x="357.0" y="178.0">
+          <Inputs>
+            <Input key="1" name="Date String"/>
+            <Input default="yyyyMMdd HHmmss.SSS" key="2" name="Input Mask"/>
+            <Input default="yyyy-MM-dd HH:mm:ss" key="3" name="Output Mask"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="1" fromKey="2" fromNamePath="Get Current Date/Result" fromType="function" toFunction="2" toKey="1" toNamePath="Date Format/Date String" toType="function"/>
+        <Mapping fromFunction="2" fromKey="2" fromNamePath="Date Format/Result" fromType="function" toFunction="0" toKey="1" toNamePath="Editor/timestamp" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

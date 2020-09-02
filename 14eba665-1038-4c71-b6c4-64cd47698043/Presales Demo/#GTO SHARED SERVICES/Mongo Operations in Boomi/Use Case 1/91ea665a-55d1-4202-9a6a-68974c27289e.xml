@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/#GTO SHARED SERVICES/Mongo Operations in Boomi/Use Case 1" componentId="91ea665a-55d1-4202-9a6a-68974c27289e" version="2" name="MongoDB (Tech Preview) messages_technical_log UPSERT Response" type="profile.json" createdDate="2020-08-24T04:50:17Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-08-24T05:10:34Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="Use Case 1" folderId="RjozNTAwMTAy">
+  <bns:encryptedValues/>
+  <bns:object>
+    <JSONProfile xmlns="" strict="false">
+      <DataElements>
+        <JSONRootValue dataType="character" isMappable="true" isNode="true" key="1" name="">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <JSONObject isMappable="false" isNode="true" key="2" name="Object">
+            <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="3" name="errorDetails">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <JSONObject isMappable="false" isNode="true" key="4" name="Object">
+                <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="5" name="errorCode">
+                  <DataFormat>
+                    <ProfileNumberFormat/>
+                  </DataFormat>
+                </JSONObjectEntry>
+                <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="6" name="errorMessage">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </JSONObjectEntry>
+              </JSONObject>
+            </JSONObjectEntry>
+          </JSONObject>
+        </JSONRootValue>
+      </DataElements>
+      <tagLists/>
+    </JSONProfile>
+  </bns:object>
+</bns:Component>
