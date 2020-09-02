@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Kundan_Sandbox/POC_XSLT_UseCase" componentId="5eac7685-22c7-46d0-a20f-78d6e3e25ad3" version="1" name="Sample XSLT" type="xslt" createdDate="2019-11-15T09:05:22Z" createdBy="kundan.gupta@dell.com" modifiedDate="2019-11-15T09:05:22Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="POC_XSLT_UseCase" folderId="RjoyOTEzODY4" copiedFromComponentId="28531e8b-666e-40a4-baa5-7c08e85719f0" copiedFromComponentVersion="21">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Xslt xmlns="">
+      <stylesheet>&lt;xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:boomi="http://boomi.com/custom-function"&gt;&#13;
+	&lt;xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" /&gt;&#13;
+	&lt;xsl:template match="/"&gt;&#13;
+		&lt;AndrewSysOut&gt;&#13;
+			&lt;xsl:variable name="FirstName"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/FirstName" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;xsl:variable name="LastName"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/LastName" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;Name&gt;&#13;
+				&lt;xsl:value-of select="concat($FirstName,' ',$LastName)" /&gt;&#13;
+			&lt;/Name&gt;&#13;
+			&lt;xsl:variable name="DOB"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/DOB" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;DateOfBirth&gt;&#13;
+			    &lt;xsl:value-of select="AndrewSys/DOB" /&gt;&#13;
+			&lt;/DateOfBirth&gt;&#13;
+			&lt;xsl:variable name="Address"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/Address" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;xsl:variable name="City"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/City" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;xsl:variable name="Country"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/Country" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;xsl:variable name="State"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/State" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;xsl:variable name="ZipCode"&gt;&#13;
+				&lt;xsl:value-of select="AndrewSys/ZipCode" /&gt;&#13;
+			&lt;/xsl:variable&gt;&#13;
+			&lt;Address&gt;&#13;
+				&lt;xsl:value-of select="concat($Address,', ',$City,', ',$Country,', ',$State,', ',$ZipCode)" /&gt;&#13;
+			&lt;/Address&gt;&#13;
+			&lt;Email&gt;&#13;
+				&lt;xsl:value-of select="concat($FirstName,'.',$LastName,substring($DOB,1,4),substring($DOB,6,2),substring($DOB,9,2),'@cmu.com')" /&gt;&#13;
+			&lt;/Email&gt;&#13;
+			&lt;UniqueId&gt;&#13;
+			    &lt;xsl:value-of select="translate(boomi:get-ddp('DDP_CurrentDate'),' ','')"/&gt;&#13;
+			&lt;/UniqueId&gt;&#13;
+		&lt;/AndrewSysOut&gt;&#13;
+	&lt;/xsl:template&gt;&#13;
+&lt;/xsl:stylesheet&gt;</stylesheet>
+    </Xslt>
+  </bns:object>
+</bns:Component>

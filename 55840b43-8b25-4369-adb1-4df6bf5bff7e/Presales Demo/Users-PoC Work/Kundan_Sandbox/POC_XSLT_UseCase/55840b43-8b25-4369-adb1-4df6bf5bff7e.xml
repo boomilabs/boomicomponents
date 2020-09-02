@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Kundan_Sandbox/POC_XSLT_UseCase" componentId="55840b43-8b25-4369-adb1-4df6bf5bff7e" version="1" name="Main: XSLT UseCase - Id and Email Generating System" type="process" createdDate="2019-11-15T09:05:22Z" createdBy="kundan.gupta@dell.com" modifiedDate="2019-11-15T09:05:22Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="POC_XSLT_UseCase" folderId="RjoyOTEzODY4" copiedFromComponentId="8349157e-4b54-441e-822b-4398c4c056d0" copiedFromComponentVersion="14">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape2" shapetype="message" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>&lt;AndrewSys&gt;
+	&lt;FirstName&gt;John&lt;/FirstName&gt;
+	&lt;LastName&gt;Wick&lt;/LastName&gt;
+	&lt;DOB&gt;1991-01-26&lt;/DOB&gt;
+	&lt;SSN&gt;1231351&lt;/SSN&gt;
+	&lt;Gender&gt;Male&lt;/Gender&gt;
+	&lt;Address&gt;12th Street&lt;/Address&gt;
+	&lt;City&gt;Dunkirk&lt;/City&gt;
+	&lt;Country&gt;US&lt;/Country&gt;
+	&lt;State&gt;NY&lt;/State&gt;
+	&lt;ZipCode&gt;10011&lt;/ZipCode&gt;
+&lt;/AndrewSys&gt;</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape5" x="416.0" y="57.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment length="63" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="dataprocess_icon" name="shape3" shapetype="dataprocess" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="1" name="XSLT Transformation" processtype="16">
+                <dataprocessxslt componentId="5eac7685-22c7-46d0-a20f-78d6e3e25ad3">
+                  <stylesheet>Sample XSLT</stylesheet>
+                </dataprocessxslt>
+              </step>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape4" x="800.0" y="57.0">
+              <linesegment length="0" name="shape3.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg2" orient="vertical" x="658.0" y="63.0"/>
+              <linesegment length="79" name="shape3.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape3.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape4" shapetype="stop" userlabel="" x="816.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="documentproperties_icon" name="shape5" shapetype="documentproperties" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isTradingPartner="false" name="Dynamic Document Property - DDP_CurrentDate" persist="false" propertyId="dynamicdocument.DDP_CurrentDate">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="date">
+                    <dateparameter dateparametertype="current" datetimemask="yyyyMMdd HHmmss"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape3" x="608.0" y="57.0">
+              <linesegment length="0" name="shape5.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape5.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment length="63" name="shape5.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
