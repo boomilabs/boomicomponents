@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Giulio/Ferrero Integration" componentId="524ad32a-369c-4b5a-8284-40a8b1094d75" version="1" name="SMTP Gmail" type="connector-settings" subType="mail" createdDate="2020-06-11T09:12:59Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:12:59Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="65f8b23c-65a7-48ee-bd09-dc663381ba77" copiedFromComponentVersion="1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//MailSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <MailSettings xmlns="" host="smtp.gmail.com" port="465" usesmtpauth="true" usessl="true" usetls="true">
+      <AuthSettings password="35d8c0010f523e58bb46c26eda85299aa5f9bae78765b74c1e08a3c1cc2743de90ece0fe599def2cf01be532a05dfb4d893118724477a92d970223bad1e4083d" user="dellboomisend.demo@gmail.com"/>
+    </MailSettings>
+  </bns:object>
+</bns:Component>

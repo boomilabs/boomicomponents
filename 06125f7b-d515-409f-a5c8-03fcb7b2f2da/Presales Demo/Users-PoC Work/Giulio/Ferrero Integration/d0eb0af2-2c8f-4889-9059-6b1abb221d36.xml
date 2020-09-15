@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Giulio/Ferrero Integration" componentId="d0eb0af2-2c8f-4889-9059-6b1abb221d36" version="1" name="PartnerLookup" type="crossref" createdDate="2020-06-11T09:12:59Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:12:59Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="71355a40-d7a8-4e7d-b431-c047f7a3d6b3" copiedFromComponentVersion="2">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <CrossRefTable xmlns="" atomEnabled="false" modelVersion="3">
+      <ColumnHeaders>
+        <columnHeader>PARTNERID</columnHeader>
+        <columnHeader>SNDPOR</columnHeader>
+        <columnHeader>RCVPOR</columnHeader>
+        <columnHeader>MSGTYPE</columnHeader>
+      </ColumnHeaders>
+      <Rows>
+        <row>
+          <Values>
+            <ref colIdx="0" value="0000005300"/>
+            <ref colIdx="1" value="SAPC41"/>
+            <ref colIdx="2" value="TRFC"/>
+            <ref colIdx="3" value="ORDERS05"/>
+          </Values>
+        </row>
+      </Rows>
+    </CrossRefTable>
+  </bns:object>
+</bns:Component>

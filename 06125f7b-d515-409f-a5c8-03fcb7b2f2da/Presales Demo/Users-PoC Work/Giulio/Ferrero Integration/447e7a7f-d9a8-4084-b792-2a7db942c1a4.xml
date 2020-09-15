@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Giulio/Ferrero Integration" componentId="447e7a7f-d9a8-4084-b792-2a7db942c1a4" version="1" name="TP_FERRERO" type="tradingpartner" createdDate="2020-06-11T09:13:00Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:13:00Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="9a33d832-017c-4547-8dda-519a326aeb9e" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <TradingPartner xmlns="" classification="tradingpartner" standard="edifact">
+      <ContactInfo/>
+      <PartnerInfo>
+        <EdifactPartnerInfo>
+          <EdifactOptions acknowledgementoption="ackitem" compositeDelimiter="colondelimited" compositeDelimiterSpecial="" envelopeoption="groupmessage" fileDelimiter="plusdelimited" fileDelimiterSpecial="" filteracknowledgements="false" includeUNA="false" outboundValidationOption="filterError" rejectDuplicateInterchange="false" segmentchar="singlequote" segmentcharSpecial=""/>
+          <EdifactControlInfo>
+            <UNBControlInfo ackRequest="false" appReference="" commAgreement="" interchangeAddress="" interchangeId="PRTNFERRO12" interchangeIdQual="14" interchangeSubAddress="" priority="NA" refPass="" refPassQual="NA" syntaxId="UNOA" syntaxVersion="3" testIndicator="NA"/>
+            <UNGControlInfo applicationId="" applicationIdQual="NA" useFunctionalGroups="false"/>
+            <UNHControlInfo assocAssignedCode="" commonAccessRef="" controllingAgency="UN" release="01B" version="D"/>
+          </EdifactControlInfo>
+        </EdifactPartnerInfo>
+      </PartnerInfo>
+      <PartnerCommunication>
+        <EdifactPartnerCommunication>
+          <CommunicationOptions>
+            <CommunicationOption commOption="default" method="as2">
+              <CommunicationSettings docType="default">
+                <SettingsObject useMyTradingPartnerSettings="true">
+                  <AS2SendSettings authenticationType="NONE">
+                    <AuthSettings/>
+                  </AS2SendSettings>
+                </SettingsObject>
+                <ActionObjects>
+                  <ActionObject useMyTradingPartnerOptions="true">
+                    <AS2PartnerObject>
+                      <partnerInfo numberOfMessagesToCheckForDuplicates="100000" rejectDuplicateMessageId="false">
+                        <ListenAuthSettings/>
+                      </partnerInfo>
+                      <AS2MessageOptions compressed="false" dataContentType="textplain" encrypted="false" encryptionAlgorithm="tripledes" signed="false" signingDigestAlg="SHA1"/>
+                      <AS2MDNOptions mdnDigestAlg="SHA1" requestMDN="false" signed="false" synchronous="sync" useSSL="false"/>
+                    </AS2PartnerObject>
+                    <DataProcessing sequence="pre">
+                      <dataprocess/>
+                    </DataProcessing>
+                    <DataProcessing sequence="post">
+                      <dataprocess/>
+                    </DataProcessing>
+                  </ActionObject>
+                </ActionObjects>
+              </CommunicationSettings>
+            </CommunicationOption>
+          </CommunicationOptions>
+        </EdifactPartnerCommunication>
+      </PartnerCommunication>
+      <DocumentTypes>
+        <DocumentType type="INVOIC">
+          <PartnerDocumentOptions>
+            <EdifactDocumentOptions expectAckForOutbound="true" inboundErrorsOption="rejected" qualifierValidation="true" validateOutboundMessages="false"/>
+          </PartnerDocumentOptions>
+          <Tracking>
+            <TrackedFields>
+              <TrackedField fieldId="13165" fieldName="Pri_Doc_Num">
+                <sourcevalues>
+                  <parametervalue key="0" valueType="profile">
+                    <profileelement elementId="66" elementName="RFF01.2 (Header/RFF/RFF/RFF01.2)" profileId="c0d2df0f-188f-42b7-8e7e-60014916c7dd" profileType="profile.edi" tagListKey="0"/>
+                  </parametervalue>
+                </sourcevalues>
+              </TrackedField>
+              <TrackedField fieldId="13166" fieldName="Alt_Doc_Num">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="profile">
+                    <profileelement elementId="19" elementName="BGM02 (Header/BGM/BGM02)" profileId="c0d2df0f-188f-42b7-8e7e-60014916c7dd" profileType="profile.edi"/>
+                  </parametervalue>
+                </sourcevalues>
+              </TrackedField>
+            </TrackedFields>
+          </Tracking>
+        </DocumentType>
+        <DocumentType profileId="cf6e2acd-1f6d-4b64-adb5-fbd20024f3a9" type="ORDERS">
+          <PartnerDocumentOptions>
+            <EdifactDocumentOptions expectAckForOutbound="false" inboundErrorsOption="rejected" qualifierValidation="false" validateOutboundMessages="false"/>
+          </PartnerDocumentOptions>
+          <Tracking>
+            <TrackedFields>
+              <TrackedField fieldId="13165" fieldName="Pri_Doc_Num">
+                <sourcevalues>
+                  <parametervalue key="0" valueType="profile">
+                    <profileelement elementId="19" elementName="BGM02.1 (Header/BGM/BGM02.1)" profileId="cf6e2acd-1f6d-4b64-adb5-fbd20024f3a9" profileType="profile.edi"/>
+                  </parametervalue>
+                </sourcevalues>
+              </TrackedField>
+            </TrackedFields>
+          </Tracking>
+        </DocumentType>
+        <DocumentType type="ORDRSP">
+          <PartnerDocumentOptions>
+            <EdifactDocumentOptions expectAckForOutbound="true" inboundErrorsOption="rejected" qualifierValidation="true" validateOutboundMessages="false"/>
+          </PartnerDocumentOptions>
+          <Tracking>
+            <TrackedFields>
+              <TrackedField fieldId="13165" fieldName="Pri_Doc_Num">
+                <sourcevalues>
+                  <parametervalue key="0" valueType="profile">
+                    <profileelement elementId="19" elementName="BGM02.1 (Header/BGM/BGM02.1)" profileId="314ce569-2adb-4f1b-898f-8e3d4ed4fd84" profileType="profile.edi"/>
+                  </parametervalue>
+                </sourcevalues>
+              </TrackedField>
+            </TrackedFields>
+          </Tracking>
+        </DocumentType>
+      </DocumentTypes>
+      <Archiving/>
+    </TradingPartner>
+  </bns:object>
+</bns:Component>

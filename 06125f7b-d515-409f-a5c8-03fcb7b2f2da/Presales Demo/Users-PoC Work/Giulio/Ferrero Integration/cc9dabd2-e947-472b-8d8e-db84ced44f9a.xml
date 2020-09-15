@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Giulio/Ferrero Integration" componentId="cc9dabd2-e947-472b-8d8e-db84ced44f9a" version="1" name="New AS2 Client Connector Operation 2" type="connector-action" subType="as2" createdDate="2020-06-11T09:12:59Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:12:59Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="5447090f-505f-4bc9-a693-3e3e0af5e674" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <AS2SendAction>
+          <AS2PartnerGroup>
+            <myCompanyInfo as2Id="MYTPDELLAS2"/>
+            <myPartnerInfo as2Id="MYPTNFERERRO"/>
+          </AS2PartnerGroup>
+          <AS2MessageOptions compressed="false" dataContentType="textplain" encrypted="false" encryptionAlgorithm="tripledes" signed="false" signingDigestAlg="SHA1" subject="EDI msg"/>
+          <AS2MDNOptions externalURL="" mdnDigestAlg="SHA1" requestMDN="true" signed="false" synchronous="sync"/>
+        </AS2SendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields>
+          <TrackedField fieldId="13165" fieldName="Pri_Doc_Num">
+            <sourcevalues>
+              <parametervalue key="0" valueType="profile">
+                <profileelement elementId="5" elementName="POREF (Record/Elements/POREF)" profileId="579d7dba-30d5-406f-8321-9c0e5a3aab85" profileType="profile.flatfile"/>
+              </parametervalue>
+            </sourcevalues>
+          </TrackedField>
+          <TrackedField fieldId="21543" fieldName="SAPIDOCNUM">
+            <sourcevalues>
+              <parametervalue key="1" valueType="profile">
+                <profileelement elementId="3" elementName="IDOCNUM (Record/Elements/IDOCNUM)" profileId="579d7dba-30d5-406f-8321-9c0e5a3aab85" profileType="profile.flatfile"/>
+              </parametervalue>
+            </sourcevalues>
+          </TrackedField>
+          <TrackedField fieldId="25975" fieldName="SAPIDOCSTATUS">
+            <sourcevalues>
+              <parametervalue key="2" valueType="profile">
+                <profileelement elementId="4" elementName="STATUS (Record/Elements/STATUS)" profileId="579d7dba-30d5-406f-8321-9c0e5a3aab85" profileType="profile.flatfile"/>
+              </parametervalue>
+            </sourcevalues>
+          </TrackedField>
+        </TrackedFields>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

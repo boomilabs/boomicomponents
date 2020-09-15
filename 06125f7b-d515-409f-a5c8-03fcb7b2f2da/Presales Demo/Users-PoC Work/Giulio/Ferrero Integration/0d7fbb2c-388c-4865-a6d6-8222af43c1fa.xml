@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Giulio/Ferrero Integration" componentId="0d7fbb2c-388c-4865-a6d6-8222af43c1fa" version="1" name="AS2_SendFromFerro" type="connector-settings" subType="as2" createdDate="2020-06-11T09:13:01Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:13:01Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="3cc1890f-4e83-4767-b281-d84f73bcbf33" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <AS2SendSettings xmlns="" authenticationType="NONE" url="http://saprouter.boomidemo.com:9090/as2">
+      <AuthSettings user=""/>
+    </AS2SendSettings>
+  </bns:object>
+</bns:Component>
