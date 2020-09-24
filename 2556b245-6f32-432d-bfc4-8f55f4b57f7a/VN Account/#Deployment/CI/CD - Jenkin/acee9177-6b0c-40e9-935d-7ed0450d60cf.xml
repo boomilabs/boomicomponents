@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Deployment/CI/CD - Jenkin" componentId="acee9177-6b0c-40e9-935d-7ed0450d60cf" version="2" name="Customer ID" type="connector-action" subType="http" createdDate="2020-05-01T00:15:51Z" createdBy="Venkata_Narra@dell.com" modifiedDate="2020-09-24T12:53:39Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="CI/CD - Jenkin" folderId="RjozMjU0NzI1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <HttpGetAction dataContentType="application/json" followRedirects="false" methodType="GET" mimePassthrough="false" requestProfileType="NONE" responseProfileType="XML" returnErrors="true" returnMimeResponse="false">
+          <requestHeaders/>
+          <pathElements>
+            <element isVariable="true" key="2000001" name="Value1"/>
+          </pathElements>
+          <responseHeaderMapping/>
+          <reflectHeaders/>
+        </HttpGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

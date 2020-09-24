@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Deployment/CI/CD - Jenkin" componentId="7d2f03a0-a031-4644-ad18-1753b72de1b1" version="6" name="GET: Customer Details" type="connector-settings" subType="http" createdDate="2020-05-01T00:15:56Z" createdBy="Venkata_Narra@dell.com" modifiedDate="2020-09-24T12:52:44Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="CI/CD - Jenkin" folderId="RjozMjU0NzI1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//HttpSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <HttpSettings xmlns="" authenticationType="NONE" url="http://localhost:9099/ws/rest/customer/CUSTID">
+      <AuthSettings password="57cebfc954536c087f5d6d02fda147adb2d943405933bec4d6b0e2646d041074a97592ff5aa216111efdfef3634b5e5f181e9a0d3e97fdde9c45cdf3059756c8" user="vnarra"/>
+      <OAuthSettings accessToken="" accessTokenURL="" authorizationURL="" consumerKey="" realm="" requestTokenURL="" suppressBlankAccessToken="false"/>
+      <OAuth2Settings grantType="code">
+        <credentials clientId=""/>
+        <authorizationTokenEndpoint url="">
+          <sslOptions/>
+        </authorizationTokenEndpoint>
+        <authorizationParameters/>
+        <accessTokenEndpoint url="">
+          <sslOptions/>
+        </accessTokenEndpoint>
+        <accessTokenParameters/>
+        <scope/>
+      </OAuth2Settings>
+      <AwsSettings>
+        <credentials>
+          <accessKeyId/>
+          <awsService>s3</awsService>
+          <customService/>
+          <awsRegion>ap-northeast-1</awsRegion>
+          <customRegion/>
+        </credentials>
+      </AwsSettings>
+      <SSLOptions clientauth="false" trustServerCert="false"/>
+    </HttpSettings>
+  </bns:object>
+</bns:Component>

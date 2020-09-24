@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Deployment/CI/CD - Jenkin" componentId="2556b245-6f32-432d-bfc4-8f55f4b57f7a" version="4" name="JenkinProcess: GET Customer Details" type="process" createdDate="2020-05-01T00:15:48Z" createdBy="Venkata_Narra@dell.com" modifiedDate="2020-09-24T12:55:18Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="CI/CD - Jenkin" folderId="RjozMjU0NzI1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape2" shapetype="connectoraction" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Get" allowDynamicCredentials="NONE" connectionId="7d2f03a0-a031-4644-ad18-1753b72de1b1" connectorType="http" hideSettings="false" operationId="acee9177-6b0c-40e9-935d-7ed0450d60cf" parameter-profile="EMBEDDED|HttpParameterChooser|acee9177-6b0c-40e9-935d-7ed0450d60cf">
+              <parameters>
+                <parametervalue elementToSetId="2000001" elementToSetName="Value1" key="0" valueType="static">
+                  <staticparameter staticproperty="1234"/>
+                </parametervalue>
+              </parameters>
+              <dynamicProperties/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="416.0" y="57.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment length="63" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape3" shapetype="stop" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
