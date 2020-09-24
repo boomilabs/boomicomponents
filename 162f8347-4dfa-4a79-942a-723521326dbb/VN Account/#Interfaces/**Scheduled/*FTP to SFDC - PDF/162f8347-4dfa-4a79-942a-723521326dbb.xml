@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Interfaces/**Scheduled/*FTP to SFDC - PDF" componentId="162f8347-4dfa-4a79-942a-723521326dbb" version="176" name="FTP to SFDC - PDF" type="process" createdDate="2016-06-26T23:35:32Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2020-07-01T09:19:22Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="*FTP to SFDC - PDF" folderId="RjoxMDIyMDIz">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="16.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Get" connectionId="29cd1ce3-2659-4e07-8ba7-73135d6774e8" connectorType="ftp" hideSettings="false" operationId="6d357551-330c-4c44-9c12-fedc118cc90e" parameter-profile="EMBEDDED|ftpparameterchooser|6d357551-330c-4c44-9c12-fedc118cc90e">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape7" x="144.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="50.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="50.0" y="63.0"/>
+              <linesegment length="55" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="50.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="105.0" y="63.0"/>
+              <linesegment length="39" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="105.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape5" shapetype="connectoraction" userlabel="" x="1104.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Send" connectionId="509250fa-6db8-4d2a-a9b9-a1da83b2861b" connectorType="salesforce" hideSettings="false" operationId="4598d65c-9a58-4c65-a655-8610a1e1cd3e" parameter-profile="db030e1a-702f-43a9-84a4-1a68cde102c4">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape16" x="1200.0" y="57.0">
+              <linesegment length="0" name="shape5.dragpoint1.lineseg1" orient="horizontal" x="1138.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg2" orient="vertical" x="1138.0" y="63.0"/>
+              <linesegment length="39" name="shape5.dragpoint1.lineseg3" orient="horizontal" x="1138.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg4" orient="vertical" x="1177.0" y="63.0"/>
+              <linesegment length="23" name="shape5.dragpoint1.lineseg5" orient="horizontal" x="1177.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape6" shapetype="map" userlabel="" x="928.0" y="48.0">
+          <configuration>
+            <map mapId="e074c84d-c2d8-47c4-8cea-bab1e0b38a25"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape6.dragpoint1" toShape="shape5" x="1088.0" y="57.0">
+              <linesegment length="0" name="shape6.dragpoint1.lineseg1" orient="horizontal" x="962.0" y="63.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg2" orient="vertical" x="962.0" y="63.0"/>
+              <linesegment length="71" name="shape6.dragpoint1.lineseg3" orient="horizontal" x="962.0" y="63.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg4" orient="vertical" x="1033.0" y="63.0"/>
+              <linesegment length="55" name="shape6.dragpoint1.lineseg5" orient="horizontal" x="1033.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="dataprocess_icon" name="shape7" shapetype="dataprocess" userlabel="" x="160.0" y="48.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="2" name="Unzip" processtype="5">
+                <dataprocessunzip actionType="Get" connectorType="ftp" propertyValue="filename"/>
+              </step>
+              <step index="2" key="1" name="Split Documents" processtype="8">
+                <documentsplit profileType="ff">
+                  <SplitOptions>
+                    <FFOptions headersOption="retain" splitOption="split_line"/>
+                  </SplitOptions>
+                </documentsplit>
+              </step>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape7.dragpoint1" toShape="shape17" x="240.0" y="57.0">
+              <linesegment length="0" name="shape7.dragpoint1.lineseg1" orient="horizontal" x="194.0" y="63.0"/>
+              <linesegment length="0" name="shape7.dragpoint1.lineseg2" orient="vertical" x="194.0" y="63.0"/>
+              <linesegment length="31" name="shape7.dragpoint1.lineseg3" orient="horizontal" x="194.0" y="63.0"/>
+              <linesegment length="0" name="shape7.dragpoint1.lineseg4" orient="vertical" x="225.0" y="63.0"/>
+              <linesegment length="15" name="shape7.dragpoint1.lineseg5" orient="horizontal" x="225.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="documentproperties_icon" name="shape10" shapetype="documentproperties" userlabel="FileName" x="816.0" y="48.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isTradingPartner="false" name="Dynamic Process Property - FileName" persist="false" propertyId="process.FileName">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="profile">
+                    <profileelement elementId="25" elementName="AttachmentFileName (Record/Elements/AttachmentFileName)" profileId="d519488d-c90f-4c53-8171-2a1416ea7ce2" profileType="profile.flatfile"/>
+                  </parametervalue>
+                  <parametervalue key="2" valueType="static">
+                    <staticparameter staticproperty=".pdf"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape10.dragpoint1" toShape="shape6" x="912.0" y="57.0">
+              <linesegment length="0" name="shape10.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="63.0"/>
+              <linesegment length="0" name="shape10.dragpoint1.lineseg2" orient="vertical" x="850.0" y="63.0"/>
+              <linesegment length="39" name="shape10.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="63.0"/>
+              <linesegment length="0" name="shape10.dragpoint1.lineseg4" orient="vertical" x="889.0" y="63.0"/>
+              <linesegment length="23" name="shape10.dragpoint1.lineseg5" orient="horizontal" x="889.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape11" shapetype="branch" userlabel="" x="640.0" y="48.0">
+          <configuration>
+            <branch numBranches="3"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape11.dragpoint1" text="1" toShape="shape10" x="800.0" y="57.0">
+              <linesegment length="0" name="shape11.dragpoint1.lineseg1" orient="horizontal" x="674.0" y="63.0"/>
+              <linesegment length="0" name="shape11.dragpoint1.lineseg2" orient="vertical" x="674.0" y="63.0"/>
+              <linesegment length="71" name="shape11.dragpoint1.lineseg3" orient="horizontal" x="674.0" y="63.0"/>
+              <linesegment length="0" name="shape11.dragpoint1.lineseg4" orient="vertical" x="745.0" y="63.0"/>
+              <linesegment label="1" length="55" name="shape11.dragpoint1.lineseg5" orient="horizontal" x="745.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape11.dragpoint2" text="2" toShape="shape22" x="800.0" y="249.0">
+              <linesegment length="0" name="shape11.dragpoint2.lineseg1" orient="horizontal" x="674.0" y="63.0"/>
+              <linesegment length="0" name="shape11.dragpoint2.lineseg2" orient="vertical" x="674.0" y="63.0"/>
+              <linesegment length="71" name="shape11.dragpoint2.lineseg3" orient="horizontal" x="674.0" y="63.0"/>
+              <linesegment length="192" name="shape11.dragpoint2.lineseg4" orient="vertical" x="745.0" y="63.0"/>
+              <linesegment label="2" length="55" name="shape11.dragpoint2.lineseg5" orient="horizontal" x="745.0" y="255.0"/>
+            </dragpoint>
+            <dragpoint identifier="3" name="shape11.dragpoint3" text="3" toShape="shape25" x="800.0" y="425.0">
+              <linesegment length="0" name="shape11.dragpoint3.lineseg1" orient="horizontal" x="674.0" y="63.0"/>
+              <linesegment length="0" name="shape11.dragpoint3.lineseg2" orient="vertical" x="674.0" y="63.0"/>
+              <linesegment length="71" name="shape11.dragpoint3.lineseg3" orient="horizontal" x="674.0" y="63.0"/>
+              <linesegment length="368" name="shape11.dragpoint3.lineseg4" orient="vertical" x="745.0" y="63.0"/>
+              <linesegment label="3" length="55" name="shape11.dragpoint3.lineseg5" orient="horizontal" x="745.0" y="431.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="dataprocess_icon" name="shape12" shapetype="dataprocess" userlabel="" x="992.0" y="240.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="1" name="BASE64 Encode" processtype="6"/>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape12.dragpoint1" toShape="shape14" x="1152.0" y="249.0">
+              <linesegment length="0" name="shape12.dragpoint1.lineseg1" orient="horizontal" x="1026.0" y="255.0"/>
+              <linesegment length="0" name="shape12.dragpoint1.lineseg2" orient="vertical" x="1026.0" y="255.0"/>
+              <linesegment length="71" name="shape12.dragpoint1.lineseg3" orient="horizontal" x="1026.0" y="255.0"/>
+              <linesegment length="0" name="shape12.dragpoint1.lineseg4" orient="vertical" x="1097.0" y="255.0"/>
+              <linesegment length="55" name="shape12.dragpoint1.lineseg5" orient="horizontal" x="1097.0" y="255.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape14" shapetype="connectoraction" userlabel="" x="1168.0" y="240.0">
+          <configuration>
+            <connectoraction actionType="Send" connectionId="509250fa-6db8-4d2a-a9b9-a1da83b2861b" connectorType="salesforce" hideSettings="false" operationId="d63e1782-34be-4fab-8f13-bc1d1f8269d9" parameter-profile="9efc3c09-bbfa-4d46-87c7-9a855a48e47c">
+              <parameters>
+                <parametervalue elementToSetId="2" elementToSetName="ParentId (Attachment/ParentId)" key="0" valueType="process">
+                  <processparameter processproperty="SFDCId" processpropertydefaultvalue=""/>
+                </parametervalue>
+                <parametervalue elementToSetId="6" elementToSetName="Body (Attachment/Body)" key="1" valueType="current"/>
+                <parametervalue elementToSetId="3" elementToSetName="Name (Attachment/Name)" key="2" valueType="process">
+                  <processparameter processproperty="FileName" processpropertydefaultvalue=""/>
+                </parametervalue>
+              </parameters>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape14.dragpoint1" toShape="shape21" x="1264.0" y="249.0">
+              <linesegment length="0" name="shape14.dragpoint1.lineseg1" orient="horizontal" x="1202.0" y="255.0"/>
+              <linesegment length="0" name="shape14.dragpoint1.lineseg2" orient="vertical" x="1202.0" y="255.0"/>
+              <linesegment length="39" name="shape14.dragpoint1.lineseg3" orient="horizontal" x="1202.0" y="255.0"/>
+              <linesegment length="0" name="shape14.dragpoint1.lineseg4" orient="vertical" x="1241.0" y="255.0"/>
+              <linesegment length="23" name="shape14.dragpoint1.lineseg5" orient="horizontal" x="1241.0" y="255.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape15" shapetype="stop" userlabel="" x="656.0" y="240.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="documentproperties_icon" name="shape16" shapetype="documentproperties" userlabel="SFDCId" x="1216.0" y="48.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isTradingPartner="false" name="Dynamic Process Property - SFDCId" persist="false" propertyId="process.SFDCId">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="profile">
+                    <profileelement elementId="2" elementName="id (Account/id)" profileId="14736dfb-d915-44e0-9c4c-92cfd7d914e9" profileType="profile.xml"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape16.dragpoint1" toShape="shape31" x="1280.0" y="57.0">
+              <linesegment length="0" name="shape16.dragpoint1.lineseg1" orient="horizontal" x="1250.0" y="63.0"/>
+              <linesegment length="0" name="shape16.dragpoint1.lineseg2" orient="vertical" x="1250.0" y="63.0"/>
+              <linesegment length="23" name="shape16.dragpoint1.lineseg3" orient="horizontal" x="1250.0" y="63.0"/>
+              <linesegment length="0" name="shape16.dragpoint1.lineseg4" orient="vertical" x="1273.0" y="63.0"/>
+              <linesegment length="7" name="shape16.dragpoint1.lineseg5" orient="horizontal" x="1273.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="businessrules_icon" name="shape17" shapetype="businessrules" userlabel="Check" x="256.0" y="48.0">
+          <configuration>
+            <businessrules profileId="d519488d-c90f-4c53-8171-2a1416ea7ce2" profileName="Account CSV" profileType="profile.flatfile">
+              <rule key="1" name="Check the input File">
+                <input alias="AccountNumber (Record/Elements/AccountNumber)" elementKey="4" id="4" name="AccountNumber (Record/Elements/AccountNumber)" taglist="0" xsi:type="BusinessRuleField"/>
+                <input alias="PostalCode (Record/Elements/PostalCode)" elementKey="10" id="5" name="PostalCode (Record/Elements/PostalCode)" taglist="0" xsi:type="BusinessRuleField"/>
+                <input alias="NotesTitle (Record/Elements/NotesTitle)" elementKey="26" id="7" name="NotesTitle (Record/Elements/NotesTitle)" taglist="0" xsi:type="BusinessRuleField"/>
+                <condition operator="and" xsi:type="GroupingCondition">
+                  <nestedExpression operator="is not empty" xsi:type="SimpleCondition">
+                    <leftInput deleted="false" id="4" name="AccountNumber (Record/Elements/AccountNumber)" xsi:type="FieldConditionInput"/>
+                  </nestedExpression>
+                  <nestedExpression operator="or" xsi:type="GroupingCondition">
+                    <nestedExpression operator="starts with" xsi:type="SimpleCondition">
+                      <leftInput deleted="false" id="5" name="PostalCode (Record/Elements/PostalCode)" xsi:type="FieldConditionInput"/>
+                      <rightInput deleted="false" id="0" name="&quot;2&quot;" value="2" xsi:type="StaticConditionInput"/>
+                    </nestedExpression>
+                    <nestedExpression operator="starts with" xsi:type="SimpleCondition">
+                      <leftInput deleted="false" id="5" name="PostalCode (Record/Elements/PostalCode)" xsi:type="FieldConditionInput"/>
+                      <rightInput deleted="false" id="0" name="&quot;3&quot;" value="3" xsi:type="StaticConditionInput"/>
+                    </nestedExpression>
+                  </nestedExpression>
+                  <nestedExpression operator="is not empty" xsi:type="SimpleCondition">
+                    <leftInput deleted="false" id="7" name="NotesTitle (Record/Elements/NotesTitle)" xsi:type="FieldConditionInput"/>
+                  </nestedExpression>
+                </condition>
+                <errorMessage content="{1} Do not match the selection criteria">
+                  <input index="1">
+                    <input deleted="false" id="4" name="AccountNumber (Record/Elements/AccountNumber)" xsi:type="FieldConditionInput"/>
+                  </input>
+                </errorMessage>
+              </rule>
+            </businessrules>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="Accepted" name="shape17.dragpoint1" text="Accepted" toShape="shape23" x="464.0" y="57.0">
+              <linesegment length="0" name="shape17.dragpoint1.lineseg1" orient="horizontal" x="290.0" y="63.0"/>
+              <linesegment length="0" name="shape17.dragpoint1.lineseg2" orient="vertical" x="290.0" y="63.0"/>
+              <linesegment length="95" name="shape17.dragpoint1.lineseg3" orient="horizontal" x="290.0" y="63.0"/>
+              <linesegment length="0" name="shape17.dragpoint1.lineseg4" orient="vertical" x="385.0" y="63.0"/>
+              <linesegment label="Accepted" length="79" name="shape17.dragpoint1.lineseg5" orient="horizontal" x="385.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="Rejected" name="shape17.dragpoint2" text="Rejected" toShape="shape19" x="432.0" y="249.0">
+              <linesegment length="0" name="shape17.dragpoint2.lineseg1" orient="horizontal" x="290.0" y="63.0"/>
+              <linesegment length="0" name="shape17.dragpoint2.lineseg2" orient="vertical" x="290.0" y="63.0"/>
+              <linesegment length="79" name="shape17.dragpoint2.lineseg3" orient="horizontal" x="290.0" y="63.0"/>
+              <linesegment length="192" name="shape17.dragpoint2.lineseg4" orient="vertical" x="369.0" y="63.0"/>
+              <linesegment label="Rejected" length="63" name="shape17.dragpoint2.lineseg5" orient="horizontal" x="369.0" y="255.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape19" shapetype="message" userlabel="" x="448.0" y="240.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>Account {1} do not meet the selection criteria</msgTxt>
+              <msgParameters>
+                <parametervalue key="0" valueType="profile">
+                  <profileelement elementId="5" elementName="AccountName (Record/Elements/AccountName)" profileId="d519488d-c90f-4c53-8171-2a1416ea7ce2" profileType="profile.flatfile"/>
+                </parametervalue>
+              </msgParameters>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape19.dragpoint1" toShape="shape24" x="528.0" y="249.0">
+              <linesegment length="0" name="shape19.dragpoint1.lineseg1" orient="horizontal" x="482.0" y="255.0"/>
+              <linesegment length="0" name="shape19.dragpoint1.lineseg2" orient="vertical" x="482.0" y="255.0"/>
+              <linesegment length="31" name="shape19.dragpoint1.lineseg3" orient="horizontal" x="482.0" y="255.0"/>
+              <linesegment length="0" name="shape19.dragpoint1.lineseg4" orient="vertical" x="513.0" y="255.0"/>
+              <linesegment length="15" name="shape19.dragpoint1.lineseg5" orient="horizontal" x="513.0" y="255.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape21" shapetype="stop" userlabel="" x="1280.0" y="240.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="connectoraction_icon" name="shape22" shapetype="connectoraction" userlabel="" x="816.0" y="240.0">
+          <configuration>
+            <connectoraction actionType="Get" connectionId="29cd1ce3-2659-4e07-8ba7-73135d6774e8" connectorType="ftp" hideSettings="false" operationId="9beb56f9-b45d-4190-89dc-b5723e683bb8" parameter-profile="EMBEDDED|ftpparameterchooser|9beb56f9-b45d-4190-89dc-b5723e683bb8">
+              <parameters>
+                <parametervalue elementToSetId="2" elementToSetName="Remote Directory" key="0" valueType="static">
+                  <staticparameter staticproperty="/VN_FTP/GPFiles/"/>
+                </parametervalue>
+                <parametervalue elementToSetId="1" elementToSetName="File Filter" key="1" valueType="process">
+                  <processparameter processproperty="FileName" processpropertydefaultvalue=""/>
+                </parametervalue>
+              </parameters>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape22.dragpoint1" toShape="shape12" x="976.0" y="249.0">
+              <linesegment length="0" name="shape22.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="255.0"/>
+              <linesegment length="0" name="shape22.dragpoint1.lineseg2" orient="vertical" x="850.0" y="255.0"/>
+              <linesegment length="71" name="shape22.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="255.0"/>
+              <linesegment length="0" name="shape22.dragpoint1.lineseg4" orient="vertical" x="921.0" y="255.0"/>
+              <linesegment length="55" name="shape22.dragpoint1.lineseg5" orient="horizontal" x="921.0" y="255.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="flowcontrol_icon" name="shape23" shapetype="flowcontrol" userlabel="" x="480.0" y="48.0">
+          <configuration>
+            <flowcontrol chunkStyle="threadOnly" chunks="0" forEachCount="1"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape23.dragpoint1" toShape="shape11" x="624.0" y="57.0">
+              <linesegment length="0" name="shape23.dragpoint1.lineseg1" orient="horizontal" x="514.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint1.lineseg2" orient="vertical" x="514.0" y="63.0"/>
+              <linesegment length="63" name="shape23.dragpoint1.lineseg3" orient="horizontal" x="514.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint1.lineseg4" orient="vertical" x="577.0" y="63.0"/>
+              <linesegment length="47" name="shape23.dragpoint1.lineseg5" orient="horizontal" x="577.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape24" shapetype="connectoraction" userlabel="Email Notification" x="544.0" y="240.0">
+          <configuration>
+            <connectoraction actionType="Send" connectionId="ce387007-914e-409c-aee8-b0d063362716" connectorType="mail" hideSettings="false" operationId="ddd697c1-ddf6-47dc-9b64-d97b023670ae">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape24.dragpoint1" toShape="shape15" x="640.0" y="249.0">
+              <linesegment length="0" name="shape24.dragpoint1.lineseg1" orient="horizontal" x="578.0" y="255.0"/>
+              <linesegment length="0" name="shape24.dragpoint1.lineseg2" orient="vertical" x="578.0" y="255.0"/>
+              <linesegment length="39" name="shape24.dragpoint1.lineseg3" orient="horizontal" x="578.0" y="255.0"/>
+              <linesegment length="0" name="shape24.dragpoint1.lineseg4" orient="vertical" x="617.0" y="255.0"/>
+              <linesegment length="23" name="shape24.dragpoint1.lineseg5" orient="horizontal" x="617.0" y="255.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape25" shapetype="message" userlabel="" x="816.0" y="416.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>New Salesforce Account record created. Details below:
+Account Name:{1}
+Account Id:{2}
+SFDC Id:{3}
+</msgTxt>
+              <msgParameters>
+                <parametervalue key="1" valueType="profile">
+                  <profileelement elementId="5" elementName="AccountName (Record/Elements/AccountName)" profileId="d519488d-c90f-4c53-8171-2a1416ea7ce2" profileType="profile.flatfile"/>
+                </parametervalue>
+                <parametervalue key="2" valueType="profile">
+                  <profileelement elementId="4" elementName="AccountNumber (Record/Elements/AccountNumber)" profileId="d519488d-c90f-4c53-8171-2a1416ea7ce2" profileType="profile.flatfile"/>
+                </parametervalue>
+                <parametervalue key="0" valueType="process">
+                  <processparameter processproperty="SFDCId" processpropertydefaultvalue=""/>
+                </parametervalue>
+              </msgParameters>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape25.dragpoint1" toShape="shape29" x="1024.0" y="425.0">
+              <linesegment length="0" name="shape25.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="431.0"/>
+              <linesegment length="0" name="shape25.dragpoint1.lineseg2" orient="vertical" x="850.0" y="431.0"/>
+              <linesegment length="95" name="shape25.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="431.0"/>
+              <linesegment length="0" name="shape25.dragpoint1.lineseg4" orient="vertical" x="945.0" y="431.0"/>
+              <linesegment length="79" name="shape25.dragpoint1.lineseg5" orient="horizontal" x="945.0" y="431.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape27" shapetype="stop" userlabel="" x="1296.0" y="416.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="map_icon" name="shape28" shapetype="map" userlabel="" x="16.0" y="320.0">
+          <configuration>
+            <map mapId="f685c00f-583c-465b-a91c-0c24dc09a8d1"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape28.dragpoint1" toShape="unset" x="63.0" y="329.0">
+              <linesegment length="0" name="shape28.dragpoint1.lineseg1" orient="horizontal" x="50.0" y="335.0"/>
+              <linesegment length="0" name="shape28.dragpoint1.lineseg2" orient="vertical" x="50.0" y="335.0"/>
+              <linesegment length="14" name="shape28.dragpoint1.lineseg3" orient="horizontal" x="50.0" y="335.0"/>
+              <linesegment length="0" name="shape28.dragpoint1.lineseg4" orient="vertical" x="64.0" y="335.0"/>
+              <linesegment length="-1" name="shape28.dragpoint1.lineseg5" orient="horizontal" x="64.0" y="335.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape29" shapetype="connectoraction" userlabel="Email Notification" x="1040.0" y="416.0">
+          <configuration>
+            <connectoraction actionType="Send" connectionId="ce387007-914e-409c-aee8-b0d063362716" connectorType="mail" hideSettings="false" operationId="ddd697c1-ddf6-47dc-9b64-d97b023670ae">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape29.dragpoint1" toShape="shape27" x="1280.0" y="425.0">
+              <linesegment length="0" name="shape29.dragpoint1.lineseg1" orient="horizontal" x="1074.0" y="431.0"/>
+              <linesegment length="0" name="shape29.dragpoint1.lineseg2" orient="vertical" x="1074.0" y="431.0"/>
+              <linesegment length="111" name="shape29.dragpoint1.lineseg3" orient="horizontal" x="1074.0" y="431.0"/>
+              <linesegment length="0" name="shape29.dragpoint1.lineseg4" orient="vertical" x="1185.0" y="431.0"/>
+              <linesegment length="95" name="shape29.dragpoint1.lineseg5" orient="horizontal" x="1185.0" y="431.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape31" shapetype="stop" userlabel="" x="1296.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides>
+    <Overrides xmlns="" allowScheduleOverride="false">
+      <Connections>
+        <ConnectionOverride id="29cd1ce3-2659-4e07-8ba7-73135d6774e8">
+          <field id="port" label="Port" overrideable="true" xpath="FTPSettings/@port"/>
+          <field id="host" label="Host" overrideable="false" xpath="FTPSettings/@host"/>
+          <field id="connectionMode" label="Connection Mode" overrideable="false" xpath="FTPSettings/@connectionMode"/>
+          <field id="user" label="User" overrideable="true" xpath="FTPSettings/AuthSettings/@user"/>
+          <field id="password" label="Password" overrideable="true" xpath="FTPSettings/AuthSettings/@password"/>
+        </ConnectionOverride>
+        <ConnectionOverride id="509250fa-6db8-4d2a-a9b9-a1da83b2861b">
+          <field id="url" label="URL" overrideable="false" xpath="SalesforceSettings/@url"/>
+          <field id="user" label="User" overrideable="true" xpath="SalesforceSettings/AuthSettings/@user"/>
+          <field id="password" label="Password" overrideable="true" xpath="SalesforceSettings/AuthSettings/@password"/>
+          <field id="maxActiveConnections" label="Maximum Concurrent Connections" overrideable="false" xpath="SalesforceSettings/@maxActiveConnections"/>
+        </ConnectionOverride>
+        <ConnectionOverride id="ce387007-914e-409c-aee8-b0d063362716">
+          <field id="host" label="Host" overrideable="false" xpath="MailSettings/@host"/>
+          <field id="port" label="Port" overrideable="false" xpath="MailSettings/@port"/>
+          <field id="usessl" label="Use SSL" overrideable="false" xpath="MailSettings/@usessl"/>
+          <field id="usesmtpauth" label="Use SMTP AUTH" overrideable="false" xpath="MailSettings/@usesmtpauth"/>
+          <field id="user" label="User" overrideable="true" xpath="MailSettings/AuthSettings/@user"/>
+          <field id="password" label="Password" overrideable="true" xpath="MailSettings/AuthSettings/@password"/>
+        </ConnectionOverride>
+      </Connections>
+      <PartnerOverrides/>
+      <Properties/>
+      <Extensions>
+        <ObjectDefinitions>
+          <objectDefinition id="1484775553569" name="Source Account CSV" objectType="Source Account CSV" userDefined="true">
+            <profiles>
+              <profile contentRoot="" contentRootId="" id="d519488d-c90f-4c53-8171-2a1416ea7ce2" name="Account CSV" type="profile.flatfile"/>
+            </profiles>
+            <LockedFields/>
+            <Aliases/>
+          </objectDefinition>
+          <objectDefinition connectionId="509250fa-6db8-4d2a-a9b9-a1da83b2861b" connectorType="salesforce" id="509250fa-6db8-4d2a-a9b9-a1da83b2861bAccount" name="Salesforce Account (VN-SFDC)" objectType="Account" userDefined="false">
+            <profiles>
+              <profile id="db030e1a-702f-43a9-84a4-1a68cde102c4" name="SF_Account_CREATE_Request" operationId="4598d65c-9a58-4c65-a655-8610a1e1cd3e" operationProfilePath="//SalesforceSendAction/@requestProfile" operationProfileRole="input" operationType="create" type="profile.xml"/>
+            </profiles>
+          </objectDefinition>
+          <objectDefinition connectionId="509250fa-6db8-4d2a-a9b9-a1da83b2861b" connectorType="salesforce" id="509250fa-6db8-4d2a-a9b9-a1da83b2861bAttachment" name="Salesforce Attachment (VN-SFDC)" objectType="Attachment" userDefined="false">
+            <profiles>
+              <profile id="9efc3c09-bbfa-4d46-87c7-9a855a48e47c" name="SF_Attachment_CREATE_Request" operationId="d63e1782-34be-4fab-8f13-bc1d1f8269d9" operationProfilePath="//SalesforceSendAction/@requestProfile" operationProfileRole="input" operationType="create" type="profile.xml"/>
+            </profiles>
+          </objectDefinition>
+          <unusedProfiles/>
+        </ObjectDefinitions>
+        <DataMaps>
+          <dataMap id="1484775553569509250fa-6db8-4d2a-a9b9-a1da83b2861bAccount" name="Source Account CSV - Salesforce Account (VN-SFDC)">
+            <source id="1484775553569" name="Source Account CSV" objectType="Source Account CSV" userDefined="true">
+              <profiles>
+                <profile contentRoot="" contentRootId="" id="d519488d-c90f-4c53-8171-2a1416ea7ce2" name="Account CSV" type="profile.flatfile"/>
+              </profiles>
+              <LockedFields>
+                <lockedField locked="false" name="Root" nodeXPath="">
+                  <lockedField locked="true" name="Record" nodeXPath="/Record">
+                    <lockedField locked="true" name="Elements" nodeXPath="/Record/Elements">
+                      <lockedField locked="true" name="AccountNumberssss" nodeXPath="/Record/Elements/AccountNumberssss"/>
+                      <lockedField locked="true" name="AccountName" nodeXPath="/Record/Elements/AccountName"/>
+                      <lockedField locked="true" name="IndustryType" nodeXPath="/Record/Elements/IndustryType"/>
+                      <lockedField locked="true" name="Street" nodeXPath="/Record/Elements/Street"/>
+                      <lockedField locked="true" name="City" nodeXPath="/Record/Elements/City"/>
+                      <lockedField locked="true" name="State" nodeXPath="/Record/Elements/State"/>
+                      <lockedField locked="true" name="PostalCode" nodeXPath="/Record/Elements/PostalCode"/>
+                      <lockedField locked="true" name="Country" nodeXPath="/Record/Elements/Country"/>
+                      <lockedField locked="false" name="Phone" nodeXPath="/Record/Elements/Phone"/>
+                      <lockedField locked="false" name="Fax" nodeXPath="/Record/Elements/Fax"/>
+                      <lockedField locked="true" name="Website" nodeXPath="/Record/Elements/Website"/>
+                      <lockedField locked="true" name="AnnualRevenue" nodeXPath="/Record/Elements/AnnualRevenue"/>
+                      <lockedField locked="true" name="NumberOfEmployees" nodeXPath="/Record/Elements/NumberOfEmployees"/>
+                      <lockedField locked="true" name="Ownership" nodeXPath="/Record/Elements/Ownership"/>
+                      <lockedField locked="true" name="OwnerId" nodeXPath="/Record/Elements/OwnerId"/>
+                      <lockedField locked="true" name="CreatedDate" nodeXPath="/Record/Elements/CreatedDate"/>
+                      <lockedField locked="true" name="CreatedById" nodeXPath="/Record/Elements/CreatedById"/>
+                      <lockedField locked="true" name="CustomerPriority" nodeXPath="/Record/Elements/CustomerPriority"/>
+                      <lockedField locked="true" name="SLA" nodeXPath="/Record/Elements/SLA"/>
+                      <lockedField locked="true" name="Active" nodeXPath="/Record/Elements/Active"/>
+                      <lockedField locked="true" name="NumberofLocations" nodeXPath="/Record/Elements/NumberofLocations"/>
+                      <lockedField locked="true" name="AttachmentFileName" nodeXPath="/Record/Elements/AttachmentFileName"/>
+                      <lockedField locked="true" name="NotesTitle" nodeXPath="/Record/Elements/NotesTitle"/>
+                      <lockedField locked="true" name="NotesBody" nodeXPath="/Record/Elements/NotesBody"/>
+                    </lockedField>
+                  </lockedField>
+                </lockedField>
+              </LockedFields>
+              <Aliases/>
+            </source>
+            <destination connectionId="509250fa-6db8-4d2a-a9b9-a1da83b2861b" connectorType="salesforce" id="509250fa-6db8-4d2a-a9b9-a1da83b2861bAccount" name="Salesforce Account (VN-SFDC)" objectType="Account" userDefined="false">
+              <profiles>
+                <profile id="db030e1a-702f-43a9-84a4-1a68cde102c4" name="SF_Account_CREATE_Request" operationId="4598d65c-9a58-4c65-a655-8610a1e1cd3e" operationProfilePath="//SalesforceSendAction/@requestProfile" operationProfileRole="input" operationType="create" type="profile.xml"/>
+              </profiles>
+              <LockedFields>
+                <lockedField locked="false" name="Account" nodeXPath="">
+                  <lockedField locked="true" name="Name" nodeXPath="/Name"/>
+                  <lockedField locked="true" name="Type" nodeXPath="/Type"/>
+                  <lockedField locked="true" name="ParentId" nodeXPath="/ParentId"/>
+                  <lockedField locked="true" name="BillingStreet" nodeXPath="/BillingStreet"/>
+                  <lockedField locked="true" name="BillingCity" nodeXPath="/BillingCity"/>
+                  <lockedField locked="true" name="BillingState" nodeXPath="/BillingState"/>
+                  <lockedField locked="true" name="BillingPostalCode" nodeXPath="/BillingPostalCode"/>
+                  <lockedField locked="true" name="BillingCountry" nodeXPath="/BillingCountry"/>
+                  <lockedField locked="true" name="ShippingStreet" nodeXPath="/ShippingStreet"/>
+                  <lockedField locked="true" name="ShippingCity" nodeXPath="/ShippingCity"/>
+                  <lockedField locked="true" name="ShippingState" nodeXPath="/ShippingState"/>
+                  <lockedField locked="true" name="ShippingPostalCode" nodeXPath="/ShippingPostalCode"/>
+                  <lockedField locked="true" name="ShippingCountry" nodeXPath="/ShippingCountry"/>
+                  <lockedField locked="false" name="Phone" nodeXPath="/Phone"/>
+                  <lockedField locked="false" name="Fax" nodeXPath="/Fax"/>
+                  <lockedField locked="true" name="AccountNumber" nodeXPath="/AccountNumber"/>
+                  <lockedField locked="true" name="Website" nodeXPath="/Website"/>
+                  <lockedField locked="true" name="Sic" nodeXPath="/Sic"/>
+                  <lockedField locked="true" name="Industry" nodeXPath="/Industry"/>
+                  <lockedField locked="true" name="AnnualRevenue" nodeXPath="/AnnualRevenue"/>
+                  <lockedField locked="true" name="NumberOfEmployees" nodeXPath="/NumberOfEmployees"/>
+                  <lockedField locked="true" name="Ownership" nodeXPath="/Ownership"/>
+                  <lockedField locked="true" name="TickerSymbol" nodeXPath="/TickerSymbol"/>
+                  <lockedField locked="false" name="Description" nodeXPath="/Description"/>
+                  <lockedField locked="true" name="Rating" nodeXPath="/Rating"/>
+                  <lockedField locked="true" name="Site" nodeXPath="/Site"/>
+                  <lockedField locked="true" name="OwnerId" nodeXPath="/OwnerId"/>
+                  <lockedField locked="true" name="CustomerPriority__c" nodeXPath="/CustomerPriority__c"/>
+                  <lockedField locked="true" name="SLA__c" nodeXPath="/SLA__c"/>
+                  <lockedField locked="true" name="Active__c" nodeXPath="/Active__c"/>
+                  <lockedField locked="true" name="NumberofLocations__c" nodeXPath="/NumberofLocations__c"/>
+                  <lockedField locked="true" name="UpsellOpportunity__c" nodeXPath="/UpsellOpportunity__c"/>
+                  <lockedField locked="true" name="SLASerialNumber__c" nodeXPath="/SLASerialNumber__c"/>
+                  <lockedField locked="true" name="SLAExpirationDate__c" nodeXPath="/SLAExpirationDate__c"/>
+                  <lockedField locked="true" name="Location__c" nodeXPath="/Location__c"/>
+                  <lockedField locked="true" name="E_W_C__c" nodeXPath="/E_W_C__c"/>
+                  <lockedField locked="true" name="NetSuite_Account_ID__c" nodeXPath="/NetSuite_Account_ID__c"/>
+                  <lockedField locked="true" name="Sync_with_NetSuite__c" nodeXPath="/Sync_with_NetSuite__c"/>
+                </lockedField>
+              </LockedFields>
+            </destination>
+            <maps>
+              <map extensible="true" id="e074c84d-c2d8-47c4-8cea-bab1e0b38a25" name="GPAccounts:FTP-SFDC"/>
+            </maps>
+          </dataMap>
+          <unusedMaps/>
+        </DataMaps>
+      </Extensions>
+      <CrossReferenceOverrides>
+        <CrossReferenceOverride id="4af0cfe6-7e2f-4bd7-a64c-8d410e5267d7" name="State Lookup" overrideable="true"/>
+      </CrossReferenceOverrides>
+      <PGPOverrides/>
+      <DefinedProcessPropertyOverrides/>
+    </Overrides>
+  </bns:processOverrides>
+</bns:Component>

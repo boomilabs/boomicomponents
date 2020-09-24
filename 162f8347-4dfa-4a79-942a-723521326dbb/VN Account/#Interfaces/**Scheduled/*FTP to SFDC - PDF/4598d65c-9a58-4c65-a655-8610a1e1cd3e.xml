@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Interfaces/**Scheduled/*FTP to SFDC - PDF" componentId="4598d65c-9a58-4c65-a655-8610a1e1cd3e" version="5" name="Create-GPAccounts" type="connector-action" subType="salesforce" createdDate="2016-06-27T00:34:30Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2016-06-27T01:33:04Z" modifiedBy="Venkata.Narra@software.dell.com" deleted="false" currentVersion="true" folderName="*FTP to SFDC - PDF" folderId="RjoxMDIyMDIz">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <SalesforceSendAction batchCount="200" objectAction="create" objectName="Account" requestProfile="db030e1a-702f-43a9-84a4-1a68cde102c4" returnApplicationErrors="true" useBulkAPI="false">
+          <Options>
+            <Fields>
+              <SalesforceObject checkable="false" externalIdField="Choose..." import="true" level="0" name="Account" objectAction="create" objectType="Account">
+                <FieldList name="FieldList">
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Name" nillable="false"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Type" nillable="true"/>
+                  <SalesforceField custom="false" dataType="reference" fEnabled="true" name="ParentId" nillable="true">
+                    <references relationshipName="Parent" useExternalId="false">
+                      <referenceTo objectType="Account">
+                        <referenceField custom="false" dataType="character" name="Id"/>
+                        <referenceField custom="true" dataType="character" name="NetSuite_Account_ID__c"/>
+                      </referenceTo>
+                    </references>
+                  </SalesforceField>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingStreet" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingCity" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingState" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingPostalCode" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingCountry" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingStreet" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingCity" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingState" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingPostalCode" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingCountry" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Phone" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Fax" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="AccountNumber" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Website" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Sic" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Industry" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="AnnualRevenue" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="NumberOfEmployees" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Ownership" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="TickerSymbol" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Description" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Rating" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Site" nillable="true"/>
+                  <SalesforceField custom="false" dataType="reference" fEnabled="true" name="OwnerId" nillable="false">
+                    <references relationshipName="Owner" useExternalId="false">
+                      <referenceTo objectType="User">
+                        <referenceField custom="false" dataType="character" name="Id"/>
+                        <referenceField custom="false" dataType="character" name="Username"/>
+                        <referenceField custom="false" dataType="character" name="Email"/>
+                      </referenceTo>
+                    </references>
+                  </SalesforceField>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="CustomerPriority__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="SLA__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Active__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="NumberofLocations__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="UpsellOpportunity__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="SLASerialNumber__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="date" fEnabled="true" name="SLAExpirationDate__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Location__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="E_W_C__c" nillable="true"/>
+                  <SalesforceField custom="true" dataType="character" fEnabled="true" name="NetSuite_Account_ID__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="boolean" fEnabled="true" name="Sync_with_NetSuite__c" nillable="false"/>
+                </FieldList>
+                <Filter>
+                  <SalesforceFilterLogical isRoot="true" logicalOperator="and"/>
+                </Filter>
+                <Sorts/>
+                <SalesforceObject checkable="true" externalIdField="Choose..." import="true" level="1" name="Attachments" objectAction="create" objectType="Attachment" relationshipField="ParentId">
+                  <FieldList name="FieldList">
+                    <SalesforceField custom="false" dataType="reference" fEnabled="true" name="ParentId" nillable="false">
+                      <references relationshipName="Parent" useExternalId="false">
+                        <referenceTo objectType="Account">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="true" dataType="character" name="NetSuite_Account_ID__c"/>
+                        </referenceTo>
+                        <referenceTo objectType="Asset">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Campaign">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Case">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="CaseNumber"/>
+                        </referenceTo>
+                        <referenceTo objectType="Contact">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Email"/>
+                        </referenceTo>
+                        <referenceTo objectType="Contract">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="ContractNumber"/>
+                        </referenceTo>
+                        <referenceTo objectType="EmailMessage">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                        </referenceTo>
+                        <referenceTo objectType="EmailTemplate">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Event">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                        </referenceTo>
+                        <referenceTo objectType="Lead">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Email"/>
+                          <referenceField custom="true" dataType="character" name="External_ID__c"/>
+                        </referenceTo>
+                        <referenceTo objectType="Opportunity">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Order">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="OrderNumber"/>
+                        </referenceTo>
+                        <referenceTo objectType="Product2">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Quote">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Solution">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="SolutionName"/>
+                        </referenceTo>
+                        <referenceTo objectType="Survey__c">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Task">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                        </referenceTo>
+                        <referenceTo objectType="Venue_Location__c">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Venue_Product__c">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                      </references>
+                    </SalesforceField>
+                    <SalesforceField custom="false" dataType="character" fEnabled="true" name="Name" nillable="false"/>
+                    <SalesforceField custom="false" dataType="boolean" fEnabled="true" name="IsPrivate" nillable="false"/>
+                    <SalesforceField custom="false" dataType="character" fEnabled="true" name="ContentType" nillable="true"/>
+                    <SalesforceField custom="false" dataType="character" fEnabled="true" name="Body" nillable="false"/>
+                    <SalesforceField custom="false" dataType="reference" fEnabled="true" name="OwnerId" nillable="false">
+                      <references relationshipName="Owner" useExternalId="false">
+                        <referenceTo objectType="User">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Username"/>
+                          <referenceField custom="false" dataType="character" name="Email"/>
+                        </referenceTo>
+                      </references>
+                    </SalesforceField>
+                    <SalesforceField custom="false" dataType="character" fEnabled="true" name="Description" nillable="true"/>
+                  </FieldList>
+                  <Filter>
+                    <SalesforceFilterLogical isRoot="true" logicalOperator="and"/>
+                  </Filter>
+                  <Sorts/>
+                </SalesforceObject>
+                <SalesforceObject checkable="true" externalIdField="Choose..." import="true" level="1" name="Notes" objectAction="create" objectType="Note" relationshipField="ParentId">
+                  <FieldList name="FieldList">
+                    <SalesforceField custom="false" dataType="reference" fEnabled="true" name="ParentId" nillable="false">
+                      <references relationshipName="Parent" useExternalId="false">
+                        <referenceTo objectType="Account">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="true" dataType="character" name="NetSuite_Account_ID__c"/>
+                        </referenceTo>
+                        <referenceTo objectType="Asset">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Contact">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Email"/>
+                        </referenceTo>
+                        <referenceTo objectType="Contract">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="ContractNumber"/>
+                        </referenceTo>
+                        <referenceTo objectType="Lead">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Email"/>
+                          <referenceField custom="true" dataType="character" name="External_ID__c"/>
+                        </referenceTo>
+                        <referenceTo objectType="Opportunity">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Order">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="OrderNumber"/>
+                        </referenceTo>
+                        <referenceTo objectType="Product2">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Quote">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Survey__c">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Venue_Location__c">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                        <referenceTo objectType="Venue_Product__c">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Name"/>
+                        </referenceTo>
+                      </references>
+                    </SalesforceField>
+                    <SalesforceField custom="false" dataType="character" fEnabled="true" name="Title" nillable="false"/>
+                    <SalesforceField custom="false" dataType="boolean" fEnabled="true" name="IsPrivate" nillable="false"/>
+                    <SalesforceField custom="false" dataType="character" fEnabled="true" name="Body" nillable="true"/>
+                    <SalesforceField custom="false" dataType="reference" fEnabled="true" name="OwnerId" nillable="false">
+                      <references relationshipName="Owner" useExternalId="false">
+                        <referenceTo objectType="User">
+                          <referenceField custom="false" dataType="character" name="Id"/>
+                          <referenceField custom="false" dataType="character" name="Username"/>
+                          <referenceField custom="false" dataType="character" name="Email"/>
+                        </referenceTo>
+                      </references>
+                    </SalesforceField>
+                  </FieldList>
+                  <Filter>
+                    <SalesforceFilterLogical isRoot="true" logicalOperator="and"/>
+                  </Filter>
+                  <Sorts/>
+                </SalesforceObject>
+              </SalesforceObject>
+            </Fields>
+          </Options>
+        </SalesforceSendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

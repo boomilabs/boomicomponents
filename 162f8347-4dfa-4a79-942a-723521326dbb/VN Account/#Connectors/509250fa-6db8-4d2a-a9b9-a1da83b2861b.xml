@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Connectors" componentId="509250fa-6db8-4d2a-a9b9-a1da83b2861b" version="58" name="VN-SFDC" type="connector-settings" subType="salesforce" createdDate="2015-09-21T04:11:16Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2020-08-07T04:00:53Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="#Connectors" folderId="RjoxOTI5MzY2">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//SalesforceSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <SalesforceSettings xmlns="" maxActiveConnections="10" url="https://www.salesforce.com/services/Soap/u/18.0" version="vx">
+      <AuthSettings password="b23d02e26d1cf15d3d8e8601c835c40904d8cb79dd791e47781be08344edb18c139afe00c6043733815b914894cd095fa799eb7a3ab57535cd79f86db8f18cad" user="venkata.narra@sfdc.com"/>
+    </SalesforceSettings>
+  </bns:object>
+</bns:Component>

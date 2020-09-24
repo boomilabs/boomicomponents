@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Connectors" componentId="ce387007-914e-409c-aee8-b0d063362716" version="34" name="Gmail Boomi (VN) smtp" type="connector-settings" subType="mail" createdDate="2015-09-21T01:25:39Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2020-07-01T09:12:47Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="#Connectors" folderId="RjoxOTI5MzY2">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//MailSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <MailSettings xmlns="" host="smtp.gmail.com" port="465" usesmtpauth="true" usessl="true" usetls="true">
+      <AuthSettings password="fcdba78c50682b01c9907c9528f90ed8f7d3db35a1e7bd6b7deab90b6d2132519d3f4f19de56faf88940c19be034e83f2e047f92f2d4d018c1534c6e81aa7015" user="venkatar.narra@gmail.com"/>
+    </MailSettings>
+  </bns:object>
+</bns:Component>

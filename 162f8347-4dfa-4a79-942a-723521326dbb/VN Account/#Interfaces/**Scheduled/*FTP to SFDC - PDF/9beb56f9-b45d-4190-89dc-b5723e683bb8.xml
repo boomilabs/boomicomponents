@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Interfaces/**Scheduled/*FTP to SFDC - PDF" componentId="9beb56f9-b45d-4190-89dc-b5723e683bb8" version="6" name="Get-GPFile(PDF)" type="connector-action" subType="ftp" createdDate="2016-06-27T01:55:20Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2018-10-29T11:09:10Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="*FTP to SFDC - PDF" folderId="RjoxMDIyMDIz">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <FTPGetAction fileToMove="" ftpaction="actionget" maxFileCount="0" remoteDirectory="" transferType="binary"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

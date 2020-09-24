@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Interfaces/**Scheduled/*FTP to SFDC - PDF" componentId="e074c84d-c2d8-47c4-8cea-bab1e0b38a25" version="24" name="GPAccounts:FTP-SFDC" type="transform.map" createdDate="2016-06-27T00:37:15Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2020-03-20T01:53:35Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="*FTP to SFDC - PDF" folderId="RjoxMDIyMDIz">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="d519488d-c90f-4c53-8171-2a1416ea7ce2" toProfile="db030e1a-702f-43a9-84a4-1a68cde102c4">
+      <Mappings>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='5']" fromNamePath="Record/Elements/AccountName" fromType="profile" toKey="2" toKeyPath="*[@key='1']/*[@key='2']" toNamePath="Account/Name" toType="profile"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" fromNamePath="Record/Elements/Street" fromType="profile" toKey="5" toKeyPath="*[@key='1']/*[@key='5']" toNamePath="Account/BillingStreet" toType="profile"/>
+        <Mapping fromKey="8" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='8']" fromNamePath="Record/Elements/City" fromType="profile" toKey="6" toKeyPath="*[@key='1']/*[@key='6']" toNamePath="Account/BillingCity" toType="profile"/>
+        <Mapping fromKey="10" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='10']" fromNamePath="Record/Elements/PostalCode" fromType="profile" toKey="8" toKeyPath="*[@key='1']/*[@key='8']" toNamePath="Account/BillingPostalCode" toType="profile"/>
+        <Mapping fromKey="11" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='11']" fromNamePath="Record/Elements/Country" fromType="profile" toKey="9" toKeyPath="*[@key='1']/*[@key='9']" toNamePath="Account/BillingCountry" toType="profile"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='7']" fromNamePath="Record/Elements/Street" fromType="profile" toKey="10" toKeyPath="*[@key='1']/*[@key='10']" toNamePath="Account/ShippingStreet" toType="profile"/>
+        <Mapping fromKey="8" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='8']" fromNamePath="Record/Elements/City" fromType="profile" toKey="11" toKeyPath="*[@key='1']/*[@key='11']" toNamePath="Account/ShippingCity" toType="profile"/>
+        <Mapping fromKey="10" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='10']" fromNamePath="Record/Elements/PostalCode" fromType="profile" toKey="13" toKeyPath="*[@key='1']/*[@key='13']" toNamePath="Account/ShippingPostalCode" toType="profile"/>
+        <Mapping fromKey="11" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='11']" fromNamePath="Record/Elements/Country" fromType="profile" toKey="14" toKeyPath="*[@key='1']/*[@key='14']" toNamePath="Account/ShippingCountry" toType="profile"/>
+        <Mapping fromKey="4" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='4']" fromNamePath="Record/Elements/AccountNumber" fromType="profile" toKey="17" toKeyPath="*[@key='1']/*[@key='17']" toNamePath="Account/AccountNumber" toType="profile"/>
+        <Mapping fromKey="14" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='14']" fromNamePath="Record/Elements/Website" fromType="profile" toKey="18" toKeyPath="*[@key='1']/*[@key='18']" toNamePath="Account/Website" toType="profile"/>
+        <Mapping fromKey="15" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='15']" fromNamePath="Record/Elements/AnnualRevenue" fromType="profile" toKey="21" toKeyPath="*[@key='1']/*[@key='21']" toNamePath="Account/AnnualRevenue" toType="profile"/>
+        <Mapping fromKey="16" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='16']" fromNamePath="Record/Elements/NumberOfEmployees" fromType="profile" toKey="22" toKeyPath="*[@key='1']/*[@key='22']" toNamePath="Account/NumberOfEmployees" toType="profile"/>
+        <Mapping fromKey="17" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='17']" fromNamePath="Record/Elements/Ownership" fromType="profile" toKey="23" toKeyPath="*[@key='1']/*[@key='23']" toNamePath="Account/Ownership" toType="profile"/>
+        <Mapping fromKey="18" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='18']" fromNamePath="Record/Elements/OwnerId" fromType="profile" toKey="28" toKeyPath="*[@key='1']/*[@key='28']" toNamePath="Account/OwnerId" toType="profile"/>
+        <Mapping fromKey="21" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='21']" fromNamePath="Record/Elements/CustomerPriority" fromType="profile" toKey="29" toKeyPath="*[@key='1']/*[@key='29']" toNamePath="Account/CustomerPriority__c" toType="profile"/>
+        <Mapping fromKey="22" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='22']" fromNamePath="Record/Elements/SLA" fromType="profile" toKey="30" toKeyPath="*[@key='1']/*[@key='30']" toNamePath="Account/SLA__c" toType="profile"/>
+        <Mapping fromKey="23" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='23']" fromNamePath="Record/Elements/Active" fromType="profile" toKey="31" toKeyPath="*[@key='1']/*[@key='31']" toNamePath="Account/Active__c" toType="profile"/>
+        <Mapping fromKey="24" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='24']" fromNamePath="Record/Elements/NumberofLocations" fromType="profile" toKey="32" toKeyPath="*[@key='1']/*[@key='32']" toNamePath="Account/NumberofLocations__c" toType="profile"/>
+        <Mapping fromKey="8" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='8']" fromNamePath="Record/Elements/City" fromType="profile" toKey="36" toKeyPath="*[@key='1']/*[@key='36']" toNamePath="Account/Location__c" toType="profile"/>
+        <Mapping fromKey="6" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='6']" fromNamePath="Record/Elements/IndustryType" fromType="profile" toKey="3" toKeyPath="*[@key='1']/*[@key='3']" toNamePath="Account/Type" toType="profile"/>
+        <Mapping fromKey="9" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='9']" fromNamePath="Record/Elements/State" fromType="profile" toFunction="3" toKey="1" toType="function"/>
+        <Mapping fromFunction="3" fromKey="2" fromType="function" toKey="7" toKeyPath="*[@key='1']/*[@key='7']" toNamePath="Account/BillingState" toType="profile"/>
+        <Mapping fromKey="12" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='12']" fromNamePath="Record/Elements/Phone" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+        <Mapping fromFunction="1" fromKey="1" fromType="function" toKey="15" toKeyPath="*[@key='1']/*[@key='15']" toNamePath="Account/Phone" toType="profile"/>
+        <Mapping fromKey="13" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='13']" fromNamePath="Record/Elements/Fax" fromType="profile" toKey="16" toKeyPath="*[@key='1']/*[@key='16']" toNamePath="Account/Fax" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep category="userdefined" id="b31d675b-1461-4d9c-b603-77e20ac8ad92" key="1" name="PhoneTransform" position="1" type="userdefined" x="30.0" y="28.0">
+          <Inputs>
+            <Input key="1" name="Phone"/>
+          </Inputs>
+          <Outputs>
+            <Output key="1" name="Phone"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" category="Date" key="2" name="Get Current Date" position="2" sumEnabled="false" type="CurrentDate" x="30.0" y="155.0">
+          <Inputs/>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Lookup" key="3" name="Cross Reference Lookup" position="3" sumEnabled="false" type="CrossRefLookup" x="30.0" y="277.0">
+          <Inputs>
+            <Input default="" key="1" name="Source - WD"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Destination - Preceda"/>
+          </Outputs>
+          <Configuration>
+            <CrossRefLookup crossRefTableId="4af0cfe6-7e2f-4bd7-a64c-8d410e5267d7" skipLookupIfNoInputs="true">
+              <Input index="1" name="Source - WD" refId="1"/>
+              <Output index="2" name="Destination - Preceda" refId="2"/>
+            </CrossRefLookup>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

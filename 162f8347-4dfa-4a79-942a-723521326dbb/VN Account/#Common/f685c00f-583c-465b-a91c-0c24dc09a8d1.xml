@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Common" componentId="f685c00f-583c-465b-a91c-0c24dc09a8d1" version="11" name="Test Boomi Suggest" type="transform.map" createdDate="2016-06-30T02:55:12Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2019-12-11T00:02:55Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="#Common" folderId="RjoxOTI5MzY1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="14159b88-76b9-4613-9cb4-a768078871bf" toProfile="37f4aa4f-5823-4df9-a66e-80be1ac32d3a">
+      <Mappings>
+        <Mapping fromKey="3" fromKeyPath="*[@key='1']/*[@key='3']" fromNamePath="Account/IsDeleted" fromType="profile" toKey="4" toKeyPath="*[@key='1']/*[@key='4']" toNamePath="Customer/externalId" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

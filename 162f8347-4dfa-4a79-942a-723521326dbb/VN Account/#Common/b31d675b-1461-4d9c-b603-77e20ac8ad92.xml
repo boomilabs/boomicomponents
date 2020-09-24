@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Common" componentId="b31d675b-1461-4d9c-b603-77e20ac8ad92" version="2" name="PhoneTransform" type="transform.function" createdDate="2016-06-09T00:42:46Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2016-06-27T02:19:53Z" modifiedBy="Venkata.Narra@software.dell.com" deleted="false" currentVersion="true" folderName="#Common" folderId="RjoxOTI5MzY1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Function xmlns="">
+      <Inputs>
+        <Input key="1" name="Phone"/>
+      </Inputs>
+      <Outputs>
+        <Output key="1" name="Phone"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="1" name="Whitespace Trim" position="1" sumEnabled="false" type="WhitespaceTrim" x="71.0" y="95.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="2" name="String Replace" position="4" sumEnabled="false" type="StringReplace" x="518.0" y="540.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default="-" key="2" name="String to Search"/>
+            <Input default="" key="3" name="String to Replace"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="3" name="String Replace" position="2" sumEnabled="false" type="StringReplace" x="158.0" y="260.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default="\(" key="2" name="String to Search"/>
+            <Input default="" key="3" name="String to Replace"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="4" name="String Replace" position="3" sumEnabled="false" type="StringReplace" x="211.0" y="424.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default="\)" key="2" name="String to Search"/>
+            <Input default="" key="3" name="String to Replace"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="0" fromKey="1" fromNamePath="Editor/HomePhone" fromType="function" toFunction="1" toKey="1" toNamePath="Whitespace Trim/Original String" toType="function"/>
+        <Mapping fromFunction="2" fromKey="2" fromNamePath="String Replace/Result" fromType="function" toFunction="0" toKey="1" toNamePath="Editor/HomePhone" toType="function"/>
+        <Mapping fromFunction="3" fromKey="2" fromNamePath="String Replace/Result" fromType="function" toFunction="4" toKey="1" toNamePath="String Replace/Original String" toType="function"/>
+        <Mapping fromFunction="4" fromKey="2" fromNamePath="String Replace/Result" fromType="function" toFunction="2" toKey="1" toNamePath="String Replace/Original String" toType="function"/>
+        <Mapping fromFunction="1" fromKey="2" fromNamePath="Whitespace Trim/Result" fromType="function" toFunction="3" toKey="1" toNamePath="String Replace/Original String" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

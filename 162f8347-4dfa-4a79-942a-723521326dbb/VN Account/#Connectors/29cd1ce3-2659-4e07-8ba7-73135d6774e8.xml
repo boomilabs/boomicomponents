@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Connectors" componentId="29cd1ce3-2659-4e07-8ba7-73135d6774e8" version="7" name="VN-BoomiFTP" type="connector-settings" subType="ftp" createdDate="2015-10-07T05:05:42Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2017-10-18T04:52:19Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="#Connectors" folderId="RjoxOTI5MzY2">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//FTPSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <FTPSettings xmlns="" connectionMode="passive" host="ftp.boomi.com">
+      <AuthSettings password="834ecff0be4f7bc168d28312053329f482c5319ebddb5708727251feb1055cae84925d9e70ca52ef8e6519a69d19becf955abd359e5ee4452abe7f58bc614837" user="saleseng"/>
+      <SSLOptions clientauth="false" sslmode="none"/>
+    </FTPSettings>
+  </bns:object>
+</bns:Component>

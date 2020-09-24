@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Interfaces/**Scheduled/*FTP to SFDC - PDF" componentId="ddd697c1-ddf6-47dc-9b64-d97b023670ae" version="1" name="Email Notification" type="connector-action" subType="mail" createdDate="2018-04-15T09:05:53Z" createdBy="Venkata_Narra@dell.com" modifiedDate="2018-04-15T09:05:53Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="*FTP to SFDC - PDF" folderId="RjoxMDIyMDIz">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <MailSendAction bodyContentType="text/plain" dataContentType="text/plain" disposition="inline" from="admin@boomi.com" subject="Notification" to="vnarra@boomi.com"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Common" componentId="4af0cfe6-7e2f-4bd7-a64c-8d410e5267d7" version="4" name="State Lookup" type="crossref" createdDate="2017-09-13T04:26:47Z" createdBy="Venkata_Narra@dell.com" modifiedDate="2019-08-27T04:05:11Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="#Common" folderId="RjoxOTI5MzY1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <CrossRefTable xmlns="" atomEnabled="false" modelVersion="3">
+      <ColumnHeaders>
+        <columnHeader>Source - WD</columnHeader>
+        <columnHeader>Destination - Preceda</columnHeader>
+      </ColumnHeaders>
+      <Rows>
+        <row>
+          <Values>
+            <ref colIdx="0" value="New South Wales"/>
+            <ref colIdx="1" value="NSW"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Victoria"/>
+            <ref colIdx="1" value="VIC"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="South Australia"/>
+            <ref colIdx="1" value="SA"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Northern Territory"/>
+            <ref colIdx="1" value="NT"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Australian Capital Territory"/>
+            <ref colIdx="1" value="ACT"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Queensland"/>
+            <ref colIdx="1" value="QLD"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Tasmania"/>
+            <ref colIdx="1" value="TAS"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Western Australia"/>
+            <ref colIdx="1" value="WA"/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="100000032"/>
+            <ref colIdx="1" value="301010008124"/>
+          </Values>
+        </row>
+      </Rows>
+    </CrossRefTable>
+  </bns:object>
+</bns:Component>

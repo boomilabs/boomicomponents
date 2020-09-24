@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="VN Account/#Interfaces/**Scheduled/*FTP to SFDC - PDF" componentId="6d357551-330c-4c44-9c12-fedc118cc90e" version="6" name="Get-GPAccounts" type="connector-action" subType="ftp" createdDate="2016-06-27T00:21:59Z" createdBy="Venkata.Narra@software.dell.com" modifiedDate="2018-10-25T22:52:40Z" modifiedBy="Venkata_Narra@dell.com" deleted="false" currentVersion="true" folderName="*FTP to SFDC - PDF" folderId="RjoxMDIyMDIz">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="D:\2. Projects\4. Genpact\PoC\Demo Digital Team\AccountArchive" enabled="true"/>
+      <Configuration>
+        <FTPGetAction fileToMove="*" ftpaction="actionget" maxFileCount="0" remoteDirectory="/VN_FTP/GPAccounts/" transferType="binary"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>
