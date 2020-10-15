@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/#Kundan Sandbox/Docusign/USAID" componentId="053016f4-aaa0-4339-951f-9831ca58b390" version="1" name="Main: SNOW to DocuSign" type="process" createdDate="2020-02-12T10:37:32Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-02-12T10:37:32Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="USAID" folderId="RjozMDg1MDI4" copiedFromComponentId="83b7e3bb-1f1a-484a-a45f-d69962afd34c" copiedFromComponentVersion="16">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="32.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Get" allowDynamicCredentials="NONE" connectionId="ce99e5df-cde6-4b13-888e-34de5af92d02" connectorType="ftp" hideSettings="false" operationId="8fcc3ccb-52e5-4fbe-8238-c59baef0528b" parameter-profile="EMBEDDED|ftpparameterchooser|8fcc3ccb-52e5-4fbe-8238-c59baef0528b">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape4" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="66.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="66.0" y="63.0"/>
+              <linesegment length="87" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="66.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="153.0" y="63.0"/>
+              <linesegment length="71" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="153.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape3" shapetype="connectoraction" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Send" allowDynamicCredentials="NONE" connectionId="a784c28c-6772-4dc1-a1b4-c8a49f8f0551" connectorType="http" hideSettings="false" operationId="6a42a6c3-9a16-40fe-83f4-aa3c8903e5f0" parameter-profile="EMBEDDED|HttpParameterChooser|6a42a6c3-9a16-40fe-83f4-aa3c8903e5f0">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape6" x="800.0" y="57.0">
+              <linesegment length="0" name="shape3.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg2" orient="vertical" x="658.0" y="63.0"/>
+              <linesegment length="79" name="shape3.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape3.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="dataprocess_icon" name="shape4" shapetype="dataprocess" userlabel="BaseEncode 64" x="240.0" y="48.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="1" name="Base64 Encode" processtype="6"/>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape4.dragpoint1" toShape="shape5" x="416.0" y="57.0">
+              <linesegment length="0" name="shape4.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape4.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment length="63" name="shape4.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape5" shapetype="message" userlabel="Request Body" x="432.0" y="48.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>'{
+   "status":"sent",
+   "emailSubject":"Please sign this form",
+   "documents":[
+      {
+         "name":"SNOW to DocuSign",
+         "fileExtension":"pdf",
+         "documentId":"1",
+         "documentBase64":"'{1}'"
+      }
+   ],
+   "recipients":{
+      "signers":[
+         {
+            "email":"kundangupta@boomi.com",
+            "name":"kundan gupta",
+            "recipientId":"94435474"
+         }
+      ]
+   }
+}'</msgTxt>
+              <msgParameters>
+                <parametervalue key="0" valueType="current"/>
+              </msgParameters>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape3" x="608.0" y="57.0">
+              <linesegment length="0" name="shape5.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape5.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment length="63" name="shape5.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape6" shapetype="stop" userlabel="" x="816.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="connectoraction_icon" name="shape7" shapetype="connectoraction" userlabel="" x="624.0" y="192.0">
+          <configuration>
+            <connectoraction actionType="Get" allowDynamicCredentials="NONE" connectionId="a784c28c-6772-4dc1-a1b4-c8a49f8f0551" connectorType="http" hideSettings="false" operationId="c0b30b16-27a3-423c-a591-7f8c77188d45" parameter-profile="EMBEDDED|HttpParameterChooser|c0b30b16-27a3-423c-a591-7f8c77188d45">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape7.dragpoint1" toShape="shape6" x="800.0" y="57.0">
+              <linesegment length="0" name="shape7.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="207.0"/>
+              <linesegment length="0" name="shape7.dragpoint1.lineseg2" orient="vertical" x="658.0" y="207.0"/>
+              <linesegment length="79" name="shape7.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="207.0"/>
+              <linesegment length="144" name="shape7.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape7.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

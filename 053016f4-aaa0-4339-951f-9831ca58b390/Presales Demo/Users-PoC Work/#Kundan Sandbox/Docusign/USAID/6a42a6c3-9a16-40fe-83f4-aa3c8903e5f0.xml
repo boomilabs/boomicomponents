@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/#Kundan Sandbox/Docusign/USAID" componentId="6a42a6c3-9a16-40fe-83f4-aa3c8903e5f0" version="1" name="HTTP: Create and Send Envelope" type="connector-action" subType="http" createdDate="2020-02-12T10:37:32Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-02-12T10:37:32Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="USAID" folderId="RjozMDg1MDI4" copiedFromComponentId="a04a42c5-4077-4003-b1ae-14eef2d3065c" copiedFromComponentVersion="3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <HttpSendAction dataContentType="application/json" followRedirects="false" methodType="POST" mimePassthrough="false" requestProfile="91fcd992-f8e6-4f28-a23f-6bab154e15b1" requestProfileType="JSON" responseProfileType="NONE" returnErrors="true" returnMimeResponse="false" returnResponses="true">
+          <requestHeaders/>
+          <pathElements>
+            <element key="2000000" name="9964889/envelopes"/>
+          </pathElements>
+          <responseHeaderMapping/>
+          <reflectHeaders/>
+        </HttpSendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

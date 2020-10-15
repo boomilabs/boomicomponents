@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/#Kundan Sandbox/Docusign/USAID" componentId="ce99e5df-cde6-4b13-888e-34de5af92d02" version="1" name="Boomi FTP Connection" type="connector-settings" subType="ftp" createdDate="2020-02-12T10:37:32Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-02-12T10:37:32Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="USAID" folderId="RjozMDg1MDI4" copiedFromComponentId="02a18a96-e014-4b3f-907d-26b123d05f24" copiedFromComponentVersion="9">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//FTPSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description>ftp.boomi.com</bns:description>
+  <bns:object>
+    <FTPSettings xmlns="" connectionMode="passive" host="ftp.boomi.com">
+      <AuthSettings password="c0bec2a896d536cfa07f0fe94003acc7607460f6761f5fe21081d60aa5df2aad07a8467da5f49067aa156e4a8c6d4f042ba423dfda901e4e4020c975ab460cba" user="saleseng"/>
+      <SSLOptions clientauth="false" sslmode="none"/>
+    </FTPSettings>
+  </bns:object>
+</bns:Component>

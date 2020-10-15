@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/#Kundan Sandbox/Docusign/USAID" componentId="c0b30b16-27a3-423c-a591-7f8c77188d45" version="1" name="Get Template" type="connector-action" subType="http" createdDate="2020-02-12T10:37:32Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-02-12T10:37:32Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="USAID" folderId="RjozMDg1MDI4" copiedFromComponentId="caa1d39a-376b-4c71-9f0b-a8375043959b" copiedFromComponentVersion="2">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <HttpGetAction dataContentType="application/json" followRedirects="false" methodType="GET" mimePassthrough="false" requestProfileType="JSON" responseProfileType="NONE" returnErrors="true" returnMimeResponse="true">
+          <requestHeaders/>
+          <pathElements>
+            <element key="2000000" name="9964889/templates/2729c9e4-f9a4-41c0-9ea8-0fdc647c68a6"/>
+          </pathElements>
+          <responseHeaderMapping/>
+          <reflectHeaders/>
+        </HttpGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

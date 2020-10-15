@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/#Kundan Sandbox/Docusign/USAID" componentId="a784c28c-6772-4dc1-a1b4-c8a49f8f0551" version="1" name="HTTP: Connection DocuSign" type="connector-settings" subType="http" createdDate="2020-02-12T10:37:32Z" createdBy="kundan.gupta@dell.com" modifiedDate="2020-02-12T10:37:32Z" modifiedBy="kundan.gupta@dell.com" deleted="false" currentVersion="true" folderName="USAID" folderId="RjozMDg1MDI4" copiedFromComponentId="75969378-eaf7-4c90-bc4a-2a7a07340c7b" copiedFromComponentVersion="4">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//HttpSettings/OAuth2Settings/credentials/@accessToken" isSet="true"/>
+    <bns:encryptedValue path="//HttpSettings/OAuth2Settings/credentials/@clientSecret" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <HttpSettings xmlns="" authenticationType="OAUTH2" url="https://demo.docusign.net/restapi/v2/accounts">
+      <AuthSettings user=""/>
+      <OAuthSettings accessToken="" accessTokenURL="" authorizationURL="" consumerKey="" realm="" requestTokenURL="" suppressBlankAccessToken="false"/>
+      <OAuth2Settings grantType="code">
+        <credentials accessToken="b90e4045938071d1868290dde523343a276593448ff4f07b54cf09b02b9254b2b4194a158dc68b4ea61a488dae2de949641932615ab3aad903e2f19f37613713" accessTokenKey="8e9bf17d-c89e-479b-91d1-a5b2413f6cb7" clientId="929734e1-366c-464a-b853-2f299476f94a" clientSecret="9bd5008b3d74727c568e52526a3310a8497db3f260acba2bb54339e89a75bc626dcb3bcc4ec4a71349555d6c3748550d2e697b0e39d11e2f24d43ebe72aa14a3"/>
+        <authorizationTokenEndpoint url="https://account-d.docusign.com/oauth/auth">
+          <sslOptions/>
+        </authorizationTokenEndpoint>
+        <authorizationParameters>
+          <parameter name="redirect_uri" value="https://platform.boomi.com/account/presales_demochild-WRHG7X/oauth2/callback"/>
+        </authorizationParameters>
+        <accessTokenEndpoint url="https://account-d.docusign.com/oauth/token">
+          <sslOptions/>
+        </accessTokenEndpoint>
+        <accessTokenParameters/>
+        <scope/>
+      </OAuth2Settings>
+      <AwsSettings>
+        <credentials>
+          <accessKeyId/>
+          <awsService>s3</awsService>
+          <customService/>
+          <awsRegion>ap-northeast-1</awsRegion>
+          <customRegion/>
+        </credentials>
+      </AwsSettings>
+      <SSLOptions clientauth="false" trustServerCert="false"/>
+    </HttpSettings>
+  </bns:object>
+</bns:Component>
