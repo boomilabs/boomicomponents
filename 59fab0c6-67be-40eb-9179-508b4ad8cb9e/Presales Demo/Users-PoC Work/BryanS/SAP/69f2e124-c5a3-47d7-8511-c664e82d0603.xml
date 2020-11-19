@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="69f2e124-c5a3-47d7-8511-c664e82d0603" version="1" name="SF_FeedPost_CREATE_Request" type="profile.xml" createdDate="2019-06-25T14:46:25Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:25Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="3a5b3f66-01dc-4edd-bbd8-f24cacfee0c5" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <XMLProfile xmlns="">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" key="1" maxOccurs="-1" minOccurs="0" name="FeedPost" useNamespace="-1">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="2" maxOccurs="1" minOccurs="0" name="ParentId" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="3" maxOccurs="1" minOccurs="0" name="Type" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="4" maxOccurs="1" minOccurs="0" name="Title" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="5" maxOccurs="1" minOccurs="0" name="Body" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="6" maxOccurs="1" minOccurs="0" name="LinkUrl" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="7" maxOccurs="1" minOccurs="0" name="ContentData" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="8" maxOccurs="1" minOccurs="0" name="ContentFileName" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="9" maxOccurs="1" minOccurs="0" name="ContentDescription" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces/>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>

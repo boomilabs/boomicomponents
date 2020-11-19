@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="f6c01238-7ae1-4ab4-a6fa-c2b2fe3f70ce" version="1" name="Create SAP Master and Update SF Account *PAS" type="process" createdDate="2019-06-25T14:46:24Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:24Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="f87d7371-ed29-49d8-b002-72568615f20a" copiedFromComponentVersion="3">
+  <bns:encryptedValues/>
+  <bns:description>Done</bns:description>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="true" enableUserLog="true" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <passthroughaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape13" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape13" shapetype="map" x="240.0" y="48.0">
+          <configuration>
+            <map mapId="229cef33-baf5-4838-a891-e8cd9a18d987"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape13.dragpoint1" toShape="shape23" x="416.0" y="57.0">
+              <linesegment length="0" name="shape13.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape13.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape13.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape13.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment length="63" name="shape13.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="processcall_icon" name="shape18" shapetype="processcall" x="816.0" y="48.0">
+          <configuration>
+            <processcall abort="true" processId="cb77f48a-be84-4fbc-9f28-5040b23f1403" wait="true">
+              <parameters/>
+              <returnpaths/>
+            </processcall>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="decision_icon" name="shape21" shapetype="decision" userlabel="Account Created in SAP Successfully?" x="624.0" y="48.0">
+          <configuration>
+            <decision comparison="notequals" name="Account Created in SAP Successfully?">
+              <decisionvalue valueType="profile">
+                <profileelement elementId="19" elementName="CUSTOMERNO (BAPI_CUSTOMER_CREATEFROMDATA1/CUSTOMERNO)" profileId="f4b46231-e1ef-4441-bf93-66fec4152c52" profileType="profile.xml"/>
+              </decisionvalue>
+              <decisionvalue valueType="static">
+                <staticparameter staticproperty=""/>
+              </decisionvalue>
+            </decision>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="true" name="shape21.dragpoint1" text="True" toShape="shape18" x="800.0" y="57.0">
+              <linesegment length="0" name="shape21.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape21.dragpoint1.lineseg2" orient="vertical" x="658.0" y="63.0"/>
+              <linesegment length="79" name="shape21.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape21.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment label="True" length="63" name="shape21.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="false" name="shape21.dragpoint2" text="False" toShape="shape22" x="800.0" y="217.0">
+              <linesegment length="0" name="shape21.dragpoint2.lineseg1" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape21.dragpoint2.lineseg2" orient="vertical" x="658.0" y="63.0"/>
+              <linesegment length="79" name="shape21.dragpoint2.lineseg3" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="160" name="shape21.dragpoint2.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment label="False" length="63" name="shape21.dragpoint2.lineseg5" orient="horizontal" x="737.0" y="223.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="processcall_icon" name="shape22" shapetype="processcall" x="816.0" y="208.0">
+          <configuration>
+            <processcall abort="true" processId="a2cbfd71-b73c-4e83-9b2c-e374f38b31fe" wait="true">
+              <parameters/>
+              <returnpaths/>
+            </processcall>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="connectoraction_icon" name="shape23" shapetype="connectoraction" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="Get" connectionId="8ebe55bb-c6ce-491d-85a1-2a573d0d1dee" connectorType="sapjco" hideSettings="false" operationId="4ab29296-4f1c-4e32-8587-65344f41dc25" parameter-profile="cdb85942-c0de-45dc-b29a-11951765f005">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape23.dragpoint1" toShape="shape21" x="608.0" y="57.0">
+              <linesegment length="0" name="shape23.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape23.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment length="63" name="shape23.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

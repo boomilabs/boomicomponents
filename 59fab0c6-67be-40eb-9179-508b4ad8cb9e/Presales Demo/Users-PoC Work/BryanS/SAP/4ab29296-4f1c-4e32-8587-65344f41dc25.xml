@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="4ab29296-4f1c-4e32-8587-65344f41dc25" version="1" name="Create SAP Customer 3" type="connector-action" subType="sapjco" createdDate="2019-06-25T14:46:25Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:25Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="a6296400-3c1d-4de7-b221-4e5b6c61c09f" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <SAPJCOGetAction commitTransaction="false" functionName="BAPI_CUSTOMER_CREATEFROMDATA1" requestProfileId="cdb85942-c0de-45dc-b29a-11951765f005" responseProfileId="f4b46231-e1ef-4441-bf93-66fec4152c52"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

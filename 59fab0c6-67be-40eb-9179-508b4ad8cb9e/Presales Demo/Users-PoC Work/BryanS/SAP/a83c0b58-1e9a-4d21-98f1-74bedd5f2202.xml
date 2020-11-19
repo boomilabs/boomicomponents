@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="a83c0b58-1e9a-4d21-98f1-74bedd5f2202" version="1" name="Country Lookup 3" type="crossref" createdDate="2019-06-25T14:46:24Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:24Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="1e3a6555-f1ba-45d7-ab50-53b1da093e99" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <CrossRefTable xmlns="" atomEnabled="false" ref1label="SFDC Country" ref2label="SAP Country" ref3label="Reference 3" ref4label="Reference 4" ref5label="Reference 5" ref6label="Reference 6">
+      <Rows>
+        <row atom="Default" atomid="-1" ref1="USA" ref2="US"/>
+        <row atom="Default" atomid="-1" ref1="US" ref2="US"/>
+      </Rows>
+    </CrossRefTable>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="006a774a-8b54-43ec-8bdb-7224901aaa9a" version="1" name="SFDC - sapadmin@boomidemo.com (SYSTEM) (PD) 2" type="connector-settings" subType="salesforce" createdDate="2019-06-25T14:46:25Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:25Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="b2792ecb-eb5b-46f4-95c2-b576aa77a0a7" copiedFromComponentVersion="1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//SalesforceSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description>Just4FunB00m14 jpYez0t3rNa7HayS4BqhEokK</bns:description>
+  <bns:object>
+    <SalesforceSettings xmlns="" maxActiveConnections="10" url="https://login.salesforce.com/services/Soap/u/18.0" version="vx">
+      <AuthSettings password="487d7b58c9cdf3f8cfb2b53ee067b0983c55d286aa63136a1ddfc4da1395c83e89bb8eeeb5e60bd8eedf700504a853c1e5ecc7dbeaff8042bcbf4bb3642614f0" user="sapadmin@boomidemo.com"/>
+    </SalesforceSettings>
+  </bns:object>
+</bns:Component>

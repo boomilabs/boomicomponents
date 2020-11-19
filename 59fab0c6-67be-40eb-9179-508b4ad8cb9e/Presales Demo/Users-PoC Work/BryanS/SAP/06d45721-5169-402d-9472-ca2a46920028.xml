@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="06d45721-5169-402d-9472-ca2a46920028" version="1" name="SF Closed/Won Opp to SAP SO *PAS" type="process" createdDate="2019-06-25T14:46:24Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:24Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="410da8fb-7cc2-427e-908b-5475ead2c726" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description>done</bns:description>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="true" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="16.0" y="256.0">
+          <configuration>
+            <passthroughaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape36" x="192.0" y="265.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="50.0" y="271.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="50.0" y="271.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="50.0" y="271.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="129.0" y="271.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="129.0" y="271.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="documentproperties_icon" name="shape2" shapetype="documentproperties" userlabel="" x="368.0" y="256.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isTradingPartner="false" name="Process - SFDC_AcctId" persist="false" propertyId="process.SFDC_AcctId">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="profile">
+                    <profileelement elementId="177" elementName="Id (Opportunity/Account/Id)" profileId="06c82b24-2d7c-4743-9288-2ebd431d838a" profileType="profile.xml"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+              <documentproperty defaultValue="" isTradingPartner="false" name="Process - SAP_CustId_Create" persist="false" propertyId="process.SAP_CustId_Create">
+                <sourcevalues>
+                  <parametervalue key="4" valueType="profile">
+                    <profileelement elementId="395" elementName="Created_in_SAP__c (Opportunity/Account/Created_in_SAP__c)" profileId="06c82b24-2d7c-4743-9288-2ebd431d838a" profileType="profile.xml"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="464.0" y="265.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="402.0" y="271.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="402.0" y="271.0"/>
+              <linesegment length="39" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="402.0" y="271.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="441.0" y="271.0"/>
+              <linesegment length="23" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="441.0" y="271.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="decision_icon" name="shape3" shapetype="decision" userlabel="Is it a New Customer?" x="480.0" y="256.0">
+          <configuration>
+            <decision comparison="equals" name="Is it a New Customer?">
+              <decisionvalue valueType="process">
+                <processparameter processproperty="SAP_CustId_Create" processpropertydefaultvalue=""/>
+              </decisionvalue>
+              <decisionvalue valueType="static">
+                <staticparameter staticproperty="false"/>
+              </decisionvalue>
+            </decision>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="true" name="shape3.dragpoint1" text="True" toShape="shape4" x="688.0" y="137.0">
+              <linesegment length="0" name="shape3.dragpoint1.lineseg1" orient="horizontal" x="514.0" y="271.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg2" orient="vertical" x="514.0" y="271.0"/>
+              <linesegment length="95" name="shape3.dragpoint1.lineseg3" orient="horizontal" x="514.0" y="271.0"/>
+              <linesegment length="128" name="shape3.dragpoint1.lineseg4" orient="vertical" x="609.0" y="143.0"/>
+              <linesegment label="True" length="79" name="shape3.dragpoint1.lineseg5" orient="horizontal" x="609.0" y="143.0"/>
+            </dragpoint>
+            <dragpoint identifier="false" name="shape3.dragpoint2" text="False" toShape="shape33" x="688.0" y="377.0">
+              <linesegment length="0" name="shape3.dragpoint2.lineseg1" orient="horizontal" x="514.0" y="271.0"/>
+              <linesegment length="0" name="shape3.dragpoint2.lineseg2" orient="vertical" x="514.0" y="271.0"/>
+              <linesegment length="95" name="shape3.dragpoint2.lineseg3" orient="horizontal" x="514.0" y="271.0"/>
+              <linesegment length="112" name="shape3.dragpoint2.lineseg4" orient="vertical" x="609.0" y="271.0"/>
+              <linesegment label="False" length="79" name="shape3.dragpoint2.lineseg5" orient="horizontal" x="609.0" y="383.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape4" shapetype="branch" x="704.0" y="128.0">
+          <configuration>
+            <branch numBranches="2"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape4.dragpoint1" text="1" toShape="shape28" x="784.0" y="57.0">
+              <linesegment length="0" name="shape4.dragpoint1.lineseg1" orient="horizontal" x="738.0" y="143.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg2" orient="vertical" x="738.0" y="143.0"/>
+              <linesegment length="31" name="shape4.dragpoint1.lineseg3" orient="horizontal" x="738.0" y="143.0"/>
+              <linesegment length="80" name="shape4.dragpoint1.lineseg4" orient="vertical" x="769.0" y="63.0"/>
+              <linesegment label="1" length="15" name="shape4.dragpoint1.lineseg5" orient="horizontal" x="769.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape4.dragpoint2" text="2" toShape="shape31" x="784.0" y="217.0">
+              <linesegment length="0" name="shape4.dragpoint2.lineseg1" orient="horizontal" x="738.0" y="143.0"/>
+              <linesegment length="0" name="shape4.dragpoint2.lineseg2" orient="vertical" x="738.0" y="143.0"/>
+              <linesegment length="31" name="shape4.dragpoint2.lineseg3" orient="horizontal" x="738.0" y="143.0"/>
+              <linesegment length="80" name="shape4.dragpoint2.lineseg4" orient="vertical" x="769.0" y="143.0"/>
+              <linesegment label="2" length="15" name="shape4.dragpoint2.lineseg5" orient="horizontal" x="769.0" y="223.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="processcall_icon" name="shape28" shapetype="processcall" userlabel="" x="800.0" y="48.0">
+          <configuration>
+            <processcall abort="true" processId="f6c01238-7ae1-4ab4-a6fa-c2b2fe3f70ce" wait="true">
+              <parameters/>
+              <returnpaths/>
+            </processcall>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="processcall_icon" name="shape29" shapetype="processcall" userlabel="" x="1136.0" y="128.0">
+          <configuration>
+            <processcall abort="true" processId="1736f624-eef1-431e-8782-c401d056eee5" wait="true">
+              <parameters/>
+              <returnpaths/>
+            </processcall>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="processcall_icon" name="shape30" shapetype="processcall" userlabel="" x="800.0" y="368.0">
+          <configuration>
+            <processcall abort="true" processId="1736f624-eef1-431e-8782-c401d056eee5" wait="true">
+              <parameters/>
+              <returnpaths/>
+            </processcall>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="decision_icon" name="shape31" shapetype="decision" userlabel="SAP Customer Master Created Successfully?" x="800.0" y="208.0">
+          <configuration>
+            <decision comparison="notequals" name="SAP Customer Master Created Successfully?">
+              <decisionvalue valueType="process">
+                <processparameter processproperty="SAP_CustId_Create_Error" processpropertydefaultvalue=""/>
+              </decisionvalue>
+              <decisionvalue valueType="static">
+                <staticparameter staticproperty="E"/>
+              </decisionvalue>
+            </decision>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="true" name="shape31.dragpoint1" text="True" toShape="shape29" x="1120.0" y="137.0">
+              <linesegment length="0" name="shape31.dragpoint1.lineseg1" orient="horizontal" x="834.0" y="223.0"/>
+              <linesegment length="0" name="shape31.dragpoint1.lineseg2" orient="vertical" x="834.0" y="223.0"/>
+              <linesegment length="151" name="shape31.dragpoint1.lineseg3" orient="horizontal" x="834.0" y="223.0"/>
+              <linesegment length="80" name="shape31.dragpoint1.lineseg4" orient="vertical" x="985.0" y="143.0"/>
+              <linesegment label="True" length="135" name="shape31.dragpoint1.lineseg5" orient="horizontal" x="985.0" y="143.0"/>
+            </dragpoint>
+            <dragpoint identifier="false" name="shape31.dragpoint2" text="False" toShape="shape32" x="1120.0" y="281.0">
+              <linesegment length="0" name="shape31.dragpoint2.lineseg1" orient="horizontal" x="834.0" y="223.0"/>
+              <linesegment length="0" name="shape31.dragpoint2.lineseg2" orient="vertical" x="834.0" y="223.0"/>
+              <linesegment length="151" name="shape31.dragpoint2.lineseg3" orient="horizontal" x="834.0" y="223.0"/>
+              <linesegment length="64" name="shape31.dragpoint2.lineseg4" orient="vertical" x="985.0" y="223.0"/>
+              <linesegment label="False" length="135" name="shape31.dragpoint2.lineseg5" orient="horizontal" x="985.0" y="287.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape32" shapetype="stop" x="1136.0" y="272.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="documentproperties_icon" name="shape33" shapetype="documentproperties" userlabel="" x="704.0" y="368.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isTradingPartner="false" name="Process - SAP_CustId_Trim" persist="false" propertyId="process.SAP_CustId_Trim">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="profile">
+                    <profileelement elementId="396" elementName="Account_Number__c (Opportunity/Account/Account_Number__c)" profileId="06c82b24-2d7c-4743-9288-2ebd431d838a" profileType="profile.xml"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape33.dragpoint1" toShape="shape30" x="784.0" y="377.0">
+              <linesegment length="0" name="shape33.dragpoint1.lineseg1" orient="horizontal" x="738.0" y="383.0"/>
+              <linesegment length="0" name="shape33.dragpoint1.lineseg2" orient="vertical" x="738.0" y="383.0"/>
+              <linesegment length="31" name="shape33.dragpoint1.lineseg3" orient="horizontal" x="738.0" y="383.0"/>
+              <linesegment length="0" name="shape33.dragpoint1.lineseg4" orient="vertical" x="769.0" y="383.0"/>
+              <linesegment length="15" name="shape33.dragpoint1.lineseg5" orient="horizontal" x="769.0" y="383.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape36" shapetype="connectoraction" userlabel="" x="208.0" y="256.0">
+          <configuration>
+            <connectoraction actionType="Get" connectionId="1204dace-9d00-4026-825c-3b0f3070dc6d" connectorType="salesforce" hideSettings="false" operationId="a8d86c7e-4bf9-4dbb-840a-abf17aa5b543" parameter-profile="EMBEDDED|salesforceparameterchooser|a8d86c7e-4bf9-4dbb-840a-abf17aa5b543">
+              <parameters>
+                <parametervalue elementToSetId="1" elementToSetName="OpportunityId" key="3" valueType="process">
+                  <processparameter processproperty="SFDC_OppId" processpropertydefaultvalue=""/>
+                </parametervalue>
+              </parameters>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape36.dragpoint1" toShape="shape2" x="352.0" y="265.0">
+              <linesegment length="0" name="shape36.dragpoint1.lineseg1" orient="horizontal" x="242.0" y="271.0"/>
+              <linesegment length="0" name="shape36.dragpoint1.lineseg2" orient="vertical" x="242.0" y="271.0"/>
+              <linesegment length="63" name="shape36.dragpoint1.lineseg3" orient="horizontal" x="242.0" y="271.0"/>
+              <linesegment length="0" name="shape36.dragpoint1.lineseg4" orient="vertical" x="305.0" y="271.0"/>
+              <linesegment length="47" name="shape36.dragpoint1.lineseg5" orient="horizontal" x="305.0" y="271.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

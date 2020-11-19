@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="f4f92f64-1307-436c-9a61-88f46697f767" version="1" name="Add Leading Zeros to SAP Customer ID" type="transform.function" createdDate="2019-06-25T14:46:25Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:25Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="f0e10afe-8c9d-45f7-9d37-86c906d89a41" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Function xmlns="" xmlns:ns5="http://schemas.microsoft.com/2003/10/Serialization/">
+      <Inputs/>
+      <Outputs>
+        <Output key="1" name="SAP_Customer_ID_Pad"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="1" name="Get Process Property" position="1" sumEnabled="false" type="PropertyGet" x="197.0" y="276.0">
+          <Inputs>
+            <Input default="SAP_CustId_Trim" key="1" name="Property Name"/>
+            <Input default="" key="2" name="Default Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="3" name="String Prepend" position="2" sumEnabled="false" type="StringPrepend" x="566.0" y="256.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default="10" key="2" name="Fix to Length"/>
+            <Input default="0" key="3" name="Char to Prepend"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="1" fromKey="3" fromNamePath="Get Process Property/Result " fromType="function" toFunction="3" toKey="1" toNamePath="String Prepend/Original String" toType="function"/>
+        <Mapping fromFunction="3" fromKey="2" fromNamePath="String Prepend/Result " fromType="function" toFunction="0" toKey="1" toNamePath="Editor/Customer Id" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

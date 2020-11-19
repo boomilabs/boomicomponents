@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="ab77dfa2-a06d-42e4-9718-d1beaeff7442" version="1" name="Trim SAP Sales Order Leading Zeros and Prepend with Message" type="transform.function" createdDate="2019-06-25T14:46:25Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:25Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="dd6c405f-b5d0-4169-ba74-4a7a58cbfc14" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Function xmlns="" xmlns:ns5="http://schemas.microsoft.com/2003/10/Serialization/">
+      <Inputs/>
+      <Outputs>
+        <Output key="1" name="SAP Sales Order Number Chatter Message"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="2" name="String Prepend" position="2" sumEnabled="false" type="StringPrepend" x="471.0" y="331.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default="" key="2" name="Fix to Length"/>
+            <Input default="Your Opportunity has been created as SAP Sales Order Number: " key="3" name="Char to Prepend"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="4" name="Get Process Property" position="1" sumEnabled="false" type="PropertyGet" x="121.0" y="348.0">
+          <Inputs>
+            <Input default="SAP_SalesOrder_Id_Trim" key="1" name="Property Name"/>
+            <Input default="" key="2" name="Default Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="2" fromKey="2" fromNamePath="String Prepend/Result " fromType="function" toFunction="0" toKey="1" toNamePath="Editor/Sales Order Chatter Message" toType="function"/>
+        <Mapping fromFunction="4" fromKey="3" fromNamePath="Get Process Property/Result " fromType="function" toFunction="2" toKey="1" toNamePath="String Prepend/Original String " toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

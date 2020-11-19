@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="f72c096d-f3d2-4c50-b72a-473513688ec4" version="1" name="SFDC Address -&gt; SAP Address Format 3" type="transform.function" createdDate="2019-06-25T14:46:24Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:24Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="c9c20f03-d034-4bdd-9aa6-077f1de734e4" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Function xmlns="" xmlns:ns5="http://schemas.microsoft.com/2003/10/Serialization/">
+      <Inputs>
+        <Input key="1" name="Street"/>
+      </Inputs>
+      <Outputs>
+        <Output default="" key="2" name="Number"/>
+        <Output default="" key="3" name="Address Line 1"/>
+        <Output default="" key="4" name="Address Line 2"/>
+        <Output default="" key="5" name="Address Line 3"/>
+        <Output default="" key="6" name="Address Line 4"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" category="Scripting" key="1" name="Embedded Scripting" position="1" sumEnabled="false" type="Scripting" x="277.0" y="198.0">
+          <Inputs>
+            <Input key="1" name="addrIn"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="addr1"/>
+            <Output key="3" name="addr2"/>
+            <Output key="4" name="addr3"/>
+            <Output key="5" name="addr4"/>
+            <Output key="6" name="addr5"/>
+          </Outputs>
+          <Configuration>
+            <Scripting language="javascript">
+              <ScriptToExecute>if (addrIn != "") {
+  var addr = addrIn.split(" ");
+  if (addr.length &gt; 0) {
+    addr1 = addr[0];
+  }
+  if (addr.length &gt; 1) {
+    addr2 = addr[1];
+  }
+  if (addr.length &gt; 2) {
+   addr3 = addr[2];
+  }
+  if (addr.length &gt; 3) {
+   addr4 = addr[3];
+  }
+  if (addr.length &gt; 4) {
+    addr5 = addr[4];
+  }
+}
+</ScriptToExecute>
+              <Input dataType="character" index="1" name="addrIn"/>
+              <Output dataType="undefined" index="2" name="addr1"/>
+              <Output dataType="undefined" index="3" name="addr2"/>
+              <Output dataType="undefined" index="4" name="addr3"/>
+              <Output dataType="undefined" index="5" name="addr4"/>
+              <Output dataType="undefined" index="6" name="addr5"/>
+            </Scripting>
+          </Configuration>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="0" fromKey="1" fromNamePath="Editor/Street" fromType="function" toFunction="1" toKey="1" toNamePath="Embedded Scripting/addrIn" toType="function"/>
+        <Mapping fromFunction="1" fromKey="2" fromNamePath="Embedded Scripting/addr1" fromType="function" toFunction="0" toKey="2" toNamePath="Editor/line 1" toType="function"/>
+        <Mapping fromFunction="1" fromKey="3" fromNamePath="Embedded Scripting/addr2" fromType="function" toFunction="0" toKey="3" toNamePath="Editor/line 2" toType="function"/>
+        <Mapping fromFunction="1" fromKey="4" fromNamePath="Embedded Scripting/addr3" fromType="function" toFunction="0" toKey="4" toNamePath="Editor/line 3" toType="function"/>
+        <Mapping fromFunction="1" fromKey="5" fromNamePath="Embedded Scripting/addr4" fromType="function" toFunction="0" toKey="5" toNamePath="Editor/line 4" toType="function"/>
+        <Mapping fromFunction="1" fromKey="6" fromNamePath="Embedded Scripting/addr5" fromType="function" toFunction="0" toKey="6" toNamePath="Editor/line 5" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

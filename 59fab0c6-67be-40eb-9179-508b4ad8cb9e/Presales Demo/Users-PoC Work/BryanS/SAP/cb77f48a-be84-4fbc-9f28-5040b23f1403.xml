@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="cb77f48a-be84-4fbc-9f28-5040b23f1403" version="1" name="Update SF Account &amp; Chatter *PAS" type="process" createdDate="2019-06-25T14:46:25Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:25Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="bce295a3-1c16-4866-be7a-dc719bffe8ae" copiedFromComponentVersion="2">
+  <bns:encryptedValues/>
+  <bns:description>What about Error Handling on SFDC Update? Done</bns:description>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="true" enableUserLog="true" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="96.0">
+          <configuration>
+            <passthroughaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="144.0" y="105.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="111.0"/>
+              <linesegment length="39" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="121.0" y="111.0"/>
+              <linesegment length="23" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="121.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape2" shapetype="branch" x="160.0" y="96.0">
+          <configuration>
+            <branch numBranches="2"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape2.dragpoint1" text="1" toShape="shape9" x="240.0" y="105.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="194.0" y="111.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="194.0" y="111.0"/>
+              <linesegment length="31" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="194.0" y="111.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="225.0" y="111.0"/>
+              <linesegment label="1" length="15" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="225.0" y="111.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape2.dragpoint2" text="2" toShape="shape5" x="240.0" y="281.0">
+              <linesegment length="0" name="shape2.dragpoint2.lineseg1" orient="horizontal" x="194.0" y="111.0"/>
+              <linesegment length="0" name="shape2.dragpoint2.lineseg2" orient="vertical" x="194.0" y="111.0"/>
+              <linesegment length="31" name="shape2.dragpoint2.lineseg3" orient="horizontal" x="194.0" y="111.0"/>
+              <linesegment length="176" name="shape2.dragpoint2.lineseg4" orient="vertical" x="225.0" y="111.0"/>
+              <linesegment label="2" length="15" name="shape2.dragpoint2.lineseg5" orient="horizontal" x="225.0" y="287.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape4" shapetype="stop" x="608.0" y="96.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="map_icon" name="shape5" shapetype="map" x="256.0" y="272.0">
+          <configuration>
+            <map mapId="b4798249-4493-4c21-a019-54337a542196"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape6" x="416.0" y="281.0">
+              <linesegment length="0" name="shape5.dragpoint1.lineseg1" orient="horizontal" x="290.0" y="287.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg2" orient="vertical" x="290.0" y="287.0"/>
+              <linesegment length="71" name="shape5.dragpoint1.lineseg3" orient="horizontal" x="290.0" y="287.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg4" orient="vertical" x="361.0" y="287.0"/>
+              <linesegment length="55" name="shape5.dragpoint1.lineseg5" orient="horizontal" x="361.0" y="287.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape6" shapetype="connectoraction" x="432.0" y="272.0">
+          <configuration>
+            <connectoraction actionType="Send" connectionId="006a774a-8b54-43ec-8bdb-7224901aaa9a" connectorType="salesforce" hideSettings="false" operationId="3b7a483a-f390-425e-995a-1279919d0000" parameter-profile="257966fc-7931-4827-8220-b37a4432af19">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape6.dragpoint1" toShape="shape7" x="592.0" y="281.0">
+              <linesegment length="0" name="shape6.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="287.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg2" orient="vertical" x="466.0" y="287.0"/>
+              <linesegment length="71" name="shape6.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="287.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg4" orient="vertical" x="537.0" y="287.0"/>
+              <linesegment length="55" name="shape6.dragpoint1.lineseg5" orient="horizontal" x="537.0" y="287.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape7" shapetype="stop" x="608.0" y="272.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="connectoraction_icon" name="shape8" shapetype="connectoraction" userlabel="" x="432.0" y="96.0">
+          <configuration>
+            <connectoraction actionType="Send" connectionId="006a774a-8b54-43ec-8bdb-7224901aaa9a" connectorType="salesforce" hideSettings="false" operationId="3efec731-894d-4ca6-a8e4-831604f7ce02" parameter-profile="e79afbda-7e95-428b-ac8e-e618a36bf9e7">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape8.dragpoint1" toShape="shape4" x="592.0" y="105.0">
+              <linesegment length="0" name="shape8.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="111.0"/>
+              <linesegment length="0" name="shape8.dragpoint1.lineseg2" orient="vertical" x="466.0" y="111.0"/>
+              <linesegment length="71" name="shape8.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="111.0"/>
+              <linesegment length="0" name="shape8.dragpoint1.lineseg4" orient="vertical" x="537.0" y="111.0"/>
+              <linesegment length="55" name="shape8.dragpoint1.lineseg5" orient="horizontal" x="537.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape9" shapetype="map" x="256.0" y="96.0">
+          <configuration>
+            <map mapId="848e7ebc-d73b-4303-9266-f642f01124c3"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape9.dragpoint1" toShape="shape8" x="416.0" y="105.0">
+              <linesegment length="0" name="shape9.dragpoint1.lineseg1" orient="horizontal" x="290.0" y="111.0"/>
+              <linesegment length="0" name="shape9.dragpoint1.lineseg2" orient="vertical" x="290.0" y="111.0"/>
+              <linesegment length="71" name="shape9.dragpoint1.lineseg3" orient="horizontal" x="290.0" y="111.0"/>
+              <linesegment length="0" name="shape9.dragpoint1.lineseg4" orient="vertical" x="361.0" y="111.0"/>
+              <linesegment length="55" name="shape9.dragpoint1.lineseg5" orient="horizontal" x="361.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

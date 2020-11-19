@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/BryanS/SAP" componentId="848e7ebc-d73b-4303-9266-f642f01124c3" version="1" name="Post Customer Info into SFDC Account Update 3" type="transform.map" createdDate="2019-06-25T14:46:25Z" createdBy="bryan_stevenson@dell.com" modifiedDate="2019-06-25T14:46:25Z" modifiedBy="bryan_stevenson@dell.com" deleted="false" currentVersion="true" folderName="SAP" folderId="RjoyNjM1Mjc4" copiedFromComponentId="d7130794-f56f-403b-9eb3-3c8fa37a78dd" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="f4b46231-e1ef-4441-bf93-66fec4152c52" toProfile="e79afbda-7e95-428b-ac8e-e618a36bf9e7">
+      <Mappings>
+        <Mapping fromFunction="1" fromKey="3" fromType="function" toKey="2" toKeyPath="*[@key='1']/*[@key='2']" toNamePath="Account/Id" toType="profile"/>
+        <Mapping fromKey="19" fromKeyPath="*[@key='1']/*[@key='19']" fromNamePath="BAPI_CUSTOMER_CREATEFROMDATA1/CUSTOMERNO" fromType="profile" toFunction="3" toKey="1" toType="function"/>
+        <Mapping fromFunction="3" fromKey="1" fromType="function" toKey="37" toKeyPath="*[@key='1']/*[@key='37']" toNamePath="Account/Account_Number__c" toType="profile"/>
+      </Mappings>
+      <Functions>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="1" name="Get Process Property" position="1" sumEnabled="false" type="PropertyGet" x="31.0" y="103.0">
+          <Inputs>
+            <Input default="SFDC_AcctId" key="1" name="Property Name"/>
+            <Input default="" key="2" name="Default Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep category="userdefined" id="4205379b-237e-4ada-b415-a29b129b7376" key="3" name="Trim Leading Zeros from SAP Sales Customer Number" position="3" type="userdefined" x="31.0" y="267.0">
+          <Inputs>
+            <Input key="1" name="SAP_Customer_Id_Raw"/>
+          </Inputs>
+          <Outputs>
+            <Output key="1" name="SAP_Customer_Id"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Functions>
+      <Defaults>
+        <Default toKey="39" value="true"/>
+      </Defaults>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>
