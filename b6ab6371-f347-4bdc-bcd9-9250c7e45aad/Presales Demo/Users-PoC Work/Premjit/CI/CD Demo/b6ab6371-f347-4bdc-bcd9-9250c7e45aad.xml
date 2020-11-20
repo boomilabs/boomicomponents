@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Premjit/CI/CD Demo" componentId="b6ab6371-f347-4bdc-bcd9-9250c7e45aad" version="1" name="TestProcess" type="process" createdDate="2020-11-20T08:10:20Z" createdBy="premjit_mishra@dell.com" modifiedDate="2020-11-20T08:10:20Z" modifiedBy="premjit_mishra@dell.com" deleted="false" currentVersion="true" folderName="CI/CD Demo" folderId="RjozNjYxNjc2">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="96.0" y="96.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="240.0" y="105.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="130.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="130.0" y="111.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="130.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="193.0" y="111.0"/>
+              <linesegment length="47" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="193.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape2" shapetype="stop" userlabel="" x="256.0" y="96.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
