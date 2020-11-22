@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes/SFDC &lt;-&gt; MySQL/2 - Daily Customer Wins" componentId="8a0ddf01-f09e-41ba-8f17-f0616f133dcd" version="1" name="Account Update" type="connector-action" subType="salesforce" createdDate="2019-04-12T20:35:11Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:35:11Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="2 - Daily Customer Wins" folderId="RjoyNTA4MzEz" copiedFromComponentId="3c9ad159-d908-4628-a5c5-37e38ae63b8c" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <SalesforceSendAction batchCount="200" objectAction="update" objectName="Account" requestProfile="9444ee34-bab4-460d-abc4-fbd7a941fd47" returnApplicationErrors="true" useBulkAPI="false">
+          <Options>
+            <Fields>
+              <SalesforceObject checkable="false" externalIdField="Choose..." import="true" level="0" name="Account" objectAction="update" objectType="Account">
+                <FieldList name="FieldList">
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Id" nillable="false"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Name" nillable="false"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Type" nillable="true"/>
+                  <SalesforceField custom="false" dataType="reference" fEnabled="true" name="ParentId" nillable="true">
+                    <references refObjectType="Account" relationshipName="Parent" useExternalId="false">
+                      <referenceTo objectType="Account">
+                        <referenceField custom="false" dataType="character" name="Id"/>
+                      </referenceTo>
+                    </references>
+                  </SalesforceField>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingStreet" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingCity" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingState" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingPostalCode" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="BillingCountry" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingStreet" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingCity" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingState" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingPostalCode" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="ShippingCountry" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Phone" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Fax" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="AccountNumber" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Website" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Sic" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Industry" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="AnnualRevenue" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="NumberOfEmployees" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Ownership" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="TickerSymbol" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Description" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Rating" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Site" nillable="true"/>
+                  <SalesforceField custom="false" dataType="reference" fEnabled="true" name="OwnerId" nillable="false">
+                    <references refObjectType="User" relationshipName="Owner" useExternalId="false">
+                      <referenceTo objectType="User">
+                        <referenceField custom="false" dataType="character" name="Id"/>
+                        <referenceField custom="false" dataType="character" name="Username"/>
+                        <referenceField custom="false" dataType="character" name="Email"/>
+                      </referenceTo>
+                    </references>
+                  </SalesforceField>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="CustomerPriority__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="SLA__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Active__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="NumberofLocations__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="UpsellOpportunity__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="SLASerialNumber__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="date" fEnabled="true" name="SLAExpirationDate__c" nillable="true"/>
+                </FieldList>
+                <Filter>
+                  <SalesforceFilterLogical isRoot="true" logicalOperator="and"/>
+                </Filter>
+                <Sorts/>
+              </SalesforceObject>
+            </Fields>
+          </Options>
+        </SalesforceSendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+    </Operation>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes" componentId="a37948b2-eb47-48de-ba5a-00d9f31f7bf9" version="1" name="MySQL Local (orgtrack)" type="connector-settings" subType="database" createdDate="2019-04-12T20:33:17Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:33:17Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="Standard SF to MySQL Processes" folderId="RjoyNTA4MzEw" copiedFromComponentId="aaf541f5-46a6-4074-8ca6-1e7f6578b143" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DatabaseConnectionSettings xmlns="" additional="" className="com.mysql.jdbc.Driver" dbname="orgtrack" driverId="mysql" host="localhost" isPoolEnabled="false" password="" port="3306" urlFormat="jdbc:mysql://{0}:{1}/{2}{3}" username="root">
+      <WriteOptions sqlFilePath="C:\TEMP\sql.txt" writeSQLToFile="false"/>
+      <AdapterPoolInfo exhaustedAction="1" maxActive="-1" maxIdle="-1" maxIdleTime="0" maxWait="0" minIdle="0" numberOfTests="0" testIdle="false" testOnBorrow="false" testOnReturn="false" timeBetweenRuns="0" validationQuery=""/>
+    </DatabaseConnectionSettings>
+  </bns:object>
+</bns:Component>

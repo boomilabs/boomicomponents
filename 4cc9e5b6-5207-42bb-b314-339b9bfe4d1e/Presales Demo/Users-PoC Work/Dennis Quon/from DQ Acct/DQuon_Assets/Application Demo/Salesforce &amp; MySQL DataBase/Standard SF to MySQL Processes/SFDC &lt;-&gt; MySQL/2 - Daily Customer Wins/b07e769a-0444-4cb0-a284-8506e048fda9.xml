@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes/SFDC &lt;-&gt; MySQL/2 - Daily Customer Wins" componentId="b07e769a-0444-4cb0-a284-8506e048fda9" version="1" name="Customer DB to SF Account Update" type="transform.map" createdDate="2019-04-12T20:36:05Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:36:05Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="2 - Daily Customer Wins" folderId="RjoyNTA4MzEz" copiedFromComponentId="a915bdfd-5402-44bd-be1d-3e1ecec20b75" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Map xmlns="" fromProfile="754852f2-dda2-497c-a2b3-cd28dc23e884" toProfile="9444ee34-bab4-460d-abc4-fbd7a941fd47">
+      <Mappings>
+        <Mapping fromKey="6" fromKeyPath="*[@key='2']/*[@key='3']/*[@key='6']" fromNamePath="Statement/Fields/NAME" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='2']/*[@key='3']/*[@key='7']" fromNamePath="Statement/Fields/PHONE" fromType="profile" toFunction="1" toKey="2" toType="function"/>
+        <Mapping fromFunction="1" fromKey="3" fromType="function" toKey="2" toKeyPath="*[@key='1']/*[@key='2']" toNamePath="Account/Id" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Connector" key="1" name="Connector Call" position="1" sumEnabled="false" type="ConnectorCall" x="10.0" y="10.0">
+          <Inputs>
+            <Input default="" key="1" name="Name="/>
+            <Input default="" key="2" name="Phone="/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Id (Account/Id)"/>
+          </Outputs>
+          <Configuration>
+            <ConnectorCall actionType="Get" connectionId="de8eb1e6-9004-4678-9f00-c18e4f84a206" connectorType="salesforce" enforceSingleResult="true" operationId="62d5314b-c3e7-4224-9676-4b02d5bb549e" output-profile="8fb433fa-f38e-4cf0-a748-dec229c6a399" parameter-profile="EMBEDDED|salesforceparameterchooser|62d5314b-c3e7-4224-9676-4b02d5bb549e">
+              <Input index="1" key="1" name="Name="/>
+              <Input index="2" key="2" name="Phone="/>
+              <Output index="3" key="2" name="Id (Account/Id)"/>
+            </ConnectorCall>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults>
+        <Default toKey="4" value="Customer - Direct"/>
+      </Defaults>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

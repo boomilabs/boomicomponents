@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes/SFDC &lt;-&gt; MySQL/2 - Daily Customer Wins" componentId="4d36b775-7635-4553-9d2d-5e09404b76da" version="1" name="Query Customer by Notify Status" type="connector-action" subType="database" createdDate="2019-04-12T20:38:54Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:38:54Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="2 - Daily Customer Wins" folderId="RjoyNTA4MzEz" copiedFromComponentId="3f3788b1-ddef-43b1-a27b-f9748322bf19" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <DatabaseGetAction batchCount="1" maxRows="0">
+          <ReadProfile profileId="754852f2-dda2-497c-a2b3-cd28dc23e884"/>
+        </DatabaseGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

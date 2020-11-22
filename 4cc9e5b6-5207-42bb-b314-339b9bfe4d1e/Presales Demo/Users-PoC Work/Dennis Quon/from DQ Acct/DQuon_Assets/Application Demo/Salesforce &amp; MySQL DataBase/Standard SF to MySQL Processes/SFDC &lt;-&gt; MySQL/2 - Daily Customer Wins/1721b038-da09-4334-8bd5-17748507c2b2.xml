@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes/SFDC &lt;-&gt; MySQL/2 - Daily Customer Wins" componentId="1721b038-da09-4334-8bd5-17748507c2b2" version="1" name="Customer Win Email" type="connector-action" subType="mail" createdDate="2019-04-12T20:36:26Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:36:26Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="2 - Daily Customer Wins" folderId="RjoyNTA4MzEz" copiedFromComponentId="876d37e8-1a0c-4cc0-87a3-c6037e26d4fc" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <MailSendAction bodyContentType="text/plain" dataContentType="text/plain" disposition="inline" from="hmelfi98@gmail.com" subject="New Customer" to="hmelfi98@gmail.com"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes" componentId="de8eb1e6-9004-4678-9f00-c18e4f84a206" version="1" name="SF Login" type="connector-settings" subType="salesforce" createdDate="2019-04-12T20:37:24Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:37:24Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="Standard SF to MySQL Processes" folderId="RjoyNTA4MzEw" copiedFromComponentId="610a6e51-d1cd-4b21-9ed0-873540c8b132" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <SalesforceSettings xmlns="" url="https://www.salesforce.com/services/Soap/u/18.0" version="vx">
+      <AuthSettings password="" user="harvey_melfi_dev@dell.com"/>
+    </SalesforceSettings>
+  </bns:object>
+</bns:Component>

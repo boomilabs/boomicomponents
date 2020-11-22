@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes/SFDC &lt;-&gt; MySQL/2 - Daily Customer Wins" componentId="754852f2-dda2-497c-a2b3-cd28dc23e884" version="1" name="Query Customer by Status / Date" type="profile.db" createdDate="2019-04-12T20:39:23Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:39:23Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="2 - Daily Customer Wins" folderId="RjoyNTA4MzEz" copiedFromComponentId="38865d98-2e74-42ee-b8b2-a869a14a9181" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DatabaseProfile xmlns="" version="2">
+      <ProfileProperties>
+        <DatabaseGeneralInfo executionType="dbread"/>
+      </ProfileProperties>
+      <DataElements>
+        <DBStatement isNode="true" key="2" name="Statement" statementType="select" storedProcedure="" tableName="">
+          <DBFields isNode="true" key="3" name="Fields">
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="5" mandatory="false" name="CUSTOMER_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="6" mandatory="false" name="NAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="7" mandatory="false" name="PHONE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+          </DBFields>
+          <DBParameters isNode="true" key="4" name="Parameters">
+            <DBParameter dataType="datetime" isMappable="false" isNode="true" key="8" name="MODIFIED_DATE&gt;=">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DBParameter>
+          </DBParameters>
+          <sql>SELECT DISTINCT CUSTOMER_ID, NAME, PHONE FROM CUSTOMER 
+WHERE MODIFIED_DATE &gt;= ? AND USER_ID = 'Harvey' 
+AND COMPANY_KEY = '59' AND WIN_FLAG = 1 AND NOTIFY_STATUS = 0</sql>
+        </DBStatement>
+      </DataElements>
+    </DatabaseProfile>
+  </bns:object>
+</bns:Component>

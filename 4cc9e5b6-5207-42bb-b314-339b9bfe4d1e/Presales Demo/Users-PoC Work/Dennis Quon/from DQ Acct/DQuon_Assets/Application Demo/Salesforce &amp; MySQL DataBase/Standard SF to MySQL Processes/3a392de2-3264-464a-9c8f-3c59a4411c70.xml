@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/Application Demo/Salesforce &amp; MySQL DataBase/Standard SF to MySQL Processes" componentId="3a392de2-3264-464a-9c8f-3c59a4411c70" version="1" name="Gmail hmelfi98@gmail.com" type="connector-settings" subType="mail" createdDate="2019-04-12T20:40:01Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:40:01Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="Standard SF to MySQL Processes" folderId="RjoyNTA4MzEw" copiedFromComponentId="54f00c20-3e52-4c89-a390-b4d363528f93" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <MailSettings xmlns="" host="smtp.gmail.com" port="465" usesmtpauth="true" usessl="true" usetls="true">
+      <AuthSettings password="" user="hmelfi98@gmail.com"/>
+    </MailSettings>
+  </bns:object>
+</bns:Component>
