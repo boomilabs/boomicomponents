@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/#Connections" componentId="0ca1cbbf-5b5d-423e-b456-452fa8f15743" version="1" name="Boomi Training (MySQL)" type="connector-settings" subType="database" createdDate="2020-05-19T14:34:50Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-05-19T14:34:50Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="#Connections" folderId="RjozMzMxODM0" copiedFromComponentId="56972b63-6e34-42b4-a300-c55a3f715d11" copiedFromComponentVersion="11">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//DatabaseConnectionSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <DatabaseConnectionSettings xmlns="" additional="" className="com.mysql.jdbc.Driver" dbname="orgtrack(BoomiTrainer)" driverId="mysql" host="traindb1.boomi.com" isPoolEnabled="false" password="7a12b6479b4977987a3fe35fccaf75c84de912e54bfbb6b1de4ba31eff5ec52f8c8e5aeb5b36116d494828d5ef1017f8a394df6e2b49092a9562357d034ea54c" port="3306" urlFormat="jdbc:mysql://{0}:{1}/{2}{3}" username="BoomiTrainer">
+      <WriteOptions sqlFilePath="" writeSQLToFile="false"/>
+      <AdapterPoolInfo exhaustedAction="1" maxActive="0" maxIdle="0" maxIdleTime="0" maxWait="0" minIdle="0" numberOfTests="0" testIdle="false" testOnBorrow="false" testOnReturn="false" timeBetweenRuns="0" validationQuery=""/>
+    </DatabaseConnectionSettings>
+  </bns:object>
+</bns:Component>

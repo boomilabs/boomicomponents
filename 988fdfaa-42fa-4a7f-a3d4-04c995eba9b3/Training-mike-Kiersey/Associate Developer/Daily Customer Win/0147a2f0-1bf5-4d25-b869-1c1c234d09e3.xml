@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/Associate Developer/Daily Customer Win" componentId="0147a2f0-1bf5-4d25-b869-1c1c234d09e3" version="1" name="Query Customer by Date" type="connector-action" subType="database" createdDate="2020-06-11T18:31:08Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-06-11T18:31:08Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="Daily Customer Win" folderId="RjozMzMxODMw">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <DatabaseGetAction batchCount="1" maxRows="0">
+          <ReadProfile linkElementKey="5" linkElementName="CUSTOMER_ID (Statement/Fields/CUSTOMER_ID)" profileId="bff52770-1dac-4ea5-a380-63acce2d3ea2"/>
+        </DatabaseGetAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

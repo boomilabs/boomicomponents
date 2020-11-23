@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/#Connections" componentId="f30e8ab8-5a1c-44d0-b7fc-1d80ba716dd4" version="1" name="Boomi Training (SF)" type="connector-settings" subType="salesforce" createdDate="2020-05-19T14:34:50Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-05-19T14:34:50Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="#Connections" folderId="RjozMzMxODM0" copiedFromComponentId="56972b63-6e34-42b4-a300-c55a3f715d11" copiedFromComponentVersion="11">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//SalesforceSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <SalesforceSettings xmlns="" maxActiveConnections="10" url="https://test.salesforce.com/services/Soap/u/39.0" version="vx">
+      <AuthSettings password="bd3820f31b77b83a3f5e95bbfdcba6699bd022237ac8756d26fa2c178d61fc4c42d29207eaae02425785d5e30f23f6934ab6463484a64fa4a2dbff10777fea77" user="boomitrainer@dell.com"/>
+    </SalesforceSettings>
+  </bns:object>
+</bns:Component>

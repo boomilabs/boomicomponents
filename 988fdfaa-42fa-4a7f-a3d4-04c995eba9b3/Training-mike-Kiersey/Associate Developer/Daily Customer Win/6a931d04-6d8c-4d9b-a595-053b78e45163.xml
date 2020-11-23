@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/Associate Developer/Daily Customer Win" componentId="6a931d04-6d8c-4d9b-a595-053b78e45163" version="1" name="Account Update - SFDC" type="connector-action" subType="salesforce" createdDate="2020-06-11T18:39:07Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-06-11T18:39:07Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="Daily Customer Win" folderId="RjozMzMxODMw">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <SalesforceSendAction batchCount="200" bulkAPIVersion="None" objectAction="update" objectName="Account__c" requestProfile="45001254-3b8b-4cd1-a062-bbbdbed3d0d0" returnApplicationErrors="false" useBulkAPI="false">
+          <Options>
+            <Fields>
+              <SalesforceObject checkable="false" externalIdField="Choose..." import="true" level="0" name="Account__c" objectAction="update" objectType="Account__c">
+                <FieldList name="FieldList">
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Id" nillable="false"/>
+                  <SalesforceField custom="false" dataType="reference" fEnabled="true" name="OwnerId" nillable="false">
+                    <references relationshipName="Owner" useExternalId="false">
+                      <referenceTo objectType="Group">
+                        <referenceField custom="false" dataType="character" name="Id"/>
+                        <referenceField custom="false" dataType="character" name="Name"/>
+                      </referenceTo>
+                      <referenceTo objectType="User">
+                        <referenceField custom="false" dataType="character" name="Id"/>
+                        <referenceField custom="false" dataType="character" name="Username"/>
+                        <referenceField custom="false" dataType="character" name="Email"/>
+                        <referenceField custom="false" dataType="character" name="FederationIdentifier"/>
+                      </referenceTo>
+                    </references>
+                  </SalesforceField>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Name" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="CurrencyIsoCode" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Account_Number__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Description_del__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Phone__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Rating__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Type__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Website__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="Annual_Revenue__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Account_Currency__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Account_Site__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Industry__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Billing_Address__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="date" fEnabled="true" name="SLA_Expiration_Date__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="Number_of_locations__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Customer_Proiority__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Active__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Custom_Links__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Fax__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Ownership__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="Employees__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="SIC_Code__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Upsell_Opportunity__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Shipping_Address__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="SLA_Serial_Number__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="SLA__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Billing_City__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Billing_State__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="number" fEnabled="true" name="ZipCode__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Billing_Address_Country__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Shipping_Address_City__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Shipping_Address_State__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Shipping_Address_Country__c" nillable="true"/>
+                  <SalesforceField custom="false" dataType="character" fEnabled="true" name="Shipping_Address_Zipcode__c" nillable="true"/>
+                  <SalesforceField custom="true" dataType="character" fEnabled="true" name="DB_External_Contact_ID__c" nillable="true"/>
+                </FieldList>
+                <Filter>
+                  <SalesforceFilterLogical isRoot="true" logicalOperator="and"/>
+                </Filter>
+                <Sorts/>
+              </SalesforceObject>
+            </Fields>
+          </Options>
+        </SalesforceSendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

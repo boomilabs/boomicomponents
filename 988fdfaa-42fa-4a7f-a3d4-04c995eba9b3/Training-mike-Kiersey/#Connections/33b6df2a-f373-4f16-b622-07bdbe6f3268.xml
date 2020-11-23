@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/#Connections" componentId="33b6df2a-f373-4f16-b622-07bdbe6f3268" version="1" name="Boomi Training (Mail)" type="connector-settings" subType="mail" createdDate="2020-06-05T13:39:10Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-06-05T13:39:10Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="#Connections" folderId="RjozMzMxODM0" copiedFromComponentId="b5014042-708f-4132-a221-b32e909bb9da" copiedFromComponentVersion="4">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//MailSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <MailSettings xmlns="" host="email-smtp.us-west-2.amazonaws.com" port="587" usesmtpauth="true" usessl="false" usetls="true">
+      <AuthSettings password="8ee1783abc04ed472d012913129a6cdec8b15b011bf6251968251efdda07a07df3d6e48290878d9bf2bae2693a6ccdaae89df44d93c70ad117c19fd0fbcd2827" user="AKIAIXMKUNOJDKH53SHQ"/>
+    </MailSettings>
+  </bns:object>
+</bns:Component>
