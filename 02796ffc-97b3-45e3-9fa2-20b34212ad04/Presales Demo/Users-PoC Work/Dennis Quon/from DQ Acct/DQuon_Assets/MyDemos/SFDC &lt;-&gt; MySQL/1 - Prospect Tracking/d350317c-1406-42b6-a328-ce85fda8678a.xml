@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/MyDemos/SFDC &lt;-&gt; MySQL/1 - Prospect Tracking" componentId="d350317c-1406-42b6-a328-ce85fda8678a" version="1" name="Customer_ID Create" type="transform.function" createdDate="2019-04-12T20:39:12Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:39:12Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="1 - Prospect Tracking" folderId="RjoyNTA4NDMx" copiedFromComponentId="0603a2a8-f95f-482c-a394-64a54fcc69da" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Function xmlns="">
+      <Inputs>
+        <Input key="1" name="Name"/>
+        <Input key="2" name="Phone"/>
+      </Inputs>
+      <Outputs>
+        <Output key="1" name="ID"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="1" name="String Remove" position="1" sumEnabled="false" type="StringRemove" x="10.0" y="10.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default=" " key="2" name="String to Remove"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="2" name="Left Character Trim" position="2" sumEnabled="false" type="LeftTrim" x="43.0" y="185.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default="4" key="2" name="Fix to Length"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="3" name="String Append" position="3" sumEnabled="false" type="StringAppend" x="317.0" y="42.0">
+          <Inputs>
+            <Input default="" key="1" name="Original String"/>
+            <Input default="" key="2" name="Fix to Length"/>
+            <Input default="" key="3" name="Char to Append"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="0" fromKey="1" fromNamePath="Editor/Name" fromType="function" toFunction="1" toKey="1" toNamePath="String Remove/Original String" toType="function"/>
+        <Mapping fromFunction="0" fromKey="2" fromNamePath="Editor/Phone" fromType="function" toFunction="2" toKey="1" toNamePath="Left Character Trim/Original String" toType="function"/>
+        <Mapping fromFunction="1" fromKey="2" fromNamePath="String Remove/Result " fromType="function" toFunction="3" toKey="1" toNamePath="String Append/Original String" toType="function"/>
+        <Mapping fromFunction="2" fromKey="3" fromNamePath="Left Character Trim/Result " fromType="function" toFunction="3" toKey="3" toNamePath="String Append/Char to Append" toType="function"/>
+        <Mapping fromFunction="3" fromKey="2" fromNamePath="String Append/Result " fromType="function" toFunction="0" toKey="1" toNamePath="Editor/ID" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

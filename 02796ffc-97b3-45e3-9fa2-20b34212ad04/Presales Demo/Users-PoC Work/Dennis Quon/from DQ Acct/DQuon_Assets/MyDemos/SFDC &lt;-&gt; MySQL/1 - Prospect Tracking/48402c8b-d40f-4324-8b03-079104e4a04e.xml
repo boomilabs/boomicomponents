@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/MyDemos/SFDC &lt;-&gt; MySQL/1 - Prospect Tracking" componentId="48402c8b-d40f-4324-8b03-079104e4a04e" version="1" name="demo.eric.chan@gmail.com" type="connector-settings" subType="salesforce" createdDate="2019-04-12T20:36:16Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:36:16Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="1 - Prospect Tracking" folderId="RjoyNTA4NDMx" copiedFromComponentId="18bbef4b-ac03-4274-9f4f-85d3fec0cb8c" copiedFromComponentVersion="1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//SalesforceSettings/AuthSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <SalesforceSettings xmlns="" maxActiveConnections="10" url="https://login.salesforce.com/services/Soap/u/36.0" version="vx">
+      <AuthSettings password="ad037cff5e5e3eef8c6e9431a71125a928a7751b655b34dc53c693f528fa60811c5483a730b83dbeb7266f5eabe8d9aed410807edd4b1dcc6ba6af58dc9750aa" user="demo.eric.chan@gmail.com"/>
+    </SalesforceSettings>
+  </bns:object>
+</bns:Component>

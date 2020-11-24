@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/MyDemos/SFDC &lt;-&gt; MySQL/1 - Prospect Tracking" componentId="ad6df466-20e8-424c-9904-a46b3ff27544" version="1" name="MySQL-Local-Docker" type="connector-settings" subType="database" createdDate="2019-04-12T20:37:10Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:37:10Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="1 - Prospect Tracking" folderId="RjoyNTA4NDMx" copiedFromComponentId="41901c8d-2760-4354-976c-7e9c89121e5e" copiedFromComponentVersion="1">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//DatabaseConnectionSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <DatabaseConnectionSettings xmlns="" additional="" className="com.mysql.jdbc.Driver" dbname="orgtrack" driverId="mysql" host="0.tcp.ngrok.io" isPoolEnabled="false" password="667a2d6d8b23b1212871e7e80aa24a6cca6a20c41a1ffcbde612e0d598daaed92bab5c4914af97d729d124a6868c5d1fe0cb8043ec091cfa4fcab4091eddbce7" port="11997" urlFormat="jdbc:mysql://{0}:{1}/{2}{3}" username="demo">
+      <WriteOptions sqlFilePath="" writeSQLToFile="false"/>
+      <AdapterPoolInfo exhaustedAction="1" maxActive="-1" maxIdle="-1" maxIdleTime="0" maxWait="0" minIdle="0" numberOfTests="0" testIdle="false" testOnBorrow="false" testOnReturn="false" timeBetweenRuns="0" validationQuery=""/>
+    </DatabaseConnectionSettings>
+  </bns:object>
+</bns:Component>

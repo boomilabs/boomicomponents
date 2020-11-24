@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/MyDemos/SFDC &lt;-&gt; MySQL/1 - Prospect Tracking" componentId="c3a8f4e1-5d92-432b-9eef-87ae21cbcbfb" version="1" name="Customer Insert" type="profile.db" createdDate="2019-04-12T20:39:07Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:39:07Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="1 - Prospect Tracking" folderId="RjoyNTA4NDMx" copiedFromComponentId="966c3921-0712-4dbd-be17-4490b0d4ff2f" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DatabaseProfile xmlns="" version="2">
+      <ProfileProperties>
+        <DatabaseGeneralInfo executionType="dbwrite"/>
+      </ProfileProperties>
+      <DataElements>
+        <DBStatement isNode="true" key="2" name="Statement" statementType="dynamicinsert" storedProcedure="" tableName="customer">
+          <DBFields isNode="true" key="3" name="Fields">
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="5" mandatory="false" name="BILL_TO_ADDR1">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="6" mandatory="false" name="BILL_TO_ADDR2">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="7" mandatory="false" name="BILL_TO_ADDR3">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="8" mandatory="false" name="BILL_TO_CITY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="9" mandatory="false" name="BILL_TO_CONTACT">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="10" mandatory="false" name="BILL_TO_COUNTRY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="11" mandatory="false" name="BILL_TO_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="12" mandatory="false" name="BILL_TO_NAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="13" mandatory="false" name="BILL_TO_PHONE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="14" mandatory="false" name="BILL_TO_STATE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="15" mandatory="false" name="BILL_TO_ZIP">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="16" mandatory="false" name="COMMENTS">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="17" mandatory="false" name="COMPANY_KEY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="datetime" enforceUnique="false" isMappable="true" isNode="true" key="18" mandatory="false" name="CREATE_DATE">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="19" mandatory="false" name="CUSTOMER_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="20" mandatory="false" name="CUST_REF">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="21" mandatory="false" name="DEPARTMENT">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="22" mandatory="false" name="FAX_NUM">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="23" mandatory="false" name="INDUSTRY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="datetime" enforceUnique="false" isMappable="true" isNode="true" key="24" mandatory="false" name="MODIFIED_DATE">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="25" mandatory="false" name="NAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="number" enforceUnique="false" isMappable="true" isNode="true" key="26" mandatory="false" name="NOTIFY_STATUS">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="27" mandatory="false" name="OWNER_NAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="28" mandatory="false" name="PHONE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="number" enforceUnique="false" isMappable="true" isNode="true" key="29" mandatory="false" name="SHIPPING_TERMS">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="30" mandatory="false" name="SHIP_TO_ADDR1">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="31" mandatory="false" name="SHIP_TO_ADDR2">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="32" mandatory="false" name="SHIP_TO_ADDR3">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="33" mandatory="false" name="SHIP_TO_CITY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="34" mandatory="false" name="SHIP_TO_CONTACT">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="35" mandatory="false" name="SHIP_TO_COUNTRY">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="36" mandatory="false" name="SHIP_TO_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="37" mandatory="false" name="SHIP_TO_NAME">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="38" mandatory="false" name="SHIP_TO_PHONE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="39" mandatory="false" name="SHIP_TO_STATE">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="40" mandatory="false" name="SHIP_TO_ZIP">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="number" enforceUnique="false" isMappable="true" isNode="true" key="41" mandatory="false" name="SHIP_VIA">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="datetime" enforceUnique="false" isMappable="true" isNode="true" key="48" mandatory="false" name="SLA_Expire_DAte">
+              <DataFormat>
+                <ProfileDateFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="number" enforceUnique="false" isMappable="true" isNode="true" key="42" mandatory="false" name="STATUS">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="43" mandatory="false" name="STORE_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="44" mandatory="false" name="URL">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="45" mandatory="false" name="USER_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" key="46" mandatory="false" name="VENDOR_ID">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </DatabaseElement>
+            <DatabaseElement dataType="number" enforceUnique="false" isMappable="true" isNode="true" key="47" mandatory="false" name="WIN_FLAG">
+              <DataFormat>
+                <ProfileNumberFormat/>
+              </DataFormat>
+            </DatabaseElement>
+          </DBFields>
+          <sql>INSERT INTO TABLE (VALUES, ?,?,?</sql>
+        </DBStatement>
+      </DataElements>
+    </DatabaseProfile>
+  </bns:object>
+</bns:Component>

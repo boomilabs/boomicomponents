@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/MyDemos/SFDC &lt;-&gt; MySQL/1 - Prospect Tracking" componentId="02796ffc-97b3-45e3-9fa2-20b34212ad04" version="1" name="Prospect Tracking" type="process" createdDate="2019-04-12T20:35:48Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:35:48Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="1 - Prospect Tracking" folderId="RjoyNTA4NDMx" copiedFromComponentId="29e79dd2-0723-4c2d-a7cd-bf934097a6a9" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="16.0" y="112.0">
+          <configuration>
+            <connectoraction actionType="Get" connectionId="48402c8b-d40f-4324-8b03-079104e4a04e" connectorType="salesforce" hideSettings="false" operationId="b2f50808-bd3f-4b29-93e2-c37963f6645f" parameter-profile="EMBEDDED|salesforceparameterchooser|b2f50808-bd3f-4b29-93e2-c37963f6645f">
+              <parameters>
+                <parametervalue elementToSetId="1" elementToSetName="ModifyDate" key="0" valueType="date">
+                  <dateparameter dateparametertype="relative" datetimemask="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'">
+                    <datedelta sign="minus" unit="days" value="1"/>
+                  </dateparameter>
+                </parametervalue>
+                <parametervalue elementToSetId="2" elementToSetName="Type" key="1" valueType="static">
+                  <staticparameter staticproperty="Prospect"/>
+                </parametervalue>
+              </parameters>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape4" x="128.0" y="121.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="50.0" y="127.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="50.0" y="127.0"/>
+              <linesegment length="47" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="50.0" y="127.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="97.0" y="127.0"/>
+              <linesegment length="31" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="97.0" y="127.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape2" shapetype="connectoraction" userlabel="" x="448.0" y="112.0">
+          <configuration>
+            <connectoraction actionType="Send" connectionId="ad6df466-20e8-424c-9904-a46b3ff27544" connectorType="database" hideSettings="false" operationId="fa7c33bc-b9d4-445f-b1b4-0cea557e7d4f" parameter-profile="EMBEDDED|databaseparameterchooser|c3a8f4e1-5d92-432b-9eef-87ae21cbcbfb|fa7c33bc-b9d4-445f-b1b4-0cea557e7d4f">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape7" x="592.0" y="121.0">
+              <linesegment length="0" name="shape2.dragpoint1.lineseg1" orient="horizontal" x="482.0" y="127.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg2" orient="vertical" x="482.0" y="127.0"/>
+              <linesegment length="63" name="shape2.dragpoint1.lineseg3" orient="horizontal" x="482.0" y="127.0"/>
+              <linesegment length="0" name="shape2.dragpoint1.lineseg4" orient="vertical" x="545.0" y="127.0"/>
+              <linesegment length="47" name="shape2.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="127.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape3" shapetype="map" userlabel="" x="288.0" y="112.0">
+          <configuration>
+            <map mapId="30468988-cfe8-4f9e-a60a-8bb2e775d13a"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape2" x="432.0" y="121.0">
+              <linesegment length="0" name="shape3.dragpoint1.lineseg1" orient="horizontal" x="322.0" y="127.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg2" orient="vertical" x="322.0" y="127.0"/>
+              <linesegment length="63" name="shape3.dragpoint1.lineseg3" orient="horizontal" x="322.0" y="127.0"/>
+              <linesegment length="0" name="shape3.dragpoint1.lineseg4" orient="vertical" x="385.0" y="127.0"/>
+              <linesegment length="47" name="shape3.dragpoint1.lineseg5" orient="horizontal" x="385.0" y="127.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="decision_icon" name="shape4" shapetype="decision" userlabel="New Account?" x="144.0" y="112.0">
+          <configuration>
+            <decision comparison="equals" name="New Account?">
+              <decisionvalue valueType="sql">
+                <sqlparameter cachevalues="true" connection="ad6df466-20e8-424c-9904-a46b3ff27544" outputdatatype="1" outputpos="1">
+                  <sqltoexecute>SELECT COUNT(*) FROM orgtrack.customer
+WHERE name= ? 
+AND user_id = 'Harvey'</sqltoexecute>
+                  <parameters>
+                    <parametervalue key="0" valueType="profile">
+                      <profileelement elementId="5" elementName="Name (Account/Name)" profileId="f8079716-4156-4414-bb0a-3e6cae703179" profileType="profile.xml"/>
+                    </parametervalue>
+                  </parameters>
+                </sqlparameter>
+              </decisionvalue>
+              <decisionvalue valueType="static">
+                <staticparameter staticproperty="0"/>
+              </decisionvalue>
+            </decision>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="true" name="shape4.dragpoint1" text="True" toShape="shape3" x="272.0" y="121.0">
+              <linesegment length="0" name="shape4.dragpoint1.lineseg1" orient="horizontal" x="178.0" y="127.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg2" orient="vertical" x="178.0" y="127.0"/>
+              <linesegment length="55" name="shape4.dragpoint1.lineseg3" orient="horizontal" x="178.0" y="127.0"/>
+              <linesegment length="0" name="shape4.dragpoint1.lineseg4" orient="vertical" x="233.0" y="127.0"/>
+              <linesegment label="True" length="39" name="shape4.dragpoint1.lineseg5" orient="horizontal" x="233.0" y="127.0"/>
+            </dragpoint>
+            <dragpoint identifier="false" name="shape4.dragpoint2" text="False" toShape="shape5" x="304.0" y="217.0">
+              <linesegment length="0" name="shape4.dragpoint2.lineseg1" orient="horizontal" x="178.0" y="127.0"/>
+              <linesegment length="0" name="shape4.dragpoint2.lineseg2" orient="vertical" x="178.0" y="127.0"/>
+              <linesegment length="71" name="shape4.dragpoint2.lineseg3" orient="horizontal" x="178.0" y="127.0"/>
+              <linesegment length="96" name="shape4.dragpoint2.lineseg4" orient="vertical" x="249.0" y="127.0"/>
+              <linesegment label="False" length="55" name="shape4.dragpoint2.lineseg5" orient="horizontal" x="249.0" y="223.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape5" shapetype="stop" x="320.0" y="208.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="stop_icon" name="shape7" shapetype="stop" x="608.0" y="112.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides>
+    <Overrides xmlns="" allowScheduleOverride="false">
+      <Connections>
+        <ConnectionOverride id="48402c8b-d40f-4324-8b03-079104e4a04e">
+          <field id="url" label="URL" overrideable="false" xpath="SalesforceSettings/@url"/>
+          <field id="user" label="User" overrideable="false" xpath="SalesforceSettings/AuthSettings/@user"/>
+          <field id="password" label="Password" overrideable="false" xpath="SalesforceSettings/AuthSettings/@password"/>
+          <field id="maxActiveConnections" label="Maximum Concurrent Connections" overrideable="false" xpath="SalesforceSettings/@maxActiveConnections"/>
+        </ConnectionOverride>
+        <ConnectionOverride id="ad6df466-20e8-424c-9904-a46b3ff27544">
+          <field id="driverId" label="Driver Type" overrideable="false" xpath="DatabaseConnectionSettings/@driverId"/>
+          <field id="username" label="User" overrideable="false" xpath="DatabaseConnectionSettings/@username"/>
+          <field id="password" label="Password" overrideable="false" xpath="DatabaseConnectionSettings/@password"/>
+          <field id="host" label="Host" overrideable="true" xpath="DatabaseConnectionSettings/@host"/>
+          <field id="port" label="Port" overrideable="true" xpath="DatabaseConnectionSettings/@port"/>
+          <field id="dbname" label="DB Name" overrideable="false" xpath="DatabaseConnectionSettings/@dbname"/>
+          <field id="additional" label="Additional Options" overrideable="false" xpath="DatabaseConnectionSettings/@additional"/>
+          <field id="className" label="Class Name" overrideable="false" xpath="DatabaseConnectionSettings/@className"/>
+          <field id="urlFormat" label="Connection URL" overrideable="false" xpath="DatabaseConnectionSettings/@urlFormat"/>
+          <field id="writeSQLToFile" label="Write SQL To File?" overrideable="false" xpath="DatabaseConnectionSettings/WriteOptions/@writeSQLToFile"/>
+          <field id="sqlFilePath" label="SQL File Path" overrideable="false" xpath="DatabaseConnectionSettings/WriteOptions/@sqlFilePath"/>
+          <field id="isPoolEnabled" label="Enable Pooling" overrideable="false" xpath="DatabaseConnectionSettings/@isPoolEnabled"/>
+          <field id="maxActive" label="Maximum Connections (0 for unlimited)" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@maxActive"/>
+          <field id="minIdle" label="Minimum Connections" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@minIdle"/>
+          <field id="maxIdleTime" label="Maximum Idle Time (sec)" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@maxIdleTime"/>
+          <field id="exhaustedAction" label="When Exhausted Action" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@exhaustedAction"/>
+          <field id="maxWait" label="Maximum Wait Time (sec)" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@maxWait"/>
+          <field id="testOnBorrow" label="Test Connection When Borrowing From Pool" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@testOnBorrow"/>
+          <field id="testOnReturn" label="Test Connection When Returning To Pool" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@testOnReturn"/>
+          <field id="testIdle" label="Test Idle Connections" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@testIdle"/>
+          <field id="maxIdle" label="Validation Query" overrideable="false" xpath="DatabaseConnectionSettings/AdapterPoolInfo/@validationQuery"/>
+        </ConnectionOverride>
+      </Connections>
+      <PartnerOverrides/>
+      <Properties/>
+      <Extensions>
+        <ObjectDefinitions>
+          <objectDefinition connectionId="48402c8b-d40f-4324-8b03-079104e4a04e" connectorType="salesforce" id="48402c8b-d40f-4324-8b03-079104e4a04eAccount" name="Salesforce Account (demo.eric.chan@gmail.com)" objectType="Account" userDefined="false">
+            <profiles>
+              <profile id="f8079716-4156-4414-bb0a-3e6cae703179" name="SF_Account_QUERY_Response" operationId="b2f50808-bd3f-4b29-93e2-c37963f6645f" operationProfilePath="//SalesforceGetAction/@responseProfile" operationProfileRole="output" operationType="query" type="profile.xml"/>
+            </profiles>
+          </objectDefinition>
+          <unusedProfiles/>
+        </ObjectDefinitions>
+        <DataMaps>
+          <unusedMaps/>
+        </DataMaps>
+      </Extensions>
+      <CrossReferenceOverrides/>
+      <PGPOverrides/>
+      <DefinedProcessPropertyOverrides/>
+    </Overrides>
+  </bns:processOverrides>
+</bns:Component>

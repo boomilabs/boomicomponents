@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Dennis Quon/from DQ Acct/DQuon_Assets/MyDemos/SFDC &lt;-&gt; MySQL/1 - Prospect Tracking" componentId="fa7c33bc-b9d4-445f-b1b4-0cea557e7d4f" version="1" name="Insert Customer" type="connector-action" subType="database" createdDate="2019-04-12T20:38:40Z" createdBy="eric_barner@dell.com" modifiedDate="2019-04-12T20:38:40Z" modifiedBy="eric_barner@dell.com" deleted="false" currentVersion="true" folderName="1 - Prospect Tracking" folderId="RjoyNTA4NDMx" copiedFromComponentId="31c06ece-576b-4038-ba71-25b0e884e4b7" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <DatabaseSendAction batchCount="0" commitOption="commitprofile">
+          <WriteProfile profileId="c3a8f4e1-5d92-432b-9eef-87ae21cbcbfb"/>
+        </DatabaseSendAction>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>
