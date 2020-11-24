@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/#dump" componentId="28e7614f-c93e-42bf-b963-a4be17a30d25" version="6" name="DB to SF Account Update" type="transform.map" createdDate="2020-06-11T19:01:39Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-11-23T11:51:28Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="#dump" folderId="RjozMzQ1NDQ2">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="bff52770-1dac-4ea5-a380-63acce2d3ea2" toProfile="b94048e1-9a73-46c7-8a25-ab1d9b23e361">
+      <Mappings>
+        <Mapping fromKey="6" fromKeyPath="*[@key='2']/*[@key='3']/*[@key='6']" fromNamePath="Statement/Fields/NAME" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+        <Mapping fromKey="7" fromKeyPath="*[@key='2']/*[@key='3']/*[@key='7']" fromNamePath="Statement/Fields/PHONE" fromType="profile" toFunction="1" toKey="2" toType="function"/>
+        <Mapping fromFunction="1" fromKey="3" fromType="function" toKey="2" toKeyPath="*[@key='1']/*[@key='2']" toNamePath="Account__c/Id" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Connector" key="1" name="Connector Call" position="1" sumEnabled="false" type="ConnectorCall" x="10.0" y="10.0">
+          <Inputs>
+            <Input default="" key="1" name="Name="/>
+            <Input default="" key="2" name="Phone="/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Id (Account__c/Id)"/>
+          </Outputs>
+          <Configuration>
+            <ConnectorCall actionType="Get" connectionId="f30e8ab8-5a1c-44d0-b7fc-1d80ba716dd4" connectorType="salesforce" enforceSingleResult="true" operationId="19c70f02-cd0f-4b5f-aaeb-682fe0e882b8" output-profile="6e22e02a-359b-487b-91f4-fd0f543ced3f" parameter-profile="EMBEDDED|salesforceparameterchooser|19c70f02-cd0f-4b5f-aaeb-682fe0e882b8">
+              <Input index="1" key="2" name="Name="/>
+              <Input index="2" key="3" name="Phone="/>
+              <Output index="3" key="2" name="Id (Account__c/Id)"/>
+            </ConnectorCall>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults>
+        <Default toKey="29" value="Gold"/>
+      </Defaults>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>
