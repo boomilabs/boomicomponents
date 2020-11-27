@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="12f8aa10-ef32-4d2b-8d7c-6183ae4b36ba" version="1" name="UtilPro Data FF" type="profile.flatfile" createdDate="2019-11-19T19:13:33Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:33Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <FlatFileProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <GeneralInfo fileType="delimited" useColumnHeaders="false"/>
+        <Options>
+          <DataOptions/>
+          <DelimitedOptions fileDelimiter="bardelimited" removeEscape="false" textQualifier="textqualifierdouble"/>
+        </Options>
+      </ProfileProperties>
+      <DataElements>
+        <FlatFileRecord detectFormat="numberofcolumns" isNode="true" key="1" name="Record">
+          <FlatFileElements isNode="true" key="2" name="Elements">
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="20" mandatory="false" maxLength="0" minLength="0" name="EE Number" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="21" mandatory="false" maxLength="0" minLength="0" name="First" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="22" mandatory="false" maxLength="0" minLength="0" name="Last" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="23" mandatory="false" maxLength="0" minLength="0" name="Email" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="24" mandatory="false" maxLength="0" minLength="0" name="Current Job" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="25" mandatory="false" maxLength="0" minLength="0" name="Department" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" identityValue="" isMappable="true" isNode="true" justification="left" key="39" mandatory="false" maxLength="0" minLength="0" name="Manager Name" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="26" mandatory="false" maxLength="0" minLength="0" name="Location" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="27" mandatory="false" maxLength="0" minLength="0" name="Supervisor" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="28" mandatory="false" maxLength="0" minLength="0" name="Cost Center" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="29" mandatory="false" maxLength="0" minLength="0" name="Last Hire" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="30" mandatory="false" maxLength="0" minLength="0" name="Suffix" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="31" mandatory="false" maxLength="0" minLength="0" name="Middle Initial" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="32" mandatory="false" maxLength="0" minLength="0" name="Company" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="33" mandatory="false" maxLength="0" minLength="0" name="Business Unit" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="34" mandatory="false" maxLength="0" minLength="0" name="Dept Head" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="35" mandatory="false" maxLength="0" minLength="0" name="Shift" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+            <FlatFileElement dataType="character" enforceUnique="false" isMappable="true" isNode="true" justification="left" key="36" mandatory="false" maxLength="0" minLength="0" name="Status" useToIdentifyFormat="false" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </FlatFileElement>
+          </FlatFileElements>
+        </FlatFileRecord>
+      </DataElements>
+    </FlatFileProfile>
+  </bns:object>
+</bns:Component>

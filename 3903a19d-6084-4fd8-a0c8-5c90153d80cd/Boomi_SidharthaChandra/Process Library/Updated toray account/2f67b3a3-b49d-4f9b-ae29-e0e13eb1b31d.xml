@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="2f67b3a3-b49d-4f9b-ae29-e0e13eb1b31d" version="1" name="Query Person Next 1000" type="connector-action" subType="ultipro" createdDate="2019-11-19T19:13:35Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:35Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="true">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="Person" objectTypeName="Person" operationType="QUERY" requestProfileType="xml" responseProfile="c1d6178b-59ec-4879-99a5-147a3280ab2f" responseProfileType="xml">
+          <field id="skip" type="integer" value="1000"/>
+          <field id="top" type="integer" value="1000"/>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Person">
+                  <FieldList>
+                    <ConnectorField filterable="true" name="PersonId" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="FirstName" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="LastName" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="MiddleName" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="FormerLastName" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="PreferredFirstName" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Prefix" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="PrefixDescription" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Suffix" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="SuffixDescription" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Ssn" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Ethnicity" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="EthnicityDescription" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="DateOfBirth" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="DeceasedDate" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="EmployeeId" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Gender" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="EmployeeDetail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="EmployeeDetail/EmployeeId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="PrimaryAddress" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="PrimaryAddress/AddressId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="OtherAddresses" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="OtherAddresses/AddressId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Phones" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Phones/PhoneId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Phones/IsPrivate" selectable="false" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="false" name="Skills" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Skills/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Educations" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Educations/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Educations/IsGraduated" selectable="false" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="true" name="Educations/IsHighestLevel" selectable="false" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="false" name="Licenses" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Licenses/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Awards" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Awards/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Awards/PersonId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="PreviousEmployments" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="PreviousEmployments/RecordId" selectable="false" selected="false" sortable="true" type="xs:int"/>
+                    <ConnectorField filterable="true" name="PreviousEmployments/PersonId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="PersonConfigurableFields" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="PersonConfigurableFields/Id" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="PersonConfigurableFields/PersonId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                  </FieldList>
+                  <Filter>
+                    <ConnectorBaseFilter/>
+                  </Filter>
+                  <Sorts/>
+                </ConnectorObject>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching docCache="4a214ca7-4b6d-46ad-97b3-00db96fbd24b"/>
+    </Operation>
+  </bns:object>
+</bns:Component>

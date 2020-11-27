@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="212af9c2-4d1e-4528-a567-87ad2e08f563" version="1" name="Query Employment 2nd Next 1000" type="connector-action" subType="ultipro" createdDate="2019-11-19T19:13:35Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:35Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="true">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="Employment" objectTypeName="Employment" operationType="QUERY" requestProfileType="xml" responseProfile="712145ba-2907-49c1-b769-1087517d134c" responseProfileType="xml">
+          <field id="skip" type="integer" value="2000"/>
+          <field id="top" type="integer" value="1000"/>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Employment">
+                  <FieldList>
+                    <ConnectorField filterable="true" name="CompanyCode" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="EmployeeId" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="AlternateTitle" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Annual" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="ArrearsSuspendedFrom" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="ArrearsSuspendedTo" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="BeneSeniority" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="DateInJob" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="EarlyRetirement" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField01" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField02" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField03" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField04" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField05" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField06" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField07" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField08" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField09" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField10" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField11" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField12" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField13" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField14" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField15" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField16" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField17" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField18" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField19" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField20" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField21" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField22" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField23" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField24" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField25" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField26" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField27" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField28" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherCompanyField29" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="EmployeeNumber" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="EmployeeType" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="EmploymentStatus" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="FullOrPartTime" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="HcsoEndDate" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="HcsoStartDate" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="Hourly" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="IsAgricultural" selectable="true" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="true" name="IsAutoPaid" selectable="true" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="true" name="IsDirectLabor" selectable="true" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="true" name="IsHcsoNotCovered" selectable="true" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="true" name="IsSeasonal" selectable="true" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="true" name="IsYouthTraining" selectable="true" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="true" name="JobCode" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="JobDescription" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="JobGroup" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="JobStart" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="LastHire" selectable="true" selected="true" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="LastPerfReview" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="LastSalaryReview" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="LeaveReason" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="LocalUnion" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="LocationCode" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="LocationCodeDescription" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="NationalUnion" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="NextPerfReview" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="NextSalaryReview" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OrgLevel1" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OrgLevel1Description" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OrgLevel2" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OrgLevel2Description" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OrgLevel3" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OrgLevel3Description" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OrgLevel4" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OrgLevel4Description" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OriginalHire" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherRate1" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherRate2" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherRate3" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherRate4" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="PayFrequency" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="PayGroup" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="PaySuspendedFrom" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="PaySuspendedTo" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="Period" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Project" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="ReasonCode" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="RegularRetirement" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="RoeIssueReason" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="ScheduledHours" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="Seniority" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="ShiftCode" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="ShiftGroup" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="StatusAnticipatedEnd" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="StatusStartDate" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="SupervisorEmployeeNumber" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="SupervisorFirstName" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="SupervisorId" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="SupervisorLastName" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="TerminationDate" selectable="true" selected="true" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="TerminationReasonCode" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="TimeClock" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Weekly" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="WorkPhoneCountryCode" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="WorkPhoneCountryName" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="WorkPhoneExt" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="WorkPhoneNumber" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="EmployeeDetail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="EmployeeDetail/EmployeeId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="BusinessRuleJobDetail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="BusinessRuleJobDetail/JobCode" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="BusinessRuleLocationDetail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="BusinessRuleLocationDetail/LocationCode" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="BusinessRuleOrgLevel1Detail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="BusinessRuleOrgLevel1Detail/OrgLvl1Code" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="BusinessRuleOrgLevel2Detail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="BusinessRuleOrgLevel2Detail/OrgLvl2Code" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="BusinessRuleOrgLevel3Detail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="BusinessRuleOrgLevel3Detail/OrgLvl3Code" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="BusinessRuleOrgLevel4Detail" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="BusinessRuleOrgLevel4Detail/OrgLvl4Code" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Allocations" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Allocations/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="CompanyProperties" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="CompanyProperties/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="ConfigurableFields" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="ConfigurableFields/Id" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Deductions" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Deductions/DeductionId" selectable="false" selected="false" sortable="true" type="xs:int"/>
+                    <ConnectorField filterable="false" name="DirectDeposits" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="DirectDeposits/Sequence" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="DirectDeposits/EmployeeId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="DirectDeposits/CompanyCode" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="PtoAccruals" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="PtoAccruals/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="PtoRequests" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="PtoRequests/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Taxes" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Taxes/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Taxes/CurrentAnnualizedRegularTaxWages" selectable="false" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="Taxes/Exemptions" selectable="false" selected="false" sortable="true" type="xs:int"/>
+                    <ConnectorField filterable="true" name="Taxes/YtdPeriodsPaid" selectable="false" selected="false" sortable="true" type="xs:int"/>
+                    <ConnectorField filterable="true" name="Taxes/T626OEDeductionAmt" selectable="false" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="Taxes/T626OETaxCreditAmt" selectable="false" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="Taxes/YtdExtraTaxDollarsTaken" selectable="false" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="Taxes/YtdResidentActualTaxCredit" selectable="false" selected="false" sortable="true" type="xs:decimal"/>
+                  </FieldList>
+                  <Filter>
+                    <ConnectorBaseFilter/>
+                  </Filter>
+                  <Sorts/>
+                </ConnectorObject>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

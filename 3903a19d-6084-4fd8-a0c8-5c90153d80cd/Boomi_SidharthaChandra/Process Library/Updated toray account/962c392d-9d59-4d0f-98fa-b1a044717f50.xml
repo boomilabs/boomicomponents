@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="962c392d-9d59-4d0f-98fa-b1a044717f50" version="1" name="UltiPro Employee QUERY Response 2" type="profile.xml" createdDate="2019-11-19T19:13:36Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:36Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <XMLProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8" implicitElementOrdering="true" parseRespectMaxOccurs="true" respectMinOccurs="false" respectMinOccursAlways="false"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" key="1" maxOccurs="1" minOccurs="1" name="Employee" typeExpanded="true" typeKey="-1" typeNamespace="UltimateSoftware.Foundation.Services.Api.SelfService.Models" useNamespace="2">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <XMLNSDeclList>
+            <XMLNSDeclaration defaultNamespace="false" isMappable="false" isNode="true" key="2"/>
+          </XMLNSDeclList>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="47" loopingOption="unique" maxOccurs="1" minOccurs="1" name="EmployeeId" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="49" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField01" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="51" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField02" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="53" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField03" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="55" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField04" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="57" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField05" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="59" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField06" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="61" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField07" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="63" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField08" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="65" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField09" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="67" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField10" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="69" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField11" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="71" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField12" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="73" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField13" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="75" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherPersonalField14" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="77" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Email" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="79" loopingOption="unique" maxOccurs="1" minOccurs="0" name="AlternateEmail" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="81" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField01" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="83" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField02" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="85" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField03" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="87" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField04" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="89" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField05" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="91" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField06" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="93" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField07" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="95" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField08" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="97" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField09" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="99" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField10" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="101" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField11" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="103" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField12" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="105" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField13" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss'Z'"/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="107" loopingOption="unique" maxOccurs="1" minOccurs="0" name="OtherInternationalField14" typeKey="-1" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="109" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Personal" typeExpanded="true" typeKey="38" typeName="Link" typeNamespace="UltimateSoftware.Foundation.Services.Api.SelfService.Models.extension" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="119" name="relation" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="121" name="collection" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="111" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Contacts" typeExpanded="true" typeKey="38" typeName="Link" typeNamespace="UltimateSoftware.Foundation.Services.Api.SelfService.Models.extension" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="123" name="relation" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="125" name="collection" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="113" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="EmploymentDetails" typeExpanded="true" typeKey="38" typeName="Link" typeNamespace="UltimateSoftware.Foundation.Services.Api.SelfService.Models.extension" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="127" name="relation" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="129" name="collection" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="115" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Earnings" typeExpanded="true" typeKey="38" typeName="Link" typeNamespace="UltimateSoftware.Foundation.Services.Api.SelfService.Models.extension" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="131" name="relation" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="133" name="collection" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="117" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="ConfigurableFields" typeExpanded="true" typeKey="38" typeName="Link" typeNamespace="UltimateSoftware.Foundation.Services.Api.SelfService.Models.extension" useNamespace="2" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="135" name="relation" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="137" name="collection" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces>
+        <XMLNamespace key="-1" name="Empty Namespace" prefix="ns3">
+          <Types/>
+        </XMLNamespace>
+        <XMLNamespace key="2" name="UltimateSoftware.Foundation.Services.Api.SelfService.Models" prefix="ns1">
+          <Types/>
+        </XMLNamespace>
+        <XMLNamespace key="37" name="UltimateSoftware.Foundation.Services.Api.SelfService.Models.extension" prefix="ns2">
+          <Types>
+            <Type anonymous="false" declarationClass="cType" typeKey="38">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="39" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Link" typeExpanded="false" typeKey="38" typeName="Link" typeNamespace="UltimateSoftware.Foundation.Services.Api.SelfService.Models.extension" useNamespace="2" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="40" name="relation" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="41" name="collection" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+          </Types>
+        </XMLNamespace>
+      </Namespaces>
+      <tagLists/>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>

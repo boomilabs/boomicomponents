@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="3903a19d-6084-4fd8-a0c8-5c90153d80cd" version="1" name="Get UltiPro Records" type="process" createdDate="2019-11-19T19:13:35Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:35Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <passthroughaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape23" x="224.0" y="57.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="82.0" y="63.0"/>
+              <linesegment length="79" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="82.0" y="63.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="161.0" y="63.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="161.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape16" shapetype="connectoraction" userlabel="" x="816.0" y="1328.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="0d495900-e299-46b2-bc10-5f977162ca0f" parameter-profile="EMBEDDED|genericparameterchooser|0d495900-e299-46b2-bc10-5f977162ca0f">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape16.dragpoint1" toShape="shape46" x="992.0" y="1337.0">
+              <linesegment length="0" name="shape16.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="1343.0"/>
+              <linesegment length="0" name="shape16.dragpoint1.lineseg2" orient="vertical" x="850.0" y="1343.0"/>
+              <linesegment length="79" name="shape16.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="1343.0"/>
+              <linesegment length="0" name="shape16.dragpoint1.lineseg4" orient="vertical" x="929.0" y="1343.0"/>
+              <linesegment length="63" name="shape16.dragpoint1.lineseg5" orient="horizontal" x="929.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape19" shapetype="connectoraction" userlabel="" x="624.0" y="48.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="d1e6f55e-e29e-4df7-8900-dbf9b73ded80" parameter-profile="EMBEDDED|genericparameterchooser|d1e6f55e-e29e-4df7-8900-dbf9b73ded80">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape19.dragpoint1" toShape="shape43" x="800.0" y="57.0">
+              <linesegment length="0" name="shape19.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape19.dragpoint1.lineseg2" orient="vertical" x="658.0" y="63.0"/>
+              <linesegment length="79" name="shape19.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="63.0"/>
+              <linesegment length="0" name="shape19.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape19.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape21" shapetype="connectoraction" userlabel="" x="624.0" y="688.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="6159996d-7c40-4713-a3ff-b9964dc9cb62" parameter-profile="EMBEDDED|genericparameterchooser|6159996d-7c40-4713-a3ff-b9964dc9cb62">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape21.dragpoint1" toShape="shape44" x="800.0" y="697.0">
+              <linesegment length="0" name="shape21.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="703.0"/>
+              <linesegment length="0" name="shape21.dragpoint1.lineseg2" orient="vertical" x="658.0" y="703.0"/>
+              <linesegment length="79" name="shape21.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="703.0"/>
+              <linesegment length="0" name="shape21.dragpoint1.lineseg4" orient="vertical" x="737.0" y="703.0"/>
+              <linesegment length="63" name="shape21.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="703.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape23" shapetype="branch" userlabel="" x="240.0" y="48.0">
+          <configuration>
+            <branch numBranches="3"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape23.dragpoint1" text="1" toShape="shape53" x="416.0" y="57.0">
+              <linesegment length="0" name="shape23.dragpoint1.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint1.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape23.dragpoint1.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint1.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment label="1" length="63" name="shape23.dragpoint1.lineseg5" orient="horizontal" x="353.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape23.dragpoint2" text="2" toShape="shape57" x="416.0" y="697.0">
+              <linesegment length="0" name="shape23.dragpoint2.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint2.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape23.dragpoint2.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="640" name="shape23.dragpoint2.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment label="2" length="63" name="shape23.dragpoint2.lineseg5" orient="horizontal" x="353.0" y="703.0"/>
+            </dragpoint>
+            <dragpoint identifier="3" name="shape23.dragpoint3" text="3" toShape="shape47" x="416.0" y="1337.0">
+              <linesegment length="0" name="shape23.dragpoint3.lineseg1" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="0" name="shape23.dragpoint3.lineseg2" orient="vertical" x="274.0" y="63.0"/>
+              <linesegment length="79" name="shape23.dragpoint3.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
+              <linesegment length="1280" name="shape23.dragpoint3.lineseg4" orient="vertical" x="353.0" y="63.0"/>
+              <linesegment label="3" length="63" name="shape23.dragpoint3.lineseg5" orient="horizontal" x="353.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape26" shapetype="map" userlabel="" x="1200.0" y="1328.0">
+          <configuration>
+            <map mapId="e9f09b34-0c02-421e-aaf4-a426beb7fe47"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape26.dragpoint1" toShape="shape61" x="1376.0" y="1337.0">
+              <linesegment length="0" name="shape26.dragpoint1.lineseg1" orient="horizontal" x="1234.0" y="1343.0"/>
+              <linesegment length="0" name="shape26.dragpoint1.lineseg2" orient="vertical" x="1234.0" y="1343.0"/>
+              <linesegment length="79" name="shape26.dragpoint1.lineseg3" orient="horizontal" x="1234.0" y="1343.0"/>
+              <linesegment length="0" name="shape26.dragpoint1.lineseg4" orient="vertical" x="1313.0" y="1343.0"/>
+              <linesegment length="63" name="shape26.dragpoint1.lineseg5" orient="horizontal" x="1313.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="returndocuments_icon" name="shape29" shapetype="returndocuments" userlabel="" x="1584.0" y="1488.0">
+          <configuration>
+            <returndocuments label=""/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="stop_icon" name="shape43" shapetype="stop" userlabel="" x="816.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="stop_icon" name="shape44" shapetype="stop" userlabel="" x="816.0" y="688.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="businessrules_icon" name="shape46" shapetype="businessrules" userlabel="Filter Required Records" x="1008.0" y="1328.0">
+          <configuration>
+            <businessrules profileId="712145ba-2907-49c1-b769-1087517d134c" profileName="UltiPro Employment QUERY Response" profileType="profile.xml">
+              <rule key="1" name="Filter Required Records">
+                <input alias="EmployeeType (Employment/EmployeeType)" elementKey="209" id="1" name="EmployeeType (Employment/EmployeeType)" taglist="0" xsi:type="BusinessRuleField"/>
+                <input alias="TerminationDate (Employment/TerminationDate)" elementKey="325" id="2" name="TerminationDate (Employment/TerminationDate)" taglist="0" xsi:type="BusinessRuleField"/>
+                <input alias="DateLimit" id="4" xsi:type="BusinessRuleFunction">
+                  <inputMapping fromElementKey="0" fromTaglist="0" toFunctionInputKey="1"/>
+                  <inputMapping fromElementKey="0" fromTaglist="0" toFunctionInputKey="2"/>
+                  <FunctionStep cacheEnabled="false" category="ProcessProperty" key="4" name="Get Dynamic Process Property" position="-1" type="PropertyGet">
+                    <Inputs>
+                      <Input default="DateLimit" key="1" name="Property Name"/>
+                      <Input default="" key="2" name="Default Value"/>
+                    </Inputs>
+                    <Outputs>
+                      <Output key="3" name="Result"/>
+                    </Outputs>
+                    <Configuration/>
+                  </FunctionStep>
+                </input>
+                <condition operator="and" xsi:type="GroupingCondition">
+                  <nestedExpression operator="or" xsi:type="GroupingCondition">
+                    <nestedExpression operator="=" xsi:type="SimpleCondition">
+                      <leftInput deleted="false" id="1" name="EmployeeType (Employment/EmployeeType)" xsi:type="FieldConditionInput"/>
+                      <rightInput deleted="false" id="0" name="&quot;REG&quot;" value="REG" xsi:type="StaticConditionInput"/>
+                    </nestedExpression>
+                    <nestedExpression operator="=" xsi:type="SimpleCondition">
+                      <leftInput deleted="false" id="1" name="EmployeeType (Employment/EmployeeType)" xsi:type="FieldConditionInput"/>
+                      <rightInput deleted="false" id="0" name="&quot;EXP&quot;" value="EXP" xsi:type="StaticConditionInput"/>
+                    </nestedExpression>
+                    <nestedExpression operator="=" xsi:type="SimpleCondition">
+                      <leftInput deleted="false" id="1" name="EmployeeType (Employment/EmployeeType)" xsi:type="FieldConditionInput"/>
+                      <rightInput deleted="false" id="0" name="&quot;INT&quot;" value="INT" xsi:type="StaticConditionInput"/>
+                    </nestedExpression>
+                  </nestedExpression>
+                  <nestedExpression operator="or" xsi:type="GroupingCondition">
+                    <nestedExpression operator="=" xsi:type="SimpleCondition">
+                      <leftInput deleted="false" id="2" name="TerminationDate (Employment/TerminationDate)" xsi:type="FieldConditionInput"/>
+                      <rightInput deleted="false" id="0" name="&quot;&quot;" value="" xsi:type="StaticConditionInput"/>
+                    </nestedExpression>
+                  </nestedExpression>
+                </condition>
+                <errorMessage/>
+              </rule>
+            </businessrules>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="Accepted" name="shape46.dragpoint1" text="Accepted" toShape="shape26" x="1184.0" y="1337.0">
+              <linesegment length="0" name="shape46.dragpoint1.lineseg1" orient="horizontal" x="1042.0" y="1343.0"/>
+              <linesegment length="0" name="shape46.dragpoint1.lineseg2" orient="vertical" x="1042.0" y="1343.0"/>
+              <linesegment length="79" name="shape46.dragpoint1.lineseg3" orient="horizontal" x="1042.0" y="1343.0"/>
+              <linesegment length="0" name="shape46.dragpoint1.lineseg4" orient="vertical" x="1121.0" y="1343.0"/>
+              <linesegment label="Accepted" length="63" name="shape46.dragpoint1.lineseg5" orient="horizontal" x="1121.0" y="1343.0"/>
+            </dragpoint>
+            <dragpoint identifier="Rejected" name="shape46.dragpoint2" text="Rejected" toShape="shape48" x="1184.0" y="1657.0">
+              <linesegment length="0" name="shape46.dragpoint2.lineseg1" orient="horizontal" x="1042.0" y="1343.0"/>
+              <linesegment length="0" name="shape46.dragpoint2.lineseg2" orient="vertical" x="1042.0" y="1343.0"/>
+              <linesegment length="79" name="shape46.dragpoint2.lineseg3" orient="horizontal" x="1042.0" y="1343.0"/>
+              <linesegment length="320" name="shape46.dragpoint2.lineseg4" orient="vertical" x="1121.0" y="1343.0"/>
+              <linesegment label="Rejected" length="63" name="shape46.dragpoint2.lineseg5" orient="horizontal" x="1121.0" y="1663.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="documentproperties_icon" name="shape47" shapetype="documentproperties" userlabel="" x="432.0" y="1328.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isTradingPartner="false" name="Dynamic Process Property - DateLimit" persist="false" propertyId="process.DateLimit">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="date">
+                    <dateparameter dateparametertype="relative" datetimemask="yyyy-MM-dd'T'HH:mm:ssZ">
+                      <datedelta sign="minus" unit="days" value="13"/>
+                    </dateparameter>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape47.dragpoint1" toShape="shape50" x="608.0" y="1337.0">
+              <linesegment length="0" name="shape47.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="1343.0"/>
+              <linesegment length="0" name="shape47.dragpoint1.lineseg2" orient="vertical" x="466.0" y="1343.0"/>
+              <linesegment length="79" name="shape47.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="1343.0"/>
+              <linesegment length="0" name="shape47.dragpoint1.lineseg4" orient="vertical" x="545.0" y="1343.0"/>
+              <linesegment length="63" name="shape47.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape48" shapetype="stop" userlabel="" x="1200.0" y="1648.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="connectoraction_icon" name="shape49" shapetype="connectoraction" userlabel="" x="816.0" y="1808.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="9664ef0b-250b-4f32-abc7-3181b9fcd000" parameter-profile="EMBEDDED|genericparameterchooser|9664ef0b-250b-4f32-abc7-3181b9fcd000">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape49.dragpoint1" toShape="shape46" x="992.0" y="1337.0">
+              <linesegment length="0" name="shape49.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="1823.0"/>
+              <linesegment length="0" name="shape49.dragpoint1.lineseg2" orient="vertical" x="850.0" y="1823.0"/>
+              <linesegment length="79" name="shape49.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="1823.0"/>
+              <linesegment length="480" name="shape49.dragpoint1.lineseg4" orient="vertical" x="929.0" y="1343.0"/>
+              <linesegment length="63" name="shape49.dragpoint1.lineseg5" orient="horizontal" x="929.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape50" shapetype="branch" userlabel="" x="624.0" y="1328.0">
+          <configuration>
+            <branch numBranches="4"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape50.dragpoint1" text="1" toShape="shape16" x="800.0" y="1337.0">
+              <linesegment length="0" name="shape50.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="0" name="shape50.dragpoint1.lineseg2" orient="vertical" x="658.0" y="1343.0"/>
+              <linesegment length="79" name="shape50.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="0" name="shape50.dragpoint1.lineseg4" orient="vertical" x="737.0" y="1343.0"/>
+              <linesegment label="1" length="63" name="shape50.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="1343.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape50.dragpoint2" text="2" toShape="shape49" x="800.0" y="1817.0">
+              <linesegment length="0" name="shape50.dragpoint2.lineseg1" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="0" name="shape50.dragpoint2.lineseg2" orient="vertical" x="658.0" y="1343.0"/>
+              <linesegment length="79" name="shape50.dragpoint2.lineseg3" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="480" name="shape50.dragpoint2.lineseg4" orient="vertical" x="737.0" y="1343.0"/>
+              <linesegment label="2" length="63" name="shape50.dragpoint2.lineseg5" orient="horizontal" x="737.0" y="1823.0"/>
+            </dragpoint>
+            <dragpoint identifier="3" name="shape50.dragpoint3" text="3" toShape="shape51" x="800.0" y="1977.0">
+              <linesegment length="0" name="shape50.dragpoint3.lineseg1" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="0" name="shape50.dragpoint3.lineseg2" orient="vertical" x="658.0" y="1343.0"/>
+              <linesegment length="79" name="shape50.dragpoint3.lineseg3" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="640" name="shape50.dragpoint3.lineseg4" orient="vertical" x="737.0" y="1343.0"/>
+              <linesegment label="3" length="63" name="shape50.dragpoint3.lineseg5" orient="horizontal" x="737.0" y="1983.0"/>
+            </dragpoint>
+            <dragpoint identifier="4" name="shape50.dragpoint4" text="4" toShape="shape52" x="800.0" y="2137.0">
+              <linesegment length="0" name="shape50.dragpoint4.lineseg1" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="0" name="shape50.dragpoint4.lineseg2" orient="vertical" x="658.0" y="1343.0"/>
+              <linesegment length="79" name="shape50.dragpoint4.lineseg3" orient="horizontal" x="658.0" y="1343.0"/>
+              <linesegment length="800" name="shape50.dragpoint4.lineseg4" orient="vertical" x="737.0" y="1343.0"/>
+              <linesegment label="4" length="63" name="shape50.dragpoint4.lineseg5" orient="horizontal" x="737.0" y="2143.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape51" shapetype="connectoraction" userlabel="" x="816.0" y="1968.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="212af9c2-4d1e-4528-a567-87ad2e08f563" parameter-profile="EMBEDDED|genericparameterchooser|212af9c2-4d1e-4528-a567-87ad2e08f563">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape51.dragpoint1" toShape="shape46" x="992.0" y="1337.0">
+              <linesegment length="0" name="shape51.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="1983.0"/>
+              <linesegment length="0" name="shape51.dragpoint1.lineseg2" orient="vertical" x="850.0" y="1983.0"/>
+              <linesegment length="79" name="shape51.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="1983.0"/>
+              <linesegment length="640" name="shape51.dragpoint1.lineseg4" orient="vertical" x="929.0" y="1343.0"/>
+              <linesegment length="63" name="shape51.dragpoint1.lineseg5" orient="horizontal" x="929.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape52" shapetype="connectoraction" userlabel="" x="816.0" y="2128.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="8ac60edc-f7a0-4d7b-ad44-fb90c7264c6a" parameter-profile="EMBEDDED|genericparameterchooser|8ac60edc-f7a0-4d7b-ad44-fb90c7264c6a">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape52.dragpoint1" toShape="shape46" x="992.0" y="1337.0">
+              <linesegment length="0" name="shape52.dragpoint1.lineseg1" orient="horizontal" x="850.0" y="2143.0"/>
+              <linesegment length="0" name="shape52.dragpoint1.lineseg2" orient="vertical" x="850.0" y="2143.0"/>
+              <linesegment length="79" name="shape52.dragpoint1.lineseg3" orient="horizontal" x="850.0" y="2143.0"/>
+              <linesegment length="800" name="shape52.dragpoint1.lineseg4" orient="vertical" x="929.0" y="1343.0"/>
+              <linesegment length="63" name="shape52.dragpoint1.lineseg5" orient="horizontal" x="929.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape53" shapetype="branch" userlabel="" x="432.0" y="48.0">
+          <configuration>
+            <branch numBranches="4"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape53.dragpoint1" text="1" toShape="shape19" x="608.0" y="57.0">
+              <linesegment length="0" name="shape53.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape53.dragpoint1.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape53.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape53.dragpoint1.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment label="1" length="63" name="shape53.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="63.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape53.dragpoint2" text="2" toShape="shape54" x="608.0" y="217.0">
+              <linesegment length="0" name="shape53.dragpoint2.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape53.dragpoint2.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape53.dragpoint2.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="160" name="shape53.dragpoint2.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment label="2" length="63" name="shape53.dragpoint2.lineseg5" orient="horizontal" x="545.0" y="223.0"/>
+            </dragpoint>
+            <dragpoint identifier="3" name="shape53.dragpoint3" text="3" toShape="shape56" x="608.0" y="377.0">
+              <linesegment length="0" name="shape53.dragpoint3.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape53.dragpoint3.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape53.dragpoint3.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="320" name="shape53.dragpoint3.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment label="3" length="63" name="shape53.dragpoint3.lineseg5" orient="horizontal" x="545.0" y="383.0"/>
+            </dragpoint>
+            <dragpoint identifier="4" name="shape53.dragpoint4" text="4" toShape="shape55" x="608.0" y="537.0">
+              <linesegment length="0" name="shape53.dragpoint4.lineseg1" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="0" name="shape53.dragpoint4.lineseg2" orient="vertical" x="466.0" y="63.0"/>
+              <linesegment length="79" name="shape53.dragpoint4.lineseg3" orient="horizontal" x="466.0" y="63.0"/>
+              <linesegment length="480" name="shape53.dragpoint4.lineseg4" orient="vertical" x="545.0" y="63.0"/>
+              <linesegment label="4" length="63" name="shape53.dragpoint4.lineseg5" orient="horizontal" x="545.0" y="543.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape54" shapetype="connectoraction" userlabel="" x="624.0" y="208.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="2f67b3a3-b49d-4f9b-ae29-e0e13eb1b31d" parameter-profile="EMBEDDED|genericparameterchooser|2f67b3a3-b49d-4f9b-ae29-e0e13eb1b31d">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape54.dragpoint1" toShape="shape43" x="800.0" y="57.0">
+              <linesegment length="0" name="shape54.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="223.0"/>
+              <linesegment length="0" name="shape54.dragpoint1.lineseg2" orient="vertical" x="658.0" y="223.0"/>
+              <linesegment length="79" name="shape54.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="223.0"/>
+              <linesegment length="160" name="shape54.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape54.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape55" shapetype="connectoraction" userlabel="" x="624.0" y="528.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="bd22d330-6112-47f1-bbed-5514befdbb7d" parameter-profile="EMBEDDED|genericparameterchooser|bd22d330-6112-47f1-bbed-5514befdbb7d">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape55.dragpoint1" toShape="shape43" x="800.0" y="57.0">
+              <linesegment length="0" name="shape55.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="543.0"/>
+              <linesegment length="0" name="shape55.dragpoint1.lineseg2" orient="vertical" x="658.0" y="543.0"/>
+              <linesegment length="79" name="shape55.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="543.0"/>
+              <linesegment length="480" name="shape55.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape55.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape56" shapetype="connectoraction" userlabel="" x="624.0" y="368.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="110041a2-4f11-47b9-90a4-ee18ec903e62" parameter-profile="EMBEDDED|genericparameterchooser|110041a2-4f11-47b9-90a4-ee18ec903e62">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape56.dragpoint1" toShape="shape43" x="800.0" y="57.0">
+              <linesegment length="0" name="shape56.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="383.0"/>
+              <linesegment length="0" name="shape56.dragpoint1.lineseg2" orient="vertical" x="658.0" y="383.0"/>
+              <linesegment length="79" name="shape56.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="383.0"/>
+              <linesegment length="320" name="shape56.dragpoint1.lineseg4" orient="vertical" x="737.0" y="63.0"/>
+              <linesegment length="63" name="shape56.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="63.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape57" shapetype="branch" userlabel="" x="432.0" y="688.0">
+          <configuration>
+            <branch numBranches="4"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape57.dragpoint1" text="1" toShape="shape21" x="608.0" y="697.0">
+              <linesegment length="0" name="shape57.dragpoint1.lineseg1" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="0" name="shape57.dragpoint1.lineseg2" orient="vertical" x="466.0" y="703.0"/>
+              <linesegment length="79" name="shape57.dragpoint1.lineseg3" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="0" name="shape57.dragpoint1.lineseg4" orient="vertical" x="545.0" y="703.0"/>
+              <linesegment label="1" length="63" name="shape57.dragpoint1.lineseg5" orient="horizontal" x="545.0" y="703.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape57.dragpoint2" text="2" toShape="shape60" x="608.0" y="857.0">
+              <linesegment length="0" name="shape57.dragpoint2.lineseg1" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="0" name="shape57.dragpoint2.lineseg2" orient="vertical" x="466.0" y="703.0"/>
+              <linesegment length="79" name="shape57.dragpoint2.lineseg3" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="160" name="shape57.dragpoint2.lineseg4" orient="vertical" x="545.0" y="703.0"/>
+              <linesegment label="2" length="63" name="shape57.dragpoint2.lineseg5" orient="horizontal" x="545.0" y="863.0"/>
+            </dragpoint>
+            <dragpoint identifier="3" name="shape57.dragpoint3" text="3" toShape="shape59" x="608.0" y="1017.0">
+              <linesegment length="0" name="shape57.dragpoint3.lineseg1" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="0" name="shape57.dragpoint3.lineseg2" orient="vertical" x="466.0" y="703.0"/>
+              <linesegment length="79" name="shape57.dragpoint3.lineseg3" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="320" name="shape57.dragpoint3.lineseg4" orient="vertical" x="545.0" y="703.0"/>
+              <linesegment label="3" length="63" name="shape57.dragpoint3.lineseg5" orient="horizontal" x="545.0" y="1023.0"/>
+            </dragpoint>
+            <dragpoint identifier="4" name="shape57.dragpoint4" text="4" toShape="shape58" x="608.0" y="1177.0">
+              <linesegment length="0" name="shape57.dragpoint4.lineseg1" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="0" name="shape57.dragpoint4.lineseg2" orient="vertical" x="466.0" y="703.0"/>
+              <linesegment length="79" name="shape57.dragpoint4.lineseg3" orient="horizontal" x="466.0" y="703.0"/>
+              <linesegment length="480" name="shape57.dragpoint4.lineseg4" orient="vertical" x="545.0" y="703.0"/>
+              <linesegment label="4" length="63" name="shape57.dragpoint4.lineseg5" orient="horizontal" x="545.0" y="1183.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape58" shapetype="connectoraction" userlabel="" x="624.0" y="1168.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="073aef4f-df3a-4060-b286-922980f226e6" parameter-profile="EMBEDDED|genericparameterchooser|073aef4f-df3a-4060-b286-922980f226e6">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape58.dragpoint1" toShape="shape44" x="800.0" y="697.0">
+              <linesegment length="0" name="shape58.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="1183.0"/>
+              <linesegment length="0" name="shape58.dragpoint1.lineseg2" orient="vertical" x="658.0" y="1183.0"/>
+              <linesegment length="79" name="shape58.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="1183.0"/>
+              <linesegment length="480" name="shape58.dragpoint1.lineseg4" orient="vertical" x="737.0" y="703.0"/>
+              <linesegment length="63" name="shape58.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="703.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape59" shapetype="connectoraction" userlabel="" x="624.0" y="1008.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="f2957479-85dc-4b2a-9d45-a62d025dffbc" parameter-profile="EMBEDDED|genericparameterchooser|f2957479-85dc-4b2a-9d45-a62d025dffbc">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape59.dragpoint1" toShape="shape44" x="800.0" y="697.0">
+              <linesegment length="0" name="shape59.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="1023.0"/>
+              <linesegment length="0" name="shape59.dragpoint1.lineseg2" orient="vertical" x="658.0" y="1023.0"/>
+              <linesegment length="79" name="shape59.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="1023.0"/>
+              <linesegment length="320" name="shape59.dragpoint1.lineseg4" orient="vertical" x="737.0" y="703.0"/>
+              <linesegment length="63" name="shape59.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="703.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape60" shapetype="connectoraction" userlabel="" x="624.0" y="848.0">
+          <configuration>
+            <connectoraction actionType="QUERY" allowDynamicCredentials="NONE" connectionId="a20d2e65-67bb-468a-8b99-af816cce694c" connectorType="ultipro" hideSettings="false" operationId="d7bbda89-1b03-43bf-a10e-76128dc0334e" parameter-profile="EMBEDDED|genericparameterchooser|d7bbda89-1b03-43bf-a10e-76128dc0334e">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape60.dragpoint1" toShape="shape44" x="800.0" y="697.0">
+              <linesegment length="0" name="shape60.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="863.0"/>
+              <linesegment length="0" name="shape60.dragpoint1.lineseg2" orient="vertical" x="658.0" y="863.0"/>
+              <linesegment length="79" name="shape60.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="863.0"/>
+              <linesegment length="160" name="shape60.dragpoint1.lineseg4" orient="vertical" x="737.0" y="703.0"/>
+              <linesegment length="63" name="shape60.dragpoint1.lineseg5" orient="horizontal" x="737.0" y="703.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="branch_icon" name="shape61" shapetype="branch" userlabel="" x="1392.0" y="1328.0">
+          <configuration>
+            <branch numBranches="2"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="1" name="shape61.dragpoint1" text="1" toShape="shape62" x="1568.0" y="1337.0">
+              <linesegment length="0" name="shape61.dragpoint1.lineseg1" orient="horizontal" x="1426.0" y="1343.0"/>
+              <linesegment length="0" name="shape61.dragpoint1.lineseg2" orient="vertical" x="1426.0" y="1343.0"/>
+              <linesegment length="79" name="shape61.dragpoint1.lineseg3" orient="horizontal" x="1426.0" y="1343.0"/>
+              <linesegment length="0" name="shape61.dragpoint1.lineseg4" orient="vertical" x="1505.0" y="1343.0"/>
+              <linesegment label="1" length="63" name="shape61.dragpoint1.lineseg5" orient="horizontal" x="1505.0" y="1343.0"/>
+            </dragpoint>
+            <dragpoint identifier="2" name="shape61.dragpoint2" text="2" toShape="shape29" x="1568.0" y="1497.0">
+              <linesegment length="0" name="shape61.dragpoint2.lineseg1" orient="horizontal" x="1426.0" y="1343.0"/>
+              <linesegment length="0" name="shape61.dragpoint2.lineseg2" orient="vertical" x="1426.0" y="1343.0"/>
+              <linesegment length="79" name="shape61.dragpoint2.lineseg3" orient="horizontal" x="1426.0" y="1343.0"/>
+              <linesegment length="160" name="shape61.dragpoint2.lineseg4" orient="vertical" x="1505.0" y="1343.0"/>
+              <linesegment label="2" length="63" name="shape61.dragpoint2.lineseg5" orient="horizontal" x="1505.0" y="1503.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="dataprocess_icon" name="shape62" shapetype="dataprocess" userlabel="" x="1584.0" y="1328.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="1" name="Combine Documents" processtype="9">
+                <dataprocesscombine profileType="flatfile">
+                  <FFOptions freeFormFooter="" freeFormHeader="" headersOption="none"/>
+                </dataprocesscombine>
+              </step>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape62.dragpoint1" toShape="shape65" x="1760.0" y="1337.0">
+              <linesegment length="0" name="shape62.dragpoint1.lineseg1" orient="horizontal" x="1618.0" y="1343.0"/>
+              <linesegment length="0" name="shape62.dragpoint1.lineseg2" orient="vertical" x="1618.0" y="1343.0"/>
+              <linesegment length="79" name="shape62.dragpoint1.lineseg3" orient="horizontal" x="1618.0" y="1343.0"/>
+              <linesegment length="0" name="shape62.dragpoint1.lineseg4" orient="vertical" x="1697.0" y="1343.0"/>
+              <linesegment length="63" name="shape62.dragpoint1.lineseg5" orient="horizontal" x="1697.0" y="1343.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape65" shapetype="stop" userlabel="" x="1776.0" y="1328.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="d9c767eb-5fec-466d-bef9-06ff47625b68" version="1" name="Shift Code Look Up" type="crossref" createdDate="2019-11-19T19:13:36Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:36Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <CrossRefTable xmlns="" atomEnabled="false" modelVersion="3">
+      <ColumnHeaders>
+        <columnHeader>Code</columnHeader>
+        <columnHeader>Description</columnHeader>
+      </ColumnHeaders>
+      <Rows>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="AR"/>
+            <ref colIdx="1" value="A Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="AV"/>
+            <ref colIdx="1" value="A Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="NA"/>
+            <ref colIdx="1" value="A/C Nights"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="AC"/>
+            <ref colIdx="1" value="A/C Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="BR"/>
+            <ref colIdx="1" value="B Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="BV"/>
+            <ref colIdx="1" value="B Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="NB"/>
+            <ref colIdx="1" value="B/D Nights"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="BD"/>
+            <ref colIdx="1" value="B/D Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="B1"/>
+            <ref colIdx="1" value="B1 Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="B2"/>
+            <ref colIdx="1" value="B2 Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="CR"/>
+            <ref colIdx="1" value="C Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="CV"/>
+            <ref colIdx="1" value="C Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="DR"/>
+            <ref colIdx="1" value="D Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="DV"/>
+            <ref colIdx="1" value="D Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="D9"/>
+            <ref colIdx="1" value="Day Shift 9 hrs"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="D4"/>
+            <ref colIdx="1" value="Day Shift 10 hrs"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="YR"/>
+            <ref colIdx="1" value="Days"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="YV"/>
+            <ref colIdx="1" value="Days"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="D1"/>
+            <ref colIdx="1" value="Days 2-3-2"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="D2"/>
+            <ref colIdx="1" value="Days 2-3-2"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="N1"/>
+            <ref colIdx="1" value="Nights 2-3-2"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="N2"/>
+            <ref colIdx="1" value="Nights 2-3-2"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="Z"/>
+            <ref colIdx="1" value="NONE"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="PR"/>
+            <ref colIdx="1" value="Part Time"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="PV"/>
+            <ref colIdx="1" value="Part Time"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="WP"/>
+            <ref colIdx="1" value="PCM W Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="XP"/>
+            <ref colIdx="1" value="PCM X Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="YP"/>
+            <ref colIdx="1" value="PCM Y Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="ZP"/>
+            <ref colIdx="1" value="PCM Z Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="RI"/>
+            <ref colIdx="1" value="DO NOT USE"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="TM"/>
+            <ref colIdx="1" value="UTM Defined Field"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="VA"/>
+            <ref colIdx="1" value="DO NOT USE"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="VY"/>
+            <ref colIdx="1" value="Y Shift"/>
+          </Values>
+        </row>
+        <row atom="Default" atomid="-1">
+          <Values>
+            <ref colIdx="0" value="VZ"/>
+            <ref colIdx="1" value="Z Shift"/>
+          </Values>
+        </row>
+      </Rows>
+    </CrossRefTable>
+  </bns:object>
+</bns:Component>

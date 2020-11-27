@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="542a96a9-0d8a-4687-a679-afb5159b3f8c" version="1" name="Employee" type="documentcache" createdDate="2019-11-19T19:13:35Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:35Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DocumentCache xmlns="" profile="3f6507ae-8821-42cc-9267-43b7689d7710" profileType="profile.xml">
+      <CacheIndex indexId="1" indexName="EmployeeId">
+        <cacheKey alias="EmployeeId (Employee/EmployeeId)" elementKey="47" id="2" name="EmployeeId (Employee/EmployeeId)" taglistKey="0" xsi:type="ProfileElementKeyConfig"/>
+      </CacheIndex>
+    </DocumentCache>
+  </bns:object>
+</bns:Component>

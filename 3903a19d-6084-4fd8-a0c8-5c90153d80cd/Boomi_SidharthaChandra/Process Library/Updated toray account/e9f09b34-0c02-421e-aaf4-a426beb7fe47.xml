@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="e9f09b34-0c02-421e-aaf4-a426beb7fe47" version="1" name="Ultipro To FF" type="transform.map" createdDate="2019-11-19T19:13:36Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:36Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="712145ba-2907-49c1-b769-1087517d134c" toProfile="12f8aa10-ef32-4d2b-8d7c-6183ae4b36ba">
+      <Mappings>
+        <Mapping fromKey="207" fromKeyPath="*[@key='1']/*[@key='207']" fromNamePath="Employment/EmployeeNumber" fromType="profile" toKey="20" toKeyPath="*[@key='1']/*[@key='2']/*[@key='20']" toNamePath="Record/Elements/EE Number" toType="profile"/>
+        <Mapping fromCacheJoinKey="1" fromKey="40" fromKeyPath="*[@key='1']/*[@key='2147483646']/*[@key='1']/*[@key='40']" fromNamePath="Employment/Person [EmployeeId]/Person/FirstName" fromType="profile" toKey="21" toKeyPath="*[@key='1']/*[@key='2']/*[@key='21']" toNamePath="Record/Elements/First" toType="profile"/>
+        <Mapping fromCacheJoinKey="1" fromKey="42" fromKeyPath="*[@key='1']/*[@key='2147483646']/*[@key='1']/*[@key='42']" fromNamePath="Employment/Person [EmployeeId]/Person/LastName" fromType="profile" toKey="22" toKeyPath="*[@key='1']/*[@key='2']/*[@key='22']" toNamePath="Record/Elements/Last" toType="profile"/>
+        <Mapping fromCacheJoinKey="1" fromKey="44" fromKeyPath="*[@key='1']/*[@key='2147483646']/*[@key='1']/*[@key='44']" fromNamePath="Employment/Person [EmployeeId]/Person/MiddleName" fromType="profile" toKey="31" toKeyPath="*[@key='1']/*[@key='2']/*[@key='31']" toNamePath="Record/Elements/Middle Initial" toType="profile"/>
+        <Mapping fromCacheJoinKey="1" fromKey="54" fromKeyPath="*[@key='1']/*[@key='2147483646']/*[@key='1']/*[@key='54']" fromNamePath="Employment/Person [EmployeeId]/Person/Suffix" fromType="profile" toKey="30" toKeyPath="*[@key='1']/*[@key='2']/*[@key='30']" toNamePath="Record/Elements/Suffix" toType="profile"/>
+        <Mapping fromCacheJoinKey="2" fromKey="77" fromKeyPath="*[@key='1']/*[@key='2147483645']/*[@key='1']/*[@key='77']" fromNamePath="Employment/Employee [EmployeeId]/Employee/Email" fromType="profile" toKey="23" toKeyPath="*[@key='1']/*[@key='2']/*[@key='23']" toNamePath="Record/Elements/Email" toType="profile"/>
+        <Mapping fromKey="235" fromKeyPath="*[@key='1']/*[@key='235']" fromNamePath="Employment/JobDescription" fromType="profile" toKey="24" toKeyPath="*[@key='1']/*[@key='2']/*[@key='24']" toNamePath="Record/Elements/Current Job" toType="profile"/>
+        <Mapping fromKey="271" fromKeyPath="*[@key='1']/*[@key='271']" fromNamePath="Employment/OrgLevel3Description" fromType="profile" toKey="25" toKeyPath="*[@key='1']/*[@key='2']/*[@key='25']" toNamePath="Record/Elements/Department" toType="profile"/>
+        <Mapping fromKey="251" fromKeyPath="*[@key='1']/*[@key='251']" fromNamePath="Employment/LocationCode" fromType="profile" toKey="26" toKeyPath="*[@key='1']/*[@key='2']/*[@key='26']" toNamePath="Record/Elements/Location" toType="profile"/>
+        <Mapping fromKey="265" fromKeyPath="*[@key='1']/*[@key='265']" fromNamePath="Employment/OrgLevel2" fromType="profile" toKey="28" toKeyPath="*[@key='1']/*[@key='2']/*[@key='28']" toNamePath="Record/Elements/Cost Center" toType="profile"/>
+        <Mapping fromKey="261" fromKeyPath="*[@key='1']/*[@key='261']" fromNamePath="Employment/OrgLevel1" fromType="profile" toKey="33" toKeyPath="*[@key='1']/*[@key='2']/*[@key='33']" toNamePath="Record/Elements/Business Unit" toType="profile"/>
+        <Mapping fromKey="275" fromKeyPath="*[@key='1']/*[@key='275']" fromNamePath="Employment/OrgLevel4Description" fromType="profile" toKey="34" toKeyPath="*[@key='1']/*[@key='2']/*[@key='34']" toNamePath="Record/Elements/Dept Head" toType="profile"/>
+        <Mapping fromKey="211" fromKeyPath="*[@key='1']/*[@key='211']" fromNamePath="Employment/EmploymentStatus" fromType="profile" toFunction="3" toKey="1" toType="function"/>
+        <Mapping fromFunction="3" fromKey="1" fromType="function" toKey="36" toKeyPath="*[@key='1']/*[@key='2']/*[@key='36']" toNamePath="Record/Elements/Status" toType="profile"/>
+        <Mapping fromCacheJoinKey="0" fromKey="241" fromKeyPath="*[@key='1']/*[@key='241']" fromNamePath="Employment/LastHire" fromType="profile" toFunction="1" toKey="1" toType="function"/>
+        <Mapping fromCacheJoinKey="0" fromKey="131" fromKeyPath="*[@key='1']/*[@key='131']" fromNamePath="Employment/CompanyCode" fromType="profile" toFunction="5" toKey="1" toType="function"/>
+        <Mapping fromFunction="5" fromKey="2" fromType="function" toKey="32" toKeyPath="*[@key='1']/*[@key='2']/*[@key='32']" toNamePath="Record/Elements/Company" toType="profile"/>
+        <Mapping fromKey="241" fromKeyPath="*[@key='1']/*[@key='241']" fromNamePath="Employment/LastHire" fromType="profile" toFunction="6" toKey="1" toType="function"/>
+        <Mapping fromFunction="6" fromKey="6" fromType="function" toKey="29" toKeyPath="*[@key='1']/*[@key='2']/*[@key='29']" toNamePath="Record/Elements/Last Hire" toType="profile"/>
+        <Mapping fromCacheJoinKey="0" fromKey="317" fromKeyPath="*[@key='1']/*[@key='317']" fromNamePath="Employment/SupervisorEmployeeNumber" fromType="profile" toFunction="7" toKey="1" toType="function"/>
+        <Mapping fromFunction="7" fromKey="2" fromType="function" toKey="27" toKeyPath="*[@key='1']/*[@key='2']/*[@key='27']" toNamePath="Record/Elements/Supervisor" toType="profile"/>
+        <Mapping fromKey="309" fromKeyPath="*[@key='1']/*[@key='309']" fromNamePath="Employment/ShiftCode" fromType="profile" toFunction="8" toKey="1" toType="function"/>
+        <Mapping fromFunction="8" fromKey="2" fromType="function" toKey="35" toKeyPath="*[@key='1']/*[@key='2']/*[@key='35']" toNamePath="Record/Elements/Shift" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Date" key="1" name="Date Format" position="1" sumEnabled="false" type="DateFormat" x="30.0" y="220.0">
+          <Inputs>
+            <Input key="1" name="Date String"/>
+            <Input default="yyyyMMdd HHmmss.SSS" key="2" name="Input Mask"/>
+            <Input default="MM/dd/yyyy" key="3" name="Output Mask"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Lookup" key="3" name="Simple Lookup" position="3" sumEnabled="false" type="SimpleLookup" x="30.0" y="373.0">
+          <Inputs>
+            <Input key="1" name="Key"/>
+          </Inputs>
+          <Outputs>
+            <Output key="1" name="Value"/>
+          </Outputs>
+          <Configuration>
+            <SimpleLookup>
+              <Input index="1" refId="1"/>
+              <Output index="1" refId="2"/>
+              <CrossRefTableObj>
+                <CrossRefTable atomEnabled="false" modelVersion="3">
+                  <ColumnHeaders>
+                    <columnHeader>Key</columnHeader>
+                    <columnHeader>Value</columnHeader>
+                  </ColumnHeaders>
+                  <Rows>
+                    <row>
+                      <Values>
+                        <ref colIdx="0" value="A"/>
+                        <ref colIdx="1" value="Active"/>
+                      </Values>
+                    </row>
+                    <row>
+                      <Values>
+                        <ref colIdx="0" value="L"/>
+                        <ref colIdx="1" value="Leave of absence"/>
+                      </Values>
+                    </row>
+                    <row>
+                      <Values>
+                        <ref colIdx="0" value="T"/>
+                        <ref colIdx="1" value="Terminated"/>
+                      </Values>
+                    </row>
+                  </Rows>
+                </CrossRefTable>
+              </CrossRefTableObj>
+            </SimpleLookup>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="4" name="String Concat" position="4" sumEnabled="false" type="StringConcat" x="30.0" y="473.0">
+          <Inputs>
+            <Input key="1" name="Last Name"/>
+            <Input key="2" name="comma"/>
+            <Input key="3" name="First Name"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration>
+            <StringConcat delimiter=""/>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Lookup" key="5" name="Cross Reference Lookup" position="5" sumEnabled="false" type="CrossRefLookup" x="10.0" y="625.0">
+          <Inputs>
+            <Input key="1" name="Reference 1"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Reference 2"/>
+          </Outputs>
+          <Configuration>
+            <CrossRefLookup crossRefTableId="bcfa133c-f77c-4f52-8971-42e485b17e2a" skipLookupIfNoInputs="true">
+              <Input index="1" name="Reference 1" refId="1"/>
+              <Output index="2" name="Reference 2" refId="2"/>
+            </CrossRefLookup>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Scripting" key="6" name="Scripting" position="6" sumEnabled="false" type="Scripting" x="10.0" y="722.0">
+          <Inputs>
+            <Input key="1" name="InputDate"/>
+            <Input default="yyyyMMdd HHmmss.SSS" key="2" name="InputFormat"/>
+            <Input default="MM/dd/yyyy" key="3" name="OutputFormat"/>
+            <Input default="24" key="7" name="Hours"/>
+            <Input default="0" key="8" name="Minutes"/>
+          </Inputs>
+          <Outputs>
+            <Output key="6" name="OutputDate"/>
+          </Outputs>
+          <Configuration>
+            <Scripting language="groovy2" useComponent="false">
+              <ScriptToExecute>import java.util.GregorianCalendar; 
+import java.util.Calendar; 
+import java.util.Date; 
+import java.text.SimpleDateFormat;
+
+SimpleDateFormat inDate = new SimpleDateFormat(InputFormat, Locale.ENGLISH);
+SimpleDateFormat outDate = new SimpleDateFormat(OutputFormat, Locale.ENGLISH);
+int minutesToAdd = (Hours * 60) + Minutes ;  
+Calendar C = Calendar.getInstance();
+Date D = inDate.parse(InputDate);
+if (D!='')
+     {
+      C.setTime(D);
+      C.add(Calendar.MINUTE, minutesToAdd);
+      OutputDate=outDate.format(C.getTime());
+     }
+else
+     {
+      OutputDate = ''
+     }</ScriptToExecute>
+              <Input dataType="character" index="1" name="InputDate"/>
+              <Input dataType="character" index="2" name="InputFormat"/>
+              <Input dataType="character" index="3" name="OutputFormat"/>
+              <Input dataType="integer" index="7" name="Hours"/>
+              <Input dataType="integer" index="8" name="Minutes"/>
+              <Output index="6" name="OutputDate"/>
+            </Scripting>
+          </Configuration>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="String" key="7" name="Whitespace Trim" position="7" sumEnabled="false" type="WhitespaceTrim" x="10.0" y="919.0">
+          <Inputs>
+            <Input key="1" name="Original String"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Lookup" key="8" name="Cross Reference Lookup" position="8" sumEnabled="false" type="CrossRefLookup" x="10.0" y="1016.0">
+          <Inputs>
+            <Input key="1" name="Code"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Description"/>
+          </Outputs>
+          <Configuration>
+            <CrossRefLookup crossRefTableId="d9c767eb-5fec-466d-bef9-06ff47625b68" skipLookupIfNoInputs="true">
+              <Input index="1" name="Code" refId="1"/>
+              <Output index="2" name="Description" refId="2"/>
+            </CrossRefLookup>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins>
+        <DocumentCacheJoin cacheIndex="1" docCache="4a214ca7-4b6d-46ad-97b3-00db96fbd24b" docCacheJoinId="1">
+          <srcParentKey key="1" tagListKey="0"/>
+          <CacheKeyJoinValues>
+            <CacheKeyJoinValue cacheKeyId="2" cacheKeyName="EmployeeId (Employment/EmployeeId)">
+              <srcLinkKey key="133" tagListKey="0"/>
+            </CacheKeyJoinValue>
+          </CacheKeyJoinValues>
+        </DocumentCacheJoin>
+        <DocumentCacheJoin cacheIndex="1" docCache="542a96a9-0d8a-4687-a679-afb5159b3f8c" docCacheJoinId="2">
+          <srcParentKey key="1" tagListKey="0"/>
+          <CacheKeyJoinValues>
+            <CacheKeyJoinValue cacheKeyId="2" cacheKeyName="EmployeeId (Employment/EmployeeId)">
+              <srcLinkKey key="133" tagListKey="0"/>
+            </CacheKeyJoinValue>
+          </CacheKeyJoinValues>
+        </DocumentCacheJoin>
+      </DocumentCacheJoins>
+    </Map>
+  </bns:object>
+</bns:Component>

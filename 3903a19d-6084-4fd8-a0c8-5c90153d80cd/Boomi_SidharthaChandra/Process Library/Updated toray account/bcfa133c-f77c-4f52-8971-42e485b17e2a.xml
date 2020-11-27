@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="bcfa133c-f77c-4f52-8971-42e485b17e2a" version="1" name="Company Code - Company" type="crossref" createdDate="2019-11-19T19:13:36Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:36Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <CrossRefTable xmlns="" atomEnabled="false" modelVersion="3">
+      <ColumnHeaders>
+        <columnHeader>Reference 1</columnHeader>
+        <columnHeader>Reference 2</columnHeader>
+        <columnHeader>Reference 3</columnHeader>
+        <columnHeader>Reference 4</columnHeader>
+        <columnHeader>Reference 5</columnHeader>
+        <columnHeader>Reference 6</columnHeader>
+      </ColumnHeaders>
+      <Rows>
+        <row>
+          <Values>
+            <ref colIdx="0" value="TPARI"/>
+            <ref colIdx="1" value="Toray Plastics (America), Inc. - RI"/>
+            <ref colIdx="2" value=""/>
+            <ref colIdx="3" value=""/>
+            <ref colIdx="4" value=""/>
+            <ref colIdx="5" value=""/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="TPAVA"/>
+            <ref colIdx="1" value="Toray Plastics (America), Inc. - VA"/>
+            <ref colIdx="2" value=""/>
+            <ref colIdx="3" value=""/>
+            <ref colIdx="4" value=""/>
+            <ref colIdx="5" value=""/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Toray Plastics (America), Inc. - RI"/>
+            <ref colIdx="1" value="Toray Plastics (America), Inc. - RI"/>
+            <ref colIdx="2" value=""/>
+            <ref colIdx="3" value=""/>
+            <ref colIdx="4" value=""/>
+            <ref colIdx="5" value=""/>
+          </Values>
+        </row>
+        <row>
+          <Values>
+            <ref colIdx="0" value="Toray Plastics (America), Inc. - VA"/>
+            <ref colIdx="1" value="Toray Plastics (America), Inc. - VA"/>
+            <ref colIdx="2" value=""/>
+            <ref colIdx="3" value=""/>
+            <ref colIdx="4" value=""/>
+            <ref colIdx="5" value=""/>
+          </Values>
+        </row>
+      </Rows>
+    </CrossRefTable>
+  </bns:object>
+</bns:Component>

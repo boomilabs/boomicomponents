@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SidharthaChandra/Process Library/Updated toray account" componentId="f2957479-85dc-4b2a-9d45-a62d025dffbc" version="1" name="Query Employee 2nd Next 1000" type="connector-action" subType="ultipro" createdDate="2019-11-19T19:13:36Z" createdBy="sidhartha.chandra@dell.com" modifiedDate="2019-11-19T19:13:36Z" modifiedBy="sidhartha.chandra@dell.com" deleted="false" currentVersion="true" folderName="Updated toray account" folderId="RjoyOTIxNTQ2" copiedFromComponentId="efe0dda7-c084-4f73-a00a-d1125c35ad7a" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="true">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="Employee" objectTypeName="Employee" operationType="QUERY" requestProfileType="xml" responseProfile="3f6507ae-8821-42cc-9267-43b7689d7710" responseProfileType="xml">
+          <field id="skip" type="integer" value="2000"/>
+          <field id="top" type="integer" value="1000"/>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Employee">
+                  <FieldList>
+                    <ConnectorField filterable="true" name="EmployeeId" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField01" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField02" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField03" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField04" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField05" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField06" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField07" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField08" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField09" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField10" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField11" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField12" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField13" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherPersonalField14" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Email" selectable="true" selected="true" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="AlternateEmail" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField01" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField02" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField03" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField04" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField05" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField06" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField07" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField08" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField09" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField10" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField11" selectable="true" selected="false" sortable="true" type="xs:decimal"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField12" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField13" selectable="true" selected="false" sortable="true" type="xs:dateTime"/>
+                    <ConnectorField filterable="true" name="OtherInternationalField14" selectable="true" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Personal" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Personal/PersonId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Contacts" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Contacts/ContactId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Contacts/IsStudent" selectable="false" selected="false" sortable="true" type="xs:boolean"/>
+                    <ConnectorField filterable="false" name="EmploymentDetails" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="EmploymentDetails/CompanyCode" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="EmploymentDetails/EmployeeId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="false" name="Earnings" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="Earnings/SystemId" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                    <ConnectorField filterable="true" name="Earnings/CalcSequence" selectable="false" selected="false" sortable="true" type="xs:int"/>
+                    <ConnectorField filterable="false" name="ConfigurableFields" selectable="false" selected="false" sortable="false"/>
+                    <ConnectorField filterable="true" name="ConfigurableFields/Id" selectable="false" selected="false" sortable="true" type="xs:string"/>
+                  </FieldList>
+                  <Filter>
+                    <ConnectorBaseFilter/>
+                  </Filter>
+                  <Sorts/>
+                </ConnectorObject>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching docCache="542a96a9-0d8a-4687-a679-afb5159b3f8c"/>
+    </Operation>
+  </bns:object>
+</bns:Component>
