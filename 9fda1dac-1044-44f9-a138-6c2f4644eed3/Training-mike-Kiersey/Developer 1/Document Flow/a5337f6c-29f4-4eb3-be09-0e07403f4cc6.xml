@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/Developer 1/Document Flow" componentId="a5337f6c-29f4-4eb3-be09-0e07403f4cc6" version="1" name="Activity 1 Loc XML" type="profile.xml" createdDate="2020-01-19T15:32:25Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-01-19T15:32:25Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="Document Flow" folderId="RjozMDI4NTE4" copiedFromComponentId="2bf60db1-141e-4039-9cbe-33d6f9e259c8" copiedFromComponentVersion="2">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <XMLProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8" implicitElementOrdering="true" parseRespectMaxOccurs="true" respectMinOccurs="false" respectMinOccursAlways="false"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" isRoot="true" key="1" loopingOption="occurrence" maxOccurs="1" minOccurs="1" name="Location" useNamespace="-1" validateData="false">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <QualifierList/>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="6" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Location" useNamespace="-1" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <QualifierList/>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="2" loopingOption="occurrence" maxOccurs="1" minOccurs="0" name="Loc_Code" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <QualifierList/>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="3" loopingOption="occurrence" maxOccurs="1" minOccurs="0" name="Location_Name" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <QualifierList/>
+            </XMLElement>
+            <XMLElement dataType="number" isMappable="true" isNode="true" key="4" loopingOption="occurrence" maxOccurs="1" minOccurs="0" name="Loc_Count" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileNumberFormat numberFormat=""/>
+              </DataFormat>
+              <QualifierList/>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="5" loopingOption="unique" maxOccurs="1" minOccurs="0" name="SER_no" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <QualifierList/>
+            </XMLElement>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces>
+        <XMLNamespace key="-1" name="Empty Namespace">
+          <Types/>
+        </XMLNamespace>
+      </Namespaces>
+      <tagLists/>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>

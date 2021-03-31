@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/Developer 1/Document Flow" componentId="26639b02-b4e2-40ce-b112-08131f97fcd9" version="1" name="Increment Map Counter" type="transform.function" createdDate="2020-01-19T15:32:25Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-01-19T15:32:25Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="Document Flow" folderId="RjozMDI4NTE4" copiedFromComponentId="2bf60db1-141e-4039-9cbe-33d6f9e259c8" copiedFromComponentVersion="2">
+  <bns:encryptedValues/>
+  <bns:object>
+    <Function xmlns="">
+      <Inputs/>
+      <Outputs>
+        <Output key="1" name="Map_Counter"/>
+      </Outputs>
+      <Steps>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="2" name="Get Dynamic Process Property" position="1" sumEnabled="false" type="PropertyGet" x="27.0" y="35.0">
+          <Inputs>
+            <Input default="P_Map_Counter" key="1" name="Property Name"/>
+            <Input default="" key="2" name="Default Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="3" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Numeric" key="3" name="Math Add" position="2" sumEnabled="false" type="MathAdd" x="291.9896" y="139.98611">
+          <Inputs>
+            <Input default="" key="1" name="Value"/>
+            <Input default="1" key="2" name="Value to Add"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="ProcessProperty" key="4" name="Set Dynamic Process Property" position="3" sumEnabled="false" type="PropertySet" x="464.0" y="312.0">
+          <Inputs>
+            <Input default="P_Map_Counter" key="1" name="Property Name"/>
+            <Input default="" key="2" name="Property Value"/>
+          </Inputs>
+          <Outputs/>
+          <Configuration/>
+        </FunctionStep>
+      </Steps>
+      <Mappings>
+        <Mapping fromFunction="2" fromKey="3" fromNamePath="Get Dynamic Process Property/Result" fromType="function" toFunction="3" toKey="1" toNamePath="Math Add/Value" toType="function"/>
+        <Mapping fromFunction="3" fromKey="2" fromNamePath="Math Add/Result" fromType="function" toFunction="0" toKey="1" toNamePath="Editor/Map_Counter" toType="function"/>
+        <Mapping fromFunction="3" fromKey="2" fromNamePath="Math Add/Result" fromType="function" toFunction="4" toKey="2" toNamePath="Set Dynamic Process Property/Property Value" toType="function"/>
+      </Mappings>
+    </Function>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Training-mike-Kiersey/Developer 1/Document Flow" componentId="5c8464fb-5bde-46e8-afb2-1aa711c4aba4" version="1" name="Contact FF to Acct XML" type="transform.map" createdDate="2020-01-19T15:32:25Z" createdBy="mike.kiersey@dell.com" modifiedDate="2020-01-19T15:32:25Z" modifiedBy="mike.kiersey@dell.com" deleted="false" currentVersion="true" folderName="Document Flow" folderId="RjozMDI4NTE4" copiedFromComponentId="2bf60db1-141e-4039-9cbe-33d6f9e259c8" copiedFromComponentVersion="2">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="5c99f243-5aa6-482e-a76a-282f8c31ff47" toProfile="a5337f6c-29f4-4eb3-be09-0e07403f4cc6">
+      <Mappings>
+        <Mapping fromKey="11" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='11']" fromNamePath="Migration/Elements/Loc_Code" fromType="profile" toKey="2" toKeyPath="*[@key='1']/*[@key='6']/*[@key='2']" toNamePath="Location/Location/Loc_Code" toType="profile"/>
+        <Mapping fromKey="12" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='12']" fromNamePath="Migration/Elements/Loc_Name" fromType="profile" toKey="3" toKeyPath="*[@key='1']/*[@key='6']/*[@key='3']" toNamePath="Location/Location/Location_Name" toType="profile"/>
+        <Mapping fromFunction="1" fromKey="1" fromType="function" toKey="4" toKeyPath="*[@key='1']/*[@key='6']/*[@key='4']" toNamePath="Location/Location/Loc_Count" toType="profile"/>
+        <Mapping fromKey="15" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='15']" fromNamePath="Migration/Elements/Ser_No" fromType="profile" toKey="5" toKeyPath="*[@key='1']/*[@key='6']/*[@key='5']" toNamePath="Location/Location/SER_no" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep category="userdefined" id="26639b02-b4e2-40ce-b112-08131f97fcd9" key="1" name="Increment Map Counter" position="1" type="userdefined" x="30.0" y="137.0">
+          <Inputs/>
+          <Outputs>
+            <Output key="1" name="Map_Counter"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+      </Functions>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>
