@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Saurabh Kumar/IMAP" componentId="70eae7c5-b6cd-45d2-9a37-d8704654e3bd" version="3" name="SKU IMAP" type="connector-settings" subType="mailsdk" createdDate="2020-08-05T16:59:59Z" createdBy="Saurabh_Kumar24@Dell.com" modifiedDate="2020-08-05T17:01:54Z" modifiedBy="Saurabh_Kumar24@Dell.com" deleted="false" currentVersion="true" folderName="IMAP" folderId="RjozNDY2NTk3">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+    <bns:encryptedValue path="//GenericConnectionConfig/field[@type='password']" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description/>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="outboundHost" type="string" value="smtp.gmail.com"/>
+      <field id="outboundPort" type="integer" value="465"/>
+      <field id="outboundUseAuthentication" type="boolean" value="true"/>
+      <field id="outboundConnectionSecurity" type="string" value="STARTTLS"/>
+      <field id="outboundUsername" type="string" value="17.saurabhkumar@gmail.com"/>
+      <field id="outboundPassword" type="password" value="b1687cce7f85355a93ab808d0bf344ec32e8bff30d198f8255775abe6baf93659c921c76fa284dccd6ca2f9c2c25a883df4f4eaacb176c0eb62a896e1bdab067"/>
+      <field id="inboundHost" type="string" value="imap.gmail.com"/>
+      <field id="inboundPort" type="integer" value="993"/>
+      <field id="inboundConnectionSecurity" type="string" value="SSL_TLS"/>
+      <field id="inboundUsername" type="string" value="17.saurabhkumar@gmail.com"/>
+      <field id="inboundPassword" type="password" value="4b9e354d6b3fe632f8e661fd5f3e0b6e4dbf8b6cc9ec0c0145e168c3e80dd862df31e4781063bafc7b99f4e7969b67768e9a91af7d129cb151982d6630379a82"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

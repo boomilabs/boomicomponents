@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Saurabh Kumar/IMAP" componentId="3fc9b607-d6d8-4847-9205-3b0df43613c6" version="12" name="SKU IMAP" type="connector-action" subType="mailsdk" createdDate="2020-08-04T11:28:06Z" createdBy="Saurabh_Kumar24@Dell.com" modifiedDate="2020-08-06T12:12:02Z" modifiedBy="Saurabh_Kumar24@Dell.com" deleted="false" currentVersion="true" folderName="IMAP" folderId="RjozNDY2NTk3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="true">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig customOperationType="RECEIVE" objectTypeId="Mail" objectTypeName="Mail" operationType="QUERY" requestProfileType="xml" responseProfileType="binary">
+          <field id="deleteFromServer" type="boolean" value="false"/>
+          <field id="attachmentCache" type="component"/>
+          <field id="indexName" type="string" value=""/>
+          <field id="aliasName" type="string" value="Mail (IMAP) - Tech Preview - Message ID"/>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Mail">
+                  <FieldList>
+                    <ConnectorField filterable="true" name="fromFolder" selected="false" type="folder"/>
+                    <ConnectorField filterable="true" name="fromAddress" selected="false" type="address"/>
+                    <ConnectorField filterable="true" name="subject" selected="false" type="subject"/>
+                    <ConnectorField filterable="true" name="receivedDate" selected="false" type="dateTime"/>
+                    <ConnectorField filterable="true" name="read" selected="false" type="boolean"/>
+                  </FieldList>
+                  <Filter>
+                    <ConnectorBaseFilter>
+                      <ConnectorFilterLogical logicalOperator="and">
+                        <ConnectorFilterExpression expressionField="fromFolder" expressionOperator="EQUAL_TO" key="0" name="folder" type="folder"/>
+                      </ConnectorFilterLogical>
+                    </ConnectorBaseFilter>
+                  </Filter>
+                  <Sorts/>
+                </ConnectorObject>
+              </Fields>
+              <Inputs>
+                <Input key="0" name="folder"/>
+              </Inputs>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

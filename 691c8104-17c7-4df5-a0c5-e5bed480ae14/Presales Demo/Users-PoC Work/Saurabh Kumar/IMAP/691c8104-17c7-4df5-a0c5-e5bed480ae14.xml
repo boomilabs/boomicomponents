@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-PoC Work/Saurabh Kumar/IMAP" componentId="691c8104-17c7-4df5-a0c5-e5bed480ae14" version="18" name="IMAPtoSN" type="process" createdDate="2020-08-04T11:28:31Z" createdBy="Saurabh_Kumar24@Dell.com" modifiedDate="2020-08-06T12:15:36Z" modifiedBy="Saurabh_Kumar24@Dell.com" deleted="false" currentVersion="true" folderName="IMAP" folderId="RjozNDY2NTk3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="96.0" y="96.0">
+          <configuration>
+            <connectoraction actionType="RECEIVE" allowDynamicCredentials="NONE" connectionId="70eae7c5-b6cd-45d2-9a37-d8704654e3bd" connectorType="mailsdk" hideSettings="false" operationId="3fc9b607-d6d8-4847-9205-3b0df43613c6" parameter-profile="EMBEDDED|genericparameterchooser|3fc9b607-d6d8-4847-9205-3b0df43613c6">
+              <parameters>
+                <parametervalue elementToSetId="0" elementToSetName="folder" name="folder" valueType="static">
+                  <staticparameter staticproperty="SNOWIncident"/>
+                </parametervalue>
+              </parameters>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="105.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="130.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="130.0" y="111.0"/>
+              <linesegment length="55" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="130.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="185.0" y="111.0"/>
+              <linesegment length="39" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="185.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape2" shapetype="stop" userlabel="" x="240.0" y="96.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
