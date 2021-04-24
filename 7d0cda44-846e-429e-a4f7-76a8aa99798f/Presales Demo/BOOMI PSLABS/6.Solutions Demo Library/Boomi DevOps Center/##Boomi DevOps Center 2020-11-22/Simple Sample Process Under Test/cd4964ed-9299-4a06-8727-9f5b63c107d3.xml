@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/BOOMI PSLABS/6.Solutions Demo Library/Boomi DevOps Center/##Boomi DevOps Center 2020-11-22/Simple Sample Process Under Test" componentId="cd4964ed-9299-4a06-8727-9f5b63c107d3" version="1" name="Sample Write to Disk" type="connector-action" subType="disk" createdDate="2020-11-21T15:40:21Z" createdBy="dave.hock@dell.com" modifiedDate="2020-11-21T15:40:21Z" modifiedBy="dave.hock@dell.com" deleted="false" currentVersion="true" folderName="Simple Sample Process Under Test" folderId="RjozNjYzMzk5" copiedFromComponentId="90fb6b8e-807b-48b9-8e79-d13b75d0792f" copiedFromComponentVersion="3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <DiskSendAction createDirectory="true" writeOption="unique"/>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>

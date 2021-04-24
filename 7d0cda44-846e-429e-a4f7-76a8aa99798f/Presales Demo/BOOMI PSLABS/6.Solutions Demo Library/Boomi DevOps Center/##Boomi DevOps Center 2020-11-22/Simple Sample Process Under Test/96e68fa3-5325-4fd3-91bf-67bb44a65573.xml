@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/BOOMI PSLABS/6.Solutions Demo Library/Boomi DevOps Center/##Boomi DevOps Center 2020-11-22/Simple Sample Process Under Test" componentId="96e68fa3-5325-4fd3-91bf-67bb44a65573" version="1" name="Sample Work Directory" type="connector-settings" subType="disk" createdDate="2020-11-21T15:40:31Z" createdBy="dave.hock@dell.com" modifiedDate="2020-11-21T15:40:31Z" modifiedBy="dave.hock@dell.com" deleted="false" currentVersion="true" folderName="Simple Sample Process Under Test" folderId="RjozNjYzMzk5" copiedFromComponentId="2154f2f0-541a-40dc-adf5-bb94b348dcfe" copiedFromComponentVersion="3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <DiskSettings xmlns="" directory="work"/>
+  </bns:object>
+</bns:Component>
