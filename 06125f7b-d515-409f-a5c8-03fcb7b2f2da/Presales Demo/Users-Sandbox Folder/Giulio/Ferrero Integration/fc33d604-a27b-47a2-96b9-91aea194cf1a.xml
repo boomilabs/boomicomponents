@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-Sandbox Folder/Giulio/Ferrero Integration" componentId="fc33d604-a27b-47a2-96b9-91aea194cf1a" version="1" name="SAP ERP 6.0 EHP4 ICC/boomi (PD)" type="connector-settings" subType="sapjco" createdDate="2020-06-11T09:12:59Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:12:59Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="63e0b4b6-cff9-4716-913f-6a53bad1738b" copiedFromComponentVersion="14">
+  <bns:encryptedValues>
+    <bns:encryptedValue path="//SAPJCOSettings/dbSettings/@password" isSet="true"/>
+    <bns:encryptedValue path="//SAPJCOSettings/@password" isSet="true"/>
+  </bns:encryptedValues>
+  <bns:description>TID DB: saptid/sapdemo (SQL Auth)</bns:description>
+  <bns:object>
+    <SAPJCOSettings xmlns="" client="800" connectionType="ASHOST" gatewayHost="/H/3.216.120.2/H/155.56.59.11/H/cpc4101" gatewayService="sapgw05" group="" jcoConfigFileLocation="" language="EN" lowLatencyDebug="false" password="dc17eed1d9a52771e8ddd518954e74f87c7714e6e1fa5c9b777be6078c7702e55a01cd3995d6c49325ebef9784a89d7f61da57ce1195c2dbdc868b760d9b98f0" server="/H/3.216.120.2/H/155.56.59.11/H/cpc4101" systemName="" systemNumber="05" trace="false" userName="boomi">
+      <dbSettings additional="" className="com.mysql.jdbc.Driver" dbname="saptid" driverId="mysql" host="mysql-db-saptid-instance.c9qgul0tizhq.us-east-1.rds.amazonaws.com" password="9bdbc62be0ea84726c969e8aa9b9f5245ee7c803ce82cc0107f7b4e659fdfd029f2c8758fbdcc6cb171d881367601d7d652409d52c72ac3b022a5b21a4c68173" port="3306" urlFormat="jdbc:mysql://{0}:{1}/{2}{3}" username="saptid"/>
+    </SAPJCOSettings>
+  </bns:object>
+</bns:Component>

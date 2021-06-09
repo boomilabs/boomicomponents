@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-Sandbox Folder/Giulio/Ferrero Integration" componentId="45947f5e-6206-4494-90b9-dd454e30df94" version="1" name="Map: Error logging" type="transform.map" createdDate="2020-06-11T09:13:01Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:13:01Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="c458d6dc-d0d8-41fe-8124-a7687023a8c4" copiedFromComponentVersion="4">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="b13b1b41-1c16-46ea-b4af-82c3e2616326" toProfile="00510942-e098-4b57-b114-abc8a9022ea4">
+      <Mappings>
+        <Mapping fromKey="3" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='3']" fromNamePath="Record/Elements/DDP_DocumentType" fromType="profile" toKey="2" toKeyPath="*[@key='1']/*[@key='10']/*[@key='2']" toNamePath="fileStaus/errorInfo/DPP_DocumentType" toType="profile"/>
+        <Mapping fromKey="4" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='4']" fromNamePath="Record/Elements/DDP_DateTIme" fromType="profile" toKey="3" toKeyPath="*[@key='1']/*[@key='10']/*[@key='3']" toNamePath="fileStaus/errorInfo/DPP_DateTIme" toType="profile"/>
+        <Mapping fromKey="5" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='5']" fromNamePath="Record/Elements/DDP_DOCNUM" fromType="profile" toKey="4" toKeyPath="*[@key='1']/*[@key='10']/*[@key='4']" toNamePath="fileStaus/errorInfo/DPP_DOCNUM" toType="profile"/>
+        <Mapping fromKey="6" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='6']" fromNamePath="Record/Elements/DDP_Status" fromType="profile" toKey="5" toKeyPath="*[@key='1']/*[@key='10']/*[@key='5']" toNamePath="fileStaus/errorInfo/DPP_Status" toType="profile"/>
+        <Mapping fromKey="8" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='8']" fromNamePath="Record/Elements/DDP_ErrorMSG" fromType="profile" toKey="7" toKeyPath="*[@key='1']/*[@key='10']/*[@key='7']" toNamePath="fileStaus/errorInfo/DPP_ErrorMSG" toType="profile"/>
+        <Mapping fromKey="9" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='9']" fromNamePath="Record/Elements/DDP_EXCEID" fromType="profile" toKey="8" toKeyPath="*[@key='1']/*[@key='10']/*[@key='8']" toNamePath="fileStaus/errorInfo/DPP_EXCEID" toType="profile"/>
+        <Mapping fromKey="11" fromKeyPath="*[@key='1']/*[@key='2']/*[@key='11']" fromNamePath="Record/Elements/DDP_InterfaceName" fromType="profile" toKey="9" toKeyPath="*[@key='1']/*[@key='10']/*[@key='9']" toNamePath="fileStaus/errorInfo/DPP_InterfaceName" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

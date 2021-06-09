@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-Sandbox Folder/Giulio/Ferrero Integration" componentId="28ee9ac2-3f21-432f-aa35-dda07bcef276" version="1" name="Error_Handler" type="process" createdDate="2020-06-11T09:13:00Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:13:00Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="8cabf398-b66b-47fd-a875-295082556a08" copiedFromComponentVersion="13">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="false" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="16.0" y="96.0">
+          <configuration>
+            <passthroughaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape17" x="160.0" y="105.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="50.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="50.0" y="111.0"/>
+              <linesegment length="63" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="50.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg4" orient="vertical" x="113.0" y="111.0"/>
+              <linesegment length="47" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="113.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape5" shapetype="message" userlabel="File Status from main Process" x="304.0" y="96.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>"{1}","{2}","{3}","{4}","{5}","{6}","{7}","{8}"</msgTxt>
+              <msgParameters>
+                <parametervalue key="4" valueType="track">
+                  <trackparameter defaultValue="" propertyId="dynamicdocument.DDP_InterfaceName" propertyName="Dynamic Document Property - DDP_InterfaceName"/>
+                </parametervalue>
+                <parametervalue key="0" valueType="track">
+                  <trackparameter defaultValue="" propertyId="dynamicdocument.DDP_DocumentType" propertyName="Dynamic Document Property - DDP_DocumentType"/>
+                </parametervalue>
+                <parametervalue key="1" valueType="track">
+                  <trackparameter defaultValue="" propertyId="dynamicdocument.DDP_DateTime" propertyName="Dynamic Document Property - DDP_DateTime"/>
+                </parametervalue>
+                <parametervalue key="2" valueType="track">
+                  <trackparameter defaultValue="" propertyId="dynamicdocument.DDP_DOCNUM" propertyName="Dynamic Document Property - DDP_DOCNUM"/>
+                </parametervalue>
+                <parametervalue key="3" valueType="track">
+                  <trackparameter defaultValue="" propertyId="dynamicdocument.DDP_Status" propertyName="Dynamic Document Property - DDP_Status"/>
+                </parametervalue>
+                <parametervalue key="6" valueType="track">
+                  <trackparameter defaultValue="" propertyId="dynamicdocument.DDP_EXCEID" propertyName="Dynamic Document Property - DDP_EXCEID"/>
+                </parametervalue>
+                <parametervalue key="8" valueType="track">
+                  <trackparameter defaultValue="" propertyId="dynamicdocument.DDP_ErrorMSG" propertyName="Dynamic Document Property - DDP_ErrorMSG"/>
+                </parametervalue>
+              </msgParameters>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape5.dragpoint1" toShape="shape16" x="480.0" y="105.0">
+              <linesegment length="0" name="shape5.dragpoint1.lineseg1" orient="horizontal" x="338.0" y="111.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg2" orient="vertical" x="338.0" y="111.0"/>
+              <linesegment length="79" name="shape5.dragpoint1.lineseg3" orient="horizontal" x="338.0" y="111.0"/>
+              <linesegment length="0" name="shape5.dragpoint1.lineseg4" orient="vertical" x="417.0" y="111.0"/>
+              <linesegment length="63" name="shape5.dragpoint1.lineseg5" orient="horizontal" x="417.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape10" shapetype="map" userlabel="" x="624.0" y="96.0">
+          <configuration>
+            <map mapId="45947f5e-6206-4494-90b9-dd454e30df94"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape10.dragpoint1" toShape="shape8" x="768.0" y="105.0">
+              <linesegment length="0" name="shape10.dragpoint1.lineseg1" orient="horizontal" x="658.0" y="111.0"/>
+              <linesegment length="0" name="shape10.dragpoint1.lineseg2" orient="vertical" x="658.0" y="111.0"/>
+              <linesegment length="63" name="shape10.dragpoint1.lineseg3" orient="horizontal" x="658.0" y="111.0"/>
+              <linesegment length="0" name="shape10.dragpoint1.lineseg4" orient="vertical" x="721.0" y="111.0"/>
+              <linesegment length="47" name="shape10.dragpoint1.lineseg5" orient="horizontal" x="721.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="dataprocess_icon" name="shape8" shapetype="dataprocess" userlabel="XSLT for report" x="784.0" y="96.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="1" name="XSLT Transformation" processtype="16">
+                <dataprocessxslt componentId="30695419-4d46-4e46-a3d0-afdeca96000f">
+                  <stylesheet>Generate Report</stylesheet>
+                </dataprocessxslt>
+              </step>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape8.dragpoint1" toShape="shape6" x="880.0" y="105.0">
+              <linesegment length="0" name="shape8.dragpoint1.lineseg1" orient="horizontal" x="818.0" y="111.0"/>
+              <linesegment length="0" name="shape8.dragpoint1.lineseg2" orient="vertical" x="818.0" y="111.0"/>
+              <linesegment length="39" name="shape8.dragpoint1.lineseg3" orient="horizontal" x="818.0" y="111.0"/>
+              <linesegment length="0" name="shape8.dragpoint1.lineseg4" orient="vertical" x="857.0" y="111.0"/>
+              <linesegment length="23" name="shape8.dragpoint1.lineseg5" orient="horizontal" x="857.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="documentproperties_icon" name="shape6" shapetype="documentproperties" userlabel="Set Mail Body" x="896.0" y="96.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Dynamic Process Property - DPP_MailBody" persist="false" propertyId="process.DPP_MailBody" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="1" valueType="current"/>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape6.dragpoint1" toShape="shape11" x="992.0" y="105.0">
+              <linesegment length="0" name="shape6.dragpoint1.lineseg1" orient="horizontal" x="930.0" y="111.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg2" orient="vertical" x="930.0" y="111.0"/>
+              <linesegment length="39" name="shape6.dragpoint1.lineseg3" orient="horizontal" x="930.0" y="111.0"/>
+              <linesegment length="0" name="shape6.dragpoint1.lineseg4" orient="vertical" x="969.0" y="111.0"/>
+              <linesegment length="23" name="shape6.dragpoint1.lineseg5" orient="horizontal" x="969.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape13" shapetype="connectoraction" userlabel="" x="1136.0" y="96.0">
+          <configuration>
+            <connectoraction actionType="Send" allowDynamicCredentials="NONE" connectionId="524ad32a-369c-4b5a-8284-40a8b1094d75" connectorType="mail" hideSettings="false" operationId="b685141e-7c33-4531-9a0b-2e8b5f621a48">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape13.dragpoint1" toShape="shape14" x="1248.0" y="105.0">
+              <linesegment length="0" name="shape13.dragpoint1.lineseg1" orient="horizontal" x="1170.0" y="111.0"/>
+              <linesegment length="0" name="shape13.dragpoint1.lineseg2" orient="vertical" x="1170.0" y="111.0"/>
+              <linesegment length="47" name="shape13.dragpoint1.lineseg3" orient="horizontal" x="1170.0" y="111.0"/>
+              <linesegment length="0" name="shape13.dragpoint1.lineseg4" orient="vertical" x="1217.0" y="111.0"/>
+              <linesegment length="31" name="shape13.dragpoint1.lineseg5" orient="horizontal" x="1217.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="documentproperties_icon" name="shape11" shapetype="documentproperties" userlabel="Set Mail Properties" x="1008.0" y="96.0">
+          <configuration>
+            <documentproperties>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Mail - Body" persist="false" propertyId="connector.mail.body" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="10" valueType="process">
+                    <processparameter processproperty="DPP_MailBody" processpropertydefaultvalue=""/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Mail - Subject" persist="false" propertyId="connector.mail.subject" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="5" valueType="static">
+                    <staticparameter staticproperty="[ERROR Report]: Ferrero failures Report"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Mail - From Address" persist="false" propertyId="connector.mail.fromAddress" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="7" valueType="static">
+                    <staticparameter staticproperty="malleswara_rao_banis@dell.com"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+              <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Mail - To Address" persist="false" propertyId="connector.mail.toAddress" shouldEncrypt="false">
+                <sourcevalues>
+                  <parametervalue key="8" valueType="static">
+                    <staticparameter staticproperty="malleswara_rao_banis@dell.com;Giulio_Moretti@Dell.com"/>
+                  </parametervalue>
+                </sourcevalues>
+              </documentproperty>
+            </documentproperties>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape11.dragpoint1" toShape="shape13" x="1120.0" y="105.0">
+              <linesegment length="0" name="shape11.dragpoint1.lineseg1" orient="horizontal" x="1042.0" y="111.0"/>
+              <linesegment length="0" name="shape11.dragpoint1.lineseg2" orient="vertical" x="1042.0" y="111.0"/>
+              <linesegment length="47" name="shape11.dragpoint1.lineseg3" orient="horizontal" x="1042.0" y="111.0"/>
+              <linesegment length="0" name="shape11.dragpoint1.lineseg4" orient="vertical" x="1089.0" y="111.0"/>
+              <linesegment length="31" name="shape11.dragpoint1.lineseg5" orient="horizontal" x="1089.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape14" shapetype="stop" userlabel="" x="1264.0" y="96.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="dataprocess_icon" name="shape16" shapetype="dataprocess" userlabel="" x="496.0" y="96.0">
+          <configuration>
+            <dataprocess>
+              <step index="1" key="2" name="Search/Replace" processtype="1">
+                <dataprocessreplace replacewith="" searchCharacterLimit="1024" searchType="char_limit" texttofind="[\r\n]"/>
+              </step>
+              <step index="2" key="1" name="Combine Documents" processtype="9">
+                <dataprocesscombine profileType="flatfile">
+                  <FFOptions freeFormFooter="" freeFormHeader="" headersOption="none"/>
+                </dataprocesscombine>
+              </step>
+            </dataprocess>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape16.dragpoint1" toShape="shape10" x="608.0" y="105.0">
+              <linesegment length="0" name="shape16.dragpoint1.lineseg1" orient="horizontal" x="530.0" y="111.0"/>
+              <linesegment length="0" name="shape16.dragpoint1.lineseg2" orient="vertical" x="530.0" y="111.0"/>
+              <linesegment length="47" name="shape16.dragpoint1.lineseg3" orient="horizontal" x="530.0" y="111.0"/>
+              <linesegment length="0" name="shape16.dragpoint1.lineseg4" orient="vertical" x="577.0" y="111.0"/>
+              <linesegment length="31" name="shape16.dragpoint1.lineseg5" orient="horizontal" x="577.0" y="111.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="catcherrors_icon" name="shape17" shapetype="catcherrors" userlabel="" x="176.0" y="96.0">
+          <configuration>
+            <catcherrors catchAll="true" retryCount="0"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="default" name="shape17.dragpoint1" text="Try" toShape="shape5" x="288.0" y="105.0">
+              <linesegment length="0" name="shape17.dragpoint1.lineseg1" orient="horizontal" x="210.0" y="111.0"/>
+              <linesegment length="0" name="shape17.dragpoint1.lineseg2" orient="vertical" x="210.0" y="111.0"/>
+              <linesegment length="47" name="shape17.dragpoint1.lineseg3" orient="horizontal" x="210.0" y="111.0"/>
+              <linesegment length="0" name="shape17.dragpoint1.lineseg4" orient="vertical" x="257.0" y="111.0"/>
+              <linesegment label="Try" length="31" name="shape17.dragpoint1.lineseg5" orient="horizontal" x="257.0" y="111.0"/>
+            </dragpoint>
+            <dragpoint identifier="error" name="shape17.dragpoint2" text="Catch" toShape="shape18" x="304.0" y="249.0">
+              <linesegment length="0" name="shape17.dragpoint2.lineseg1" orient="horizontal" x="210.0" y="111.0"/>
+              <linesegment length="0" name="shape17.dragpoint2.lineseg2" orient="vertical" x="210.0" y="111.0"/>
+              <linesegment length="55" name="shape17.dragpoint2.lineseg3" orient="horizontal" x="210.0" y="111.0"/>
+              <linesegment length="144" name="shape17.dragpoint2.lineseg4" orient="vertical" x="265.0" y="111.0"/>
+              <linesegment label="Catch" length="39" name="shape17.dragpoint2.lineseg5" orient="horizontal" x="265.0" y="255.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape image="exception_icon" name="shape18" shapetype="exception" userlabel="" x="320.0" y="240.0">
+          <configuration>
+            <exception stopProcessReturnSingleDoc="false" stopsingledoc="true" title="">
+              <exMessage>{1)</exMessage>
+              <exParameters>
+                <parametervalue key="0" valueType="track">
+                  <trackparameter defaultValue="" propertyId="meta.base.catcherrorsmessage" propertyName="Base - Try/Catch Message"/>
+                </parametervalue>
+              </exParameters>
+            </exception>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

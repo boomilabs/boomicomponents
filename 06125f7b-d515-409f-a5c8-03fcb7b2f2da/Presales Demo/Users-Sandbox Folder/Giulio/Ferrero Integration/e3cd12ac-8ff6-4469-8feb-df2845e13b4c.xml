@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-Sandbox Folder/Giulio/Ferrero Integration" componentId="e3cd12ac-8ff6-4469-8feb-df2845e13b4c" version="1" name="MYCOMP_DELL" type="tradingpartner" createdDate="2020-06-11T09:13:00Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:13:00Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="870e260b-465a-4223-8841-401499e84fdf" copiedFromComponentVersion="3">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <TradingPartner xmlns="" classification="mytradingpartner" standard="edifact">
+      <ContactInfo/>
+      <PartnerInfo>
+        <EdifactPartnerInfo>
+          <EdifactOptions acknowledgementoption="donotackitem" compositeDelimiter="colondelimited" compositeDelimiterSpecial="" envelopeoption="groupall" fileDelimiter="plusdelimited" fileDelimiterSpecial="" filteracknowledgements="false" includeUNA="false" outboundValidationOption="filterError" rejectDuplicateInterchange="false" segmentchar="singlequote" segmentcharSpecial=""/>
+          <EdifactControlInfo>
+            <UNBControlInfo ackRequest="false" appReference="" commAgreement="" interchangeAddress="" interchangeId="DELLTP123" interchangeIdQual="14" interchangeSubAddress="" priority="NA" refPass="" refPassQual="NA" syntaxId="UNOA" syntaxVersion="3" testIndicator="NA"/>
+            <UNGControlInfo applicationId="" applicationIdQual="NA" useFunctionalGroups="false"/>
+            <UNHControlInfo assocAssignedCode="" commonAccessRef="" controllingAgency="UN" release="01B" version="D"/>
+          </EdifactControlInfo>
+        </EdifactPartnerInfo>
+      </PartnerInfo>
+      <PartnerCommunication>
+        <EdifactPartnerCommunication>
+          <CommunicationOptions>
+            <CommunicationOption commOption="default" method="as2">
+              <CommunicationSettings docType="default">
+                <SettingsObject useMyTradingPartnerSettings="false">
+                  <AS2ServerSettings useSharedServer="true">
+                    <defaultPartnerSettings authenticationType="NONE" url="http://saprouter.boomidemo.com:9090/as2">
+                      <AuthSettings/>
+                    </defaultPartnerSettings>
+                  </AS2ServerSettings>
+                </SettingsObject>
+                <ActionObjects>
+                  <ActionObject useMyTradingPartnerOptions="false">
+                    <AS2PartnerObject>
+                      <partnerInfo as2Id="MYTPDELLAS2" numberOfMessagesToCheckForDuplicates="100000" rejectDuplicateMessageId="false">
+                        <ListenAuthSettings/>
+                      </partnerInfo>
+                      <defaultPartnerInfo as2Id="MYPTNFERERRO" numberOfMessagesToCheckForDuplicates="100000" rejectDuplicateMessageId="false">
+                        <ListenAuthSettings/>
+                      </defaultPartnerInfo>
+                      <AS2MessageOptions compressed="false" dataContentType="textplain" encrypted="false" encryptionAlgorithm="tripledes" signed="false" signingDigestAlg="SHA1"/>
+                      <AS2MDNOptions mdnDigestAlg="SHA1" requestMDN="true" signed="false" synchronous="sync" useSSL="false"/>
+                    </AS2PartnerObject>
+                    <DataProcessing sequence="pre">
+                      <dataprocess/>
+                    </DataProcessing>
+                    <DataProcessing sequence="post">
+                      <dataprocess/>
+                    </DataProcessing>
+                  </ActionObject>
+                </ActionObjects>
+              </CommunicationSettings>
+            </CommunicationOption>
+          </CommunicationOptions>
+        </EdifactPartnerCommunication>
+      </PartnerCommunication>
+      <DocumentTypes/>
+      <Archiving/>
+    </TradingPartner>
+  </bns:object>
+</bns:Component>

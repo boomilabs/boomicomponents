@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-Sandbox Folder/Giulio/Ferrero Integration" componentId="4f326332-468f-4fae-9f50-ec4550a93def" version="1" name="Map_EDIFACTD.01B_to_SAP.ORDERS05" type="transform.map" createdDate="2020-06-11T09:12:59Z" createdBy="Giulio_Moretti@Dell.com" modifiedDate="2020-06-11T09:12:59Z" modifiedBy="Giulio_Moretti@Dell.com" deleted="false" currentVersion="true" folderName="Ferrero Integration" folderId="RjozMzQ0MzA1" copiedFromComponentId="53d29846-4fc5-46ff-ad50-be65f992e92a" copiedFromComponentVersion="12">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="cf6e2acd-1f6d-4b64-adb5-fbd20024f3a9" toProfile="a7e22bc3-aaa1-4cce-8f7a-7ff773fc45b5">
+      <Mappings>
+        <Mapping fromKey="19" fromKeyPath="*[@key='1']/*[@key='14']/*[@key='19']" fromNamePath="Header/BGM/BGM02.1" fromType="profile" toKey="1316" toKeyPath="*[@key='1']/*[@key='864']/*[@key='886']/*[@key='1316']" toNamePath="ORDERS05/IDOC/E1EDK01/BELNR" toType="profile"/>
+        <Mapping fromKey="19" fromKeyPath="*[@key='1']/*[@key='14']/*[@key='19']" fromNamePath="Header/BGM/BGM02.1" fromType="profile" toKey="1366" toKeyPath="*[@key='1']/*[@key='864']/*[@key='888']/*[@key='1366']" toNamePath="ORDERS05/IDOC/E1EDK02/BELNR" toType="profile"/>
+        <Mapping fromFunction="1" fromKey="2" fromType="function" toKey="1384" toKeyPath="*[@key='1']/*[@key='864']/*[@key='892']/*[@key='1384']" toNamePath="ORDERS05/IDOC/E1EDP01/POSEX" toType="profile"/>
+        <Mapping fromKey="26" fromKeyPath="*[@key='1']/*[@key='24'][@tagListKey='4']/*[@key='26'][@tagListKey='4']" fromNamePath="Header/DTM[DTM01.1='137']/DTM01.2" fromTagListKey="4" fromType="profile" toFunction="2" toKey="1" toType="function"/>
+        <Mapping fromFunction="2" fromKey="2" fromType="function" toKey="1292" toKeyPath="*[@key='1']/*[@key='864']/*[@key='884']/*[@key='1292']" toNamePath="ORDERS05/IDOC/E1EDK03/DATUM" toType="profile"/>
+        <Mapping fromKey="78" fromKeyPath="*[@key='2']/*[@key='63']/*[@key='75']/*[@key='78']" fromNamePath="Detail/LIN/PIA/PIA02.2" fromType="profile" toKey="1446" toKeyPath="*[@key='1']/*[@key='864']/*[@key='892']/*[@key='1446']" toNamePath="ORDERS05/IDOC/E1EDP01/PSTYV" toType="profile"/>
+        <Mapping fromFunction="2" fromKey="2" fromType="function" toKey="1806" toKeyPath="*[@key='1']/*[@key='864']/*[@key='892']/*[@key='1496']/*[@key='1806']" toNamePath="ORDERS05/IDOC/E1EDP01/E1EDP02/DATUM" toType="profile"/>
+        <Mapping fromKey="77" fromKeyPath="*[@key='2']/*[@key='63']/*[@key='75']/*[@key='77']" fromNamePath="Detail/LIN/PIA/PIA02.1" fromType="profile" toKey="1854" toKeyPath="*[@key='1']/*[@key='864']/*[@key='892']/*[@key='1506']/*[@key='1854']" toNamePath="ORDERS05/IDOC/E1EDP01/E1EDP19/IDTNR" toType="profile"/>
+        <Mapping fromKey="38" fromKeyPath="*[@key='1']/*[@key='35']/*[@key='36'][@tagListKey='1']/*[@key='38'][@tagListKey='1']" fromNamePath="Header/NAD/NAD[NAD01='SU']/NAD02.1" fromTagListKey="1" fromType="profile" toKey="1120" toKeyPath="*[@key='1']/*[@key='864']/*[@key='874'][@tagListKey='8']/*[@key='1120'][@tagListKey='8']" toNamePath="ORDERS05/IDOC/E1EDKA1[1]/PARTN" toTagListKey="8" toType="profile"/>
+        <Mapping fromKey="38" fromKeyPath="*[@key='1']/*[@key='35']/*[@key='36'][@tagListKey='2']/*[@key='38'][@tagListKey='2']" fromNamePath="Header/NAD/NAD[NAD01='BY']/NAD02.1" fromTagListKey="2" fromType="profile" toKey="1120" toKeyPath="*[@key='1']/*[@key='864']/*[@key='874'][@tagListKey='9']/*[@key='1120'][@tagListKey='9']" toNamePath="ORDERS05/IDOC/E1EDKA1[2]/PARTN" toTagListKey="9" toType="profile"/>
+        <Mapping fromKey="19" fromKeyPath="*[@key='1']/*[@key='14']/*[@key='19']" fromNamePath="Header/BGM/BGM02.1" fromType="profile" toKey="972" toKeyPath="*[@key='1']/*[@key='864']/*[@key='868']/*[@key='972']" toNamePath="ORDERS05/IDOC/EDI_DC40/ARCKEY" toType="profile"/>
+        <Mapping fromKey="123" fromKeyPath="*[@key='2']/*[@key='63']/*[@key='120']/*[@key='121']/*[@key='123']" fromNamePath="Detail/LIN/PRI/PRI/PRI01.2" fromType="profile" toKey="1402" toKeyPath="*[@key='1']/*[@key='864']/*[@key='892']/*[@key='1402']" toNamePath="ORDERS05/IDOC/E1EDP01/VPREI" toType="profile"/>
+        <Mapping fromKey="111" fromKeyPath="*[@key='2']/*[@key='63']/*[@key='109']/*[@key='111']" fromNamePath="Detail/LIN/QTY/QTY01.2" fromType="profile" toKey="1392" toKeyPath="*[@key='1']/*[@key='864']/*[@key='892']/*[@key='1392']" toNamePath="ORDERS05/IDOC/E1EDP01/MENGE" toType="profile"/>
+        <Mapping fromKey="38" fromKeyPath="*[@key='1']/*[@key='35']/*[@key='36'][@tagListKey='1']/*[@key='38'][@tagListKey='1']" fromNamePath="Header/NAD/NAD [NAD01=SU]/NAD02.1" fromTagListKey="1" fromType="profile" toFunction="4" toKey="1" toType="function"/>
+        <Mapping fromFunction="4" fromKey="2" fromType="function" toKey="938" toKeyPath="*[@key='1']/*[@key='864']/*[@key='868']/*[@key='938']" toNamePath="ORDERS05/IDOC/EDI_DC40/SNDPOR (SAPC41)" toType="profile"/>
+        <Mapping fromFunction="4" fromKey="3" fromType="function" toKey="950" toKeyPath="*[@key='1']/*[@key='864']/*[@key='868']/*[@key='950']" toNamePath="ORDERS05/IDOC/EDI_DC40/RCVPOR (TRFC)" toType="profile"/>
+        <Mapping fromFunction="4" fromKey="4" fromType="function" toKey="922" toKeyPath="*[@key='1']/*[@key='864']/*[@key='868']/*[@key='922']" toNamePath="ORDERS05/IDOC/EDI_DC40/IDOCTYP (ORDERS05)" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true">
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Numeric" key="1" name="Line Item Increment" position="1" sumEnabled="false" type="LineItemIncrement" x="30.0" y="399.0">
+          <Inputs>
+            <Input default="1" key="1" name="Increment Basis"/>
+            <Input key="2" name="Reset Value"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" cacheOption="none" category="Date" enabled="true" key="2" name="Date Format" position="2" sumEnabled="false" type="DateFormat" x="30.0" y="207.0">
+          <Inputs>
+            <Input isReset="false" key="1" name="Date String"/>
+            <Input default="yyyyMMdd" isReset="false" key="2" name="Input Mask"/>
+            <Input default="yyyyMMdd" isReset="false" key="3" name="Output Mask"/>
+          </Inputs>
+          <Outputs>
+            <Output isReset="false" key="2" name="Result"/>
+          </Outputs>
+          <Configuration/>
+        </FunctionStep>
+        <FunctionStep cacheEnabled="true" category="Lookup" key="4" name="Cross Reference Lookup" position="4" sumEnabled="false" type="CrossRefLookup" x="30.0" y="23.0">
+          <Inputs>
+            <Input key="1" name="PARTNERID"/>
+          </Inputs>
+          <Outputs>
+            <Output key="2" name="SNDPOR"/>
+            <Output key="3" name="RCVPOR"/>
+            <Output key="4" name="MSGTYPE"/>
+          </Outputs>
+          <Configuration>
+            <CrossRefLookup crossRefTableId="d0eb0af2-2c8f-4889-9059-6b1abb221d36" skipLookupIfNoInputs="true">
+              <Input index="1" name="PARTNERID" refId="1"/>
+              <Output index="2" name="SNDPOR" refId="2"/>
+              <Output index="3" name="RCVPOR" refId="3"/>
+              <Output index="4" name="MSGTYPE" refId="4"/>
+            </CrossRefLookup>
+          </Configuration>
+        </FunctionStep>
+      </Functions>
+      <Defaults>
+        <Default toKey="866" value="1"/>
+        <Default toKey="1296" value="1"/>
+        <Default toKey="1302" value="USD"/>
+        <Default toKey="1282" toTagListKey="1" value="1"/>
+        <Default toKey="1284" toTagListKey="1" value="008"/>
+        <Default toKey="1286" toTagListKey="1" value="3000"/>
+        <Default toKey="1282" toTagListKey="3" value="1"/>
+        <Default toKey="1284" toTagListKey="3" value="012"/>
+        <Default toKey="1286" toTagListKey="3" value="OR"/>
+        <Default toKey="1282" toTagListKey="4" value="1"/>
+        <Default toKey="1284" toTagListKey="4" value="007"/>
+        <Default toKey="1286" toTagListKey="4" value="10"/>
+        <Default toKey="1282" toTagListKey="5" value="1"/>
+        <Default toKey="1284" toTagListKey="5" value="006"/>
+        <Default toKey="1286" toTagListKey="5" value="00"/>
+        <Default toKey="1282" toTagListKey="6" value="1"/>
+        <Default toKey="1282" toTagListKey="7" value="1"/>
+        <Default toKey="1284" toTagListKey="6" value="013"/>
+        <Default toKey="1286" toTagListKey="6" value="NB"/>
+        <Default toKey="1284" toTagListKey="7" value="011"/>
+        <Default toKey="1286" toTagListKey="7" value="3000"/>
+        <Default toKey="1116" toTagListKey="8" value="1"/>
+        <Default toKey="1362" value="1"/>
+        <Default toKey="1364" value="001"/>
+        <Default toKey="1382" value="1"/>
+        <Default toKey="1288" value="1"/>
+        <Default toKey="1290" value="022"/>
+        <Default toKey="1798" value="1"/>
+        <Default toKey="1800" value="001"/>
+        <Default toKey="1802" value="0010000022"/>
+        <Default toKey="1804" value="1"/>
+        <Default toKey="1850" value="1"/>
+        <Default toKey="1852" value="002"/>
+        <Default toKey="902" value="1"/>
+        <Default toKey="1118" toTagListKey="8" value="AG"/>
+        <Default toKey="1116" toTagListKey="9" value="1"/>
+        <Default toKey="1118" toTagListKey="9" value="WE"/>
+        <Default toKey="904" value="EDI_DC40"/>
+        <Default toKey="914" value="2"/>
+        <Default toKey="922" value="ORDERS05"/>
+        <Default toKey="926" value="ORDERS"/>
+        <Default toKey="938" value="SAPC41"/>
+        <Default toKey="940" value="LS"/>
+        <Default toKey="950" value="TRFC"/>
+        <Default toKey="952" value="LS"/>
+        <Default toKey="932" value="D"/>
+        <Default toKey="936" value="850"/>
+        <Default toKey="934" value="01B"/>
+        <Default toKey="944" value="T90CLNT090"/>
+        <Default toKey="956" value="DELL"/>
+      </Defaults>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>
