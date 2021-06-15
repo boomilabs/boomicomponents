@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/BOOMI PSLABS/6.Solutions Demo Library/Boomi DevOps Center/##Boomi DevOps Center 2020-11-22/Simple Sample Process Under Test" componentId="7d0cda44-846e-429e-a4f7-76a8aa99798f" version="1" name="Sample Functional Test - Simple FF" type="process" createdDate="2020-11-21T15:40:27Z" createdBy="dave.hock@dell.com" modifiedDate="2020-11-21T15:40:27Z" modifiedBy="dave.hock@dell.com" deleted="false" currentVersion="true" folderName="Simple Sample Process Under Test" folderId="RjozNjYzMzk5" copiedFromComponentId="38bf8f09-5a75-414b-865d-c9d5b76cb76d" copiedFromComponentVersion="12">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/BOOMI PSLABS/6.Solutions Demo Library/Boomi DevOps Center/##Boomi DevOps Center 2020-11-22/Simple Sample Process Under Test" componentId="7d0cda44-846e-429e-a4f7-76a8aa99798f" version="2" name="Sample Functional Test - Simple FF" type="process" createdDate="2020-11-21T15:40:27Z" createdBy="dave.hock@dell.com" modifiedDate="2021-04-24T17:51:06Z" modifiedBy="dave.hock@dell.com" deleted="false" currentVersion="true" folderName="Simple Sample Process Under Test" folderId="RjozNjYzMzk5">
   <bns:encryptedValues/>
   <bns:description>Test on a non-cloud atom. CICD_TEST_MODE = TEST|CAPTURE|&lt;blank&gt;.  Optional - CICD_EXECUTION_GROUP_ID, CICD_TEST_ID. Go to https://boomi.to/cicdtesting to change the current test</bns:description>
   <bns:object>
@@ -101,12 +101,12 @@ for( int i = 0; i &lt; dataContext.getDataCount(); i++ ) {
             </dataprocess>
           </configuration>
           <dragpoints>
-            <dragpoint name="shape13.dragpoint1" toShape="shape28" x="1168.0" y="57.0">
+            <dragpoint name="shape13.dragpoint1" toShape="shape39" x="1216.0" y="57.0">
               <linesegment length="0" name="shape13.dragpoint1.lineseg1" orient="horizontal" x="1026.0" y="63.0"/>
               <linesegment length="0" name="shape13.dragpoint1.lineseg2" orient="vertical" x="1026.0" y="63.0"/>
-              <linesegment length="79" name="shape13.dragpoint1.lineseg3" orient="horizontal" x="1026.0" y="63.0"/>
-              <linesegment length="0" name="shape13.dragpoint1.lineseg4" orient="vertical" x="1105.0" y="63.0"/>
-              <linesegment length="63" name="shape13.dragpoint1.lineseg5" orient="horizontal" x="1105.0" y="63.0"/>
+              <linesegment length="103" name="shape13.dragpoint1.lineseg3" orient="horizontal" x="1026.0" y="63.0"/>
+              <linesegment length="0" name="shape13.dragpoint1.lineseg4" orient="vertical" x="1129.0" y="63.0"/>
+              <linesegment length="87" name="shape13.dragpoint1.lineseg5" orient="horizontal" x="1129.0" y="63.0"/>
             </dragpoint>
           </dragpoints>
         </shape>
@@ -149,34 +149,6 @@ for( int i = 0; i &lt; dataContext.getDataCount(); i++ ) {
               <linesegment length="39" name="shape22.dragpoint2.lineseg3" orient="horizontal" x="274.0" y="63.0"/>
               <linesegment length="112" name="shape22.dragpoint2.lineseg4" orient="vertical" x="313.0" y="63.0"/>
               <linesegment label="False" length="23" name="shape22.dragpoint2.lineseg5" orient="horizontal" x="313.0" y="175.0"/>
-            </dragpoint>
-          </dragpoints>
-        </shape>
-        <shape image="decision_icon" name="shape28" shapetype="decision" userlabel="CICD_TEST_MODE = TEST?" x="1184.0" y="48.0">
-          <configuration>
-            <decision comparison="equals" name="CICD_TEST_MODE = TEST?">
-              <decisionvalue valueType="process">
-                <processparameter processproperty="CICD_TEST_MODE" processpropertydefaultvalue=""/>
-              </decisionvalue>
-              <decisionvalue valueType="static">
-                <staticparameter staticproperty="TEST"/>
-              </decisionvalue>
-            </decision>
-          </configuration>
-          <dragpoints>
-            <dragpoint identifier="true" name="shape28.dragpoint1" text="True" toShape="shape7" x="1360.0" y="57.0">
-              <linesegment length="0" name="shape28.dragpoint1.lineseg1" orient="horizontal" x="1218.0" y="63.0"/>
-              <linesegment length="0" name="shape28.dragpoint1.lineseg2" orient="vertical" x="1218.0" y="63.0"/>
-              <linesegment length="79" name="shape28.dragpoint1.lineseg3" orient="horizontal" x="1218.0" y="63.0"/>
-              <linesegment length="0" name="shape28.dragpoint1.lineseg4" orient="vertical" x="1297.0" y="63.0"/>
-              <linesegment label="True" length="63" name="shape28.dragpoint1.lineseg5" orient="horizontal" x="1297.0" y="63.0"/>
-            </dragpoint>
-            <dragpoint identifier="false" name="shape28.dragpoint2" text="False" toShape="shape39" x="1280.0" y="169.0">
-              <linesegment length="0" name="shape28.dragpoint2.lineseg1" orient="horizontal" x="1218.0" y="63.0"/>
-              <linesegment length="0" name="shape28.dragpoint2.lineseg2" orient="vertical" x="1218.0" y="63.0"/>
-              <linesegment length="39" name="shape28.dragpoint2.lineseg3" orient="horizontal" x="1218.0" y="63.0"/>
-              <linesegment length="112" name="shape28.dragpoint2.lineseg4" orient="vertical" x="1257.0" y="63.0"/>
-              <linesegment label="False" length="23" name="shape28.dragpoint2.lineseg5" orient="horizontal" x="1257.0" y="175.0"/>
             </dragpoint>
           </dragpoints>
         </shape>
@@ -287,7 +259,7 @@ for( int i = 0; i &lt; dataContext.getDataCount(); i++ ) {
             </dragpoint>
           </dragpoints>
         </shape>
-        <shape image="connectoraction_icon" name="shape39" shapetype="connectoraction" userlabel="" x="1296.0" y="160.0">
+        <shape image="connectoraction_icon" name="shape39" shapetype="connectoraction" userlabel="" x="1232.0" y="48.0">
           <configuration>
             <connectoraction actionType="Send" allowDynamicCredentials="NONE" connectionId="96e68fa3-5325-4fd3-91bf-67bb44a65573" connectorType="disk" hideSettings="false" operationId="cd4964ed-9299-4a06-8727-9f5b63c107d3">
               <parameters/>
@@ -295,11 +267,11 @@ for( int i = 0; i &lt; dataContext.getDataCount(); i++ ) {
           </configuration>
           <dragpoints>
             <dragpoint name="shape39.dragpoint1" toShape="shape7" x="1360.0" y="57.0">
-              <linesegment length="0" name="shape39.dragpoint1.lineseg1" orient="horizontal" x="1330.0" y="175.0"/>
-              <linesegment length="0" name="shape39.dragpoint1.lineseg2" orient="vertical" x="1330.0" y="175.0"/>
-              <linesegment length="23" name="shape39.dragpoint1.lineseg3" orient="horizontal" x="1330.0" y="175.0"/>
-              <linesegment length="112" name="shape39.dragpoint1.lineseg4" orient="vertical" x="1353.0" y="63.0"/>
-              <linesegment length="7" name="shape39.dragpoint1.lineseg5" orient="horizontal" x="1353.0" y="63.0"/>
+              <linesegment length="0" name="shape39.dragpoint1.lineseg1" orient="horizontal" x="1266.0" y="63.0"/>
+              <linesegment length="0" name="shape39.dragpoint1.lineseg2" orient="vertical" x="1266.0" y="63.0"/>
+              <linesegment length="55" name="shape39.dragpoint1.lineseg3" orient="horizontal" x="1266.0" y="63.0"/>
+              <linesegment length="0" name="shape39.dragpoint1.lineseg4" orient="vertical" x="1321.0" y="63.0"/>
+              <linesegment length="39" name="shape39.dragpoint1.lineseg5" orient="horizontal" x="1321.0" y="63.0"/>
             </dragpoint>
           </dragpoints>
         </shape>
