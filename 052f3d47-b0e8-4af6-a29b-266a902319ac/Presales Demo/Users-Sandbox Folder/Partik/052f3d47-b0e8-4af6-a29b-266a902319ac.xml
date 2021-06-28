@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Presales Demo/Users-Sandbox Folder/Partik" componentId="052f3d47-b0e8-4af6-a29b-266a902319ac" version="1" name="Test Deployment Partik CICD" type="process" createdDate="2021-06-28T06:39:01Z" createdBy="Partik_Singla@Dell.com" modifiedDate="2021-06-28T06:39:01Z" modifiedBy="Partik_Singla@Dell.com" deleted="false" currentVersion="true" folderName="Partik" folderId="RjoyNDg1ODI1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="96.0" y="96.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="unset" x="230.0" y="107.0">
+              <linesegment length="0" name="shape1.dragpoint1.lineseg1" orient="horizontal" x="130.0" y="111.0"/>
+              <linesegment length="0" name="shape1.dragpoint1.lineseg2" orient="vertical" x="130.0" y="111.0"/>
+              <linesegment length="58" name="shape1.dragpoint1.lineseg3" orient="horizontal" x="130.0" y="111.0"/>
+              <linesegment length="2" name="shape1.dragpoint1.lineseg4" orient="vertical" x="188.0" y="111.0"/>
+              <linesegment length="42" name="shape1.dragpoint1.lineseg5" orient="horizontal" x="188.0" y="113.0"/>
+            </dragpoint>
+          </dragpoints>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>
